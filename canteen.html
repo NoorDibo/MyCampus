@@ -5,12 +5,28 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
+  <style>
+    .image-container{
+  position: relative;
+  display: inline-block;
+}
+.contered-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.7);
+  /*Bakgrunnsfarger for tekstboksen*/
+  padding: 10px; /*juster padding etter behov*/
+}
+
+  </style>
   <title>Canteen at OsloMet</title>
 </head>
 <body>
   <!-- Page header -->
   <header>
-    <h1>Canteen at Pilestredet 35</h1>
+    <h1>Canteen at OsloMet</h1>
   </header>
 
   <!-- Main content area -->
@@ -18,10 +34,24 @@
     <!-- Canteen information section -->
     <section>
       <h2>Enjoy a Variety of Meals</h2>
-      <img src="canteen.jpg" alt="Canteen at OsloMet" width="800" height="600">
+      <div class="image-container"></div>
+      <img src="C:\Users\Alaa\Downloads\368024938_7033828580013766_5913945131469860174_n.jpg"alt="Canteen at OsloMet" width="800" height="600">
+        <div class="contered-text"><br>KJØTTFRI KANTINEMAT PÅ OSLOMET</br>
+          <br>Vi tibyr veriert,vegetarisk mat til alle studenter for en rimlig pris</br>
+          <br>Ved norges beste sjefer tilbyr oslomet masse god og forskjellig mat</br>
+          <br>Vi gjør vårt beste for for deg! Kvalitet,hyggiene er en av våres prioriterte</br>
+          <br>Velkommen!</br>
+
+        </div>
+      </div>
+    
+
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+     
+      
     </section>
   </main>
+  
 
   <!-- Page footer -->
   <footer>
