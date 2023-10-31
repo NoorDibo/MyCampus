@@ -23,18 +23,6 @@ footer {
   color: white;
 }
 
-.image-container{
-  position: relative;
-  display: inline-block;
-}
-.contered-text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: rgba(255, 255, 255, 0.7);
-  /*Bakgrunnsfarger for tekstboksen*/
-  padding: 10px; /*juster padding etter behov*/
-}
+
 
 
