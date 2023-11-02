@@ -67,11 +67,12 @@ footer {
   background-color: #333;
   color: white;
 }
-/*kantine styling*/
-.image-container{
+/*kantine styling*/ 
+/*.image-container{
   position: relative;
   display: inline-block;
-}
+  
+}*/
 .contered-text {
   position: absolute;
   top: 50%;
@@ -81,7 +82,20 @@ footer {
   /*Bakgrunnsfarger for tekstboksen*/
   padding: 10px; /*juster padding etter behov*/
 }
-/*Style for menyen*/
+/*kantine med flex*/
+.container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+}
+.image {
+  width: 150px;
+  height: 150px;
+  margin: 10px;
+
+}
+
 
 .grid-container {
   display: grid;
