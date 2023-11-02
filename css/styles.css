@@ -95,5 +95,13 @@ footer {
   margin: 10px;
 
 }
-
-
+/*Legger farge på bakgrunnen til Kantine*/
+body{
+  font-family: Arial, sans-serif;
+}
+#canteen1.heading{
+  color:chocolate;
+}
+#canteen1{
+  background-color: chocolate;
+}
