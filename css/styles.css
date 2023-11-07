@@ -13,51 +13,89 @@ body {
   color: #333;
 }
 
-/* Header styling with spacing and background color */
-header {
-  background-color: #0056b3;
-  color: #fff;
-  padding-top: 30px;
-  min-height: 70px;
-  border-bottom: #bbb 1px solid;
+.container{
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 30px;
 }
+
 
 /* Navigation bar styling */
-nav {
-  display: flex;
-  justify-content: center;
-  padding: 15px 0;
+
+ul {
+  list-style-type: none;
 }
 
-nav ul {
-  list-style: none;
+.navbar{
+  background: #2196F3;
+  color: #fff;
+  height: 60px;
 }
 
-nav li {
-  display: inline;
-  margin-right: 20px;
+.navbar .logo{
+
 }
 
-nav a {
+.navbar a{
+  color: #fff;
   text-decoration: none;
-  color: white;
+  font-size: 18px;
   font-weight: bold;
 }
 
+.navbar a:hover{
+  color: #333;
+}
+
+.navbar .container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.navbar ul{
+  display: flex;
+}
+
+.navbar ul li{
+  margin-left: 20px;
+}
+
+
+
+
+
 /* Main content styling with padding */
 main {
-  padding: 15px;
+  
+}
+
+/* Header styling with spacing and background color */
+.header {
+  background-color: #0056b3;
+  color: #fff;
+  
+}
+
+.header .container{
+  display: flex;
+  
+  justify-self: space-between;
+}
+
+.boxes .container{
+  display: flex;
+  align-items: center;
+  justify-self: space-between;
 }
 
 /* Image styling for responsiveness */
-img {
-  max-width: 100%;
-  height: auto;
-}
+
 
 /* Section styling for spacing */
 section {
-  margin-bottom: 20px;
+  
 }
 
 /* Footer styling */
@@ -85,7 +123,6 @@ footer {
 /*kantine med flex*/
 .container{
   display: flex;
-  flex-direction: row;
   justify-content: center;
 
 }
