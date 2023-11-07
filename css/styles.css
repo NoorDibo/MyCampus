@@ -110,10 +110,7 @@ footer {
 /*kantine med flex*/
 .container{
   display: flex;
-<<<<<<< HEAD
   justify-content: center;
-=======
-  /*flex-direction: row;*/
   justify-content: space-around;
   align-items: center;
 
@@ -122,7 +119,7 @@ footer {
   text-align: center;
   padding: 20px;
   border: 1px; solid: #ddd;
->>>>>>> origin/main
+
 
 }
 .image {
