@@ -106,32 +106,34 @@ footer {
   color: white;
 }
 /*kantine styling*/ 
-/*.image-container{
-  position: relative;
-  display: inline-block;
-  
-}*/
-.contered-text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: rgba(255, 255, 255, 0.7);
-  /*Bakgrunnsfarger for tekstboksen*/
-  padding: 10px; /*juster padding etter behov*/
-}
+
 /*kantine med flex*/
 .container{
   display: flex;
+<<<<<<< HEAD
   justify-content: center;
+=======
+  /*flex-direction: row;*/
+  justify-content: space-around;
+  align-items: center;
+
+}
+.box{
+  text-align: center;
+  padding: 20px;
+  border: 1px; solid: #ddd;
+>>>>>>> origin/main
 
 }
 .image {
   width: 150px;
   height: 150px;
-  margin: 10px;
-
+  
 }
+p{
+  margin: 10px;
+}
+
 /*Legger farge på bakgrunnen til Kantine*/
 /*body{
   font-family: Arial, sans-serif;
