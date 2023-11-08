@@ -33,7 +33,7 @@ ul {
 
 .navbar{
   background-color: #28282B ;
-  height: 70px;
+  height: 73px;
   
 }
 
@@ -45,13 +45,13 @@ ul {
 
 .logo i{
   color: var(--main-color);
-  margin-right: 5px;
-  font-size: 28px;
+  margin-right: 6px;
+  font-size: 34px;
 
 }
 
 .logo span{
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   font-weight: 650;
   margin-top: 6px;
 }
