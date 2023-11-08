@@ -93,12 +93,10 @@ main {
 
 /* Header styling with spacing and background color */
 .header {
-  background-image: url("");
+  
   color: #1C2833;
   height: 100vh; /* This makes the div the height of the viewport */
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center; /* This will center your image in the div */
+
 }
   
 
