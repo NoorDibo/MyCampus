@@ -11,6 +11,7 @@ body {
   line-height: 1.6;
   background-color: #f9f9f9;
   color: #333;
+ 
 }
 
 .container{
@@ -27,9 +28,9 @@ ul {
 }
 
 .navbar{
-  background: #2196F3;
-  color: #fff;
+  background-color: #FEF9E7;
   height: 60px;
+  
 }
 
 .navbar .logo{
@@ -37,14 +38,14 @@ ul {
 }
 
 .navbar a{
-  color: #fff;
+  color: #254A3E;
   text-decoration: none;
   font-size: 18px;
   font-weight: bold;
 }
 
 .navbar a:hover{
-  color: #333;
+  color: #E7B44A;
 }
 
 .navbar .container{
@@ -73,14 +74,20 @@ main {
 
 /* Header styling with spacing and background color */
 .header {
-  background-color: #0056b3;
+  background-image: url("/img/campus1.jpg");
   color: #fff;
-  
+  height: 100vh; /* This makes the div the height of the viewport */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; /* This will center your image in the div */
 }
+  
+
+
 
 .header .container{
   display: flex;
-  
+  align-items: center;
   justify-self: space-between;
 }
 
@@ -117,7 +124,7 @@ footer {
 .box{
   text-align: center;
   padding: 20px;
-  border: 1px; solid: #ddd;
+  border: 1px;  
 
 
 }
