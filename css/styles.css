@@ -9,7 +9,7 @@
 body {
   font-family: 'Arial', sans-serif;
   line-height: 1.6;
-  background-color: #D0D3D4;
+  background-color: #ECF0F1 ;
   color: #1C2833;
  
 }
@@ -38,7 +38,7 @@ ul {
 }
 
 .navbar a{
-  color: #D0D3D4;
+  color: #ECF0F1;
   text-decoration: none;
   font-size: 18px;
   font-weight: bold;
