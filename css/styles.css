@@ -132,10 +132,11 @@ footer {
 /*kantine styling*/ 
 
 /*kantine med flex*/
-.container{
+.box .container{
   display: flex;
   justify-content: center;
   align-items: center;
+  justify-self: space-between;
 
 }
 .box{
