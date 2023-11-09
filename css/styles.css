@@ -132,12 +132,8 @@ footer {
 /*kantine styling*/ 
 
 /*kantine med flex*/
-.container{
-  display: flex;
-  height: 90vh;
-  align-items: center;
 
-}
+
 .box{
 width: 150px;
 height: 150px;
