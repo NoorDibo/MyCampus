@@ -216,12 +216,6 @@ footer {
 
  /* Styl for Libary*/
 
- .card .container{
-  display: flex;
-  align-items: center;
-  justify-self: space-between;
-}
-
  /* Stiler for søkeboksen */
 .search-container {
   display: flex;
