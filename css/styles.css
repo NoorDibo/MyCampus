@@ -92,16 +92,19 @@ ul {
   flex-direction: row-reverse;
   align-items: center;
   justify-self: space-between;
+  
 }
 
 .header{
   padding-top: 30px;
   color: #1C2833;
   width: 100%;
+  
 }
 .text-content {
   flex: 1; /* Allows text content to grow and shrink as needed */
   padding: 10px; /* Adjust padding as needed */
+  
 }
 
 .image-content {
@@ -312,6 +315,10 @@ footer {
 .navigation input:checked ~ .menu {
   right: 0;
 }
+
+/* blur effect*/
+
+
 
 /* media screen starts here*/
 
