@@ -19,7 +19,7 @@ body {
 }
 
 .container{
-  max-width: 1400px;
+  max-width: 1500px;
   margin: 0 auto;
   padding: 0 30px;
 }
@@ -33,8 +33,7 @@ ul {
 
 .navbar{
   background-color: #28282B;
-  height: 73px;
-  
+  height: 80px;
 }
 
 /* logo style starts here*/
@@ -82,31 +81,42 @@ ul {
   margin-left: 20px;
 }
 
-
-
-
-
-/* Main content styling with padding */
-main {
-  
-}
-
 /* Header styling with spacing and background color */
-.header {
+
   
-  color: #1C2833;
-  height: 100vh; /* This makes the div the height of the viewport */
-
-}
-  
-
-
-
-.header .container{
+.header .container {
   display: flex;
   align-items: center;
-  justify-self: space-between;
+  justify-content: space-between;
+  
 }
+
+.header{
+  padding-top: 30px;
+  color: #1C2833;
+  width: 100%;
+  
+}
+.text-content {
+  flex: 1; /* Allows text content to grow and shrink as needed */
+  padding: 10px; /* Adjust padding as needed */
+  text-align: start;
+  
+}
+
+.image-content {
+  flex: 1.5; /* Allows image content to grow and shrink as needed */
+  padding: 10px;
+}
+
+.image-content img {
+  max-width: 100%; /* Ensures the image is responsive */
+  height: auto; /* Maintains aspect ratio */
+}
+
+
+
+
 
 .boxes .container{
   display: flex;
@@ -118,9 +128,7 @@ main {
 
 
 /* Section styling for spacing */
-section {
-  
-}
+
 
 /* Footer styling */
 footer {
@@ -129,53 +137,38 @@ footer {
   background-color: #333;
   color: white;
 }
+
+
 /*kantine styling*/ 
 
-/*kantine med flex*/
-.container{
+.food .container{
   display: flex;
-  height: 90vh;
   align-items: center;
-
-}
-.box{
-width: 150px;
-height: 150px;
-text-align: center;
-border-radius: 5px;
-padding: 10px;
-margin: 10px;
-max-width: 300px;
-}
-#box1{
-  
-  background-color:hsl(9, 22%, 76%);
-  align-self: center;
-  width: 800px;
-  height: 450px;
-}
-#box2{
-  background-color:hsl(9, 22%, 76%);
-  align-self: center;
-  width: 800px;
-  height: 450px;
+  justify-self: space-between;
+  flex-wrap: wrap;
 }
 
-#box3{
-  background-color:hsl(9, 22%, 76%);
-  align-self: center;
-  width: 800px;
-  height: 450px;
+/*kantine med flex*/
+
+/* Box styling */
+.box {
+  flex: 1 0 300px; /* Grow to fill available space */
+  min-width: 300px; /* Minimum width before wrapping */
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  background-color: hsl(9, 22%, 76%);
 }
 
-.box img{
+.box img {
   max-width: 100%;
   height: auto;
-  
 }
 
 
 
+/* Topical*/
 .grid-container {
   display: grid;
   grid-template-columns: auto auto auto;
@@ -190,13 +183,44 @@ max-width: 300px;
   text-align: center;
 }
 
- /* Styl for Libary//////////////////////////////////////////////////////////////////////////////////////////////////*/
+.main-topical{
+  margin: 20px;
+}
+.body-topical{
+  margin: 0px;
+}
+.navbar-topical ul{
+  list-style: none;
+  background-color: hsl(0, 0%, 25%);
+  padding: 0px;
+  margin: 0px;
+  overflow: hidden;
+}
+
+.navbar-topical a{
+  color: white;
+  text-decoration: none;
+  padding: 15px;
+  text-align: center;
+}
+
+.navbar-topical a:hover{
+  background-color:  hsl(0, 0%, 10%);
+}
+
+.navbar-topical li{
+  float: left;
+}
+
+
+ /* Styl for Libary*/
 
  /* Stiler for søkeboksen */
 .search-container {
   display: flex;
   align-items: center;
   margin: 20px;
+  justify-content: space-between;
 }
 
 #search {
@@ -217,11 +241,7 @@ max-width: 300px;
 }
 
  
- .container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-}
+ 
 
 .card {
   flex: 1;
@@ -319,6 +339,10 @@ max-width: 300px;
   right: 0;
 }
 
+/* blur effect*/
+
+
+
 /* media screen starts here*/
 
 @media (max-width: 992px) {
@@ -348,7 +372,7 @@ max-width: 300px;
     background: #28282B;
     width: 400px;
     height: 100%;
-    padding-top: 73px;
+    padding-top: 80px;
     
 }
 
@@ -371,3 +395,23 @@ max-width: 300px;
 /* media screen for the menu ends here*/
 
 } 
+
+
+/* Media query for screens smaller than 768px */
+@media (max-width: 768px) {
+  .header .container {
+    flex-direction: column; /* Stack items vertically */
+    
+  }
+  .text-content, .image-content {
+    flex-basis: auto; /* Reset flex-basis for stacked layout */
+    width: 100%; /* Full width for smaller screens */
+    }
+  
+  .image-content img {
+    /* Optional: Adjust the image size for smaller screens */
+  }
+}
+
+/* Media query for screens smaller than 768px ends here */
+
