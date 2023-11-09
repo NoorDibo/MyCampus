@@ -19,7 +19,7 @@ body {
 }
 
 .container{
-  max-width: 1400px;
+  max-width: 1500px;
   margin: 0 auto;
   padding: 0 30px;
 }
@@ -89,29 +89,33 @@ ul {
   
 .header .container {
   display: flex;
+  flex-direction: row-reverse;
   align-items: center;
   justify-self: space-between;
-  flex-direction: row-reverse;
-
 }
 
 .header{
-  padding: 20px;
+  padding-top: 30px;
   color: #1C2833;
+  width: 100%;
 }
 .text-content {
   flex: 1; /* Allows text content to grow and shrink as needed */
-  padding: 20px; /* Adjust padding as needed */
+  padding: 10px; /* Adjust padding as needed */
 }
 
 .image-content {
   flex: 1; /* Allows image content to grow and shrink as needed */
+  padding: 10px;
 }
 
 .image-content img {
   max-width: 100%; /* Ensures the image is responsive */
   height: auto; /* Maintains aspect ratio */
 }
+
+
+
 .boxes .container{
   display: flex;
   align-items: center;
@@ -361,3 +365,23 @@ footer {
 /* media screen for the menu ends here*/
 
 } 
+
+
+/* Media query for screens smaller than 768px */
+@media (max-width: 768px) {
+  .header .container {
+    flex-direction: column; /* Stack items vertically */
+    
+  }
+  
+  .text-content, .image-content {
+    flex-basis: auto; /* Reset flex-basis for stacked layout */
+    width: 100%; /* Full width for smaller screens */
+  }
+  
+  .image-content img {
+    /* Optional: Adjust the image size for smaller screens */
+  }
+}
+
+/* Media query for screens smaller than 768px ends here */
