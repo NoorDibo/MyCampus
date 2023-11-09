@@ -84,24 +84,13 @@ ul {
 
 
 
-
-
-/* Main content styling with padding */
-main {
-  
-}
-
 /* Header styling with spacing and background color */
 .header {
   
   color: #1C2833;
-  height: 100vh; /* This makes the div the height of the viewport */
 
 }
   
-
-
-
 .header .container{
   display: flex;
   align-items: center;
@@ -118,9 +107,7 @@ main {
 
 
 /* Section styling for spacing */
-section {
-  
-}
+
 
 /* Footer styling */
 footer {
@@ -129,49 +116,38 @@ footer {
   background-color: #333;
   color: white;
 }
+
+
 /*kantine styling*/ 
+
+.food .container{
+  display: flex;
+  align-items: center;
+  justify-self: space-between;
+  flex-wrap: wrap;
+}
 
 /*kantine med flex*/
 
-
-.box{
-width: 150px;
-height: 150px;
-text-align: center;
-border-radius: 5px;
-padding: 10px;
-margin: 10px;
-max-width: 300px;
-}
-#box1{
-  
-  background-color:hsl(9, 22%, 76%);
-  align-self: center;
-  width: 800px;
-  height: 450px;
-}
-#box2{
-  background-color:hsl(9, 22%, 76%);
-  align-self: center;
-  width: 800px;
-  height: 450px;
+/* Box styling */
+.box {
+  flex: 1 0 300px; /* Grow to fill available space */
+  min-width: 300px; /* Minimum width before wrapping */
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  background-color: hsl(9, 22%, 76%);
 }
 
-#box3{
-  background-color:hsl(9, 22%, 76%);
-  align-self: center;
-  width: 800px;
-  height: 450px;
-}
-
-.box img{
+.box img {
   max-width: 100%;
   height: auto;
-  
 }
 
 
 
+/* Topical*/
 .grid-container {
   display: grid;
   grid-template-columns: auto auto auto;
@@ -188,11 +164,18 @@ max-width: 300px;
 
  /* Styl for Libary*/
 
+ .card .container{
+  display: flex;
+  align-items: center;
+  justify-self: space-between;
+}
+
  /* Stiler for søkeboksen */
 .search-container {
   display: flex;
   align-items: center;
   margin: 20px;
+  justify-content: space-between;
 }
 
 #search {
@@ -213,11 +196,7 @@ max-width: 300px;
 }
 
  
- .container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-}
+ 
 
 .card {
   flex: 1;
@@ -233,6 +212,7 @@ max-width: 300px;
   height: auto;
 
 }
+
 
 
 
