@@ -154,9 +154,10 @@ footer {
 .box {
   flex: 1 0 300px; /* Grow to fill available space */
   min-width: 300px; /* Minimum width before wrapping */
+  height: 800;
   margin: 10px;
   padding: 10px;
-  border-radius: 10px;
+  border-radius: 5px;
   box-sizing: border-box; /* Include padding and border in the element's total width and height */
   background-color: hsl(9, 22%, 76%);
 }
