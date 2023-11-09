@@ -274,8 +274,10 @@ footer {
 .card img {
   max-width: 100%;
   height: auto;
+}
+
   h2, h3 {
-    color: #007BFF;
+    color: #1500ff;
     font-size: 20px;
     margin: 10px 0;
   }
@@ -313,7 +315,7 @@ tr:nth-child(even) {
 }
 
 th {
-  background-color: #7300ff;
+  background-color: #1900ff;
   color: white;
 }
 
