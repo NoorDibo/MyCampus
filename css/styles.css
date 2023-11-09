@@ -215,7 +215,9 @@ footer {
 
 
  /* Styl for Libary***********************************************/
-
+ .centered-text {
+  text-align: center;
+ }
  /* Stiler for søkeboksen */
 .search-container {
   display: flex;
@@ -241,11 +243,26 @@ footer {
   cursor: pointer;
 }
 
-.centered-text {
+/*style for blog*/
+
+.blog-container {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 200px; /* Juster høyden etter behov */
+  flex-direction: column;
+  margin: 20px;
+}
+
+.blog-post {
+  background-color: #fff;
+  margin: 10px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease-in-out;
+}
+
+.blog-post:hover {
+  transform: translateY(-5px);
 }
  
 .card-container {
@@ -277,7 +294,7 @@ footer {
 }
 
   h2, h3 {
-    color: #1500ff;
+    color: #00b3ff;
     font-size: 20px;
     margin: 10px 0;
   }
@@ -287,7 +304,7 @@ footer {
   }
   
   .read-more-button {
-    background-color: #007BFF;
+    background-color: #0077ff;
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -315,7 +332,7 @@ tr:nth-child(even) {
 }
 
 th {
-  background-color: #1900ff;
+  background-color: #00b3ff;
   color: white;
 }
 
