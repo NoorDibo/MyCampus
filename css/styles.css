@@ -85,16 +85,28 @@ ul {
 
 
 /* Header styling with spacing and background color */
-.header {
-  
-  color: #1C2833;
 
-}
   
-.header .container{
+.header .container {
   display: flex;
   align-items: center;
   justify-self: space-between;
+  color: #1C2833;
+  
+}
+
+.header{
+  min-height: 400px;
+}
+.header h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  line-height: 1.2;
+
+}
+.header img {
+  max-width: 400px;
+  
 }
 
 .boxes .container{
