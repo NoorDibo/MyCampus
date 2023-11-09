@@ -214,7 +214,7 @@ footer {
 }
 
 
- /* Styl for Libary*/
+ /* Styl for Libary***********************************************/
 
  /* Stiler for søkeboksen */
 .search-container {
@@ -241,38 +241,58 @@ footer {
   cursor: pointer;
 }
 
+.centered-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px; /* Juster høyden etter behov */
+}
  
- 
-
 .card-container {
   display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
   justify-content: space-between;
-  flex-wrap: wrap; /* Når skjermen blir smal, vil kortene wrappe til neste linje */
-  gap: 20px; /* Legger til mellomrom mellom kortene */
 }
 
 .card {
   flex: 1;
   border: 1px solid #ccc;
-  padding: 10px;
+  padding: 20px;
   text-align: center;
   max-width: 300px;
+  background-color: #f7f7f7;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: scale(1.05); /* Forstør kortet ved hover-effekt */
 }
 
 .card img {
   max-width: 100%;
   height: auto;
-}
-/*styl to read more button*/
-.read-more-button {
-  background-color: #007BFF;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  padding: 5px 10px;
-  margin-top: auto; /* Plasserer knappen nederst i kortet */
-  cursor: pointer;
-}
+  h2, h3 {
+    color: #007BFF;
+    font-size: 20px;
+    margin: 10px 0;
+  }
+  
+  p {
+    font-size: 16px;
+  }
+  
+  .read-more-button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin-top: 10px;
+    cursor: pointer;
+  }
 
 /*styl to åpnings tider*/
 /* Stiler for tabellen */
