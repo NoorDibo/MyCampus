@@ -167,12 +167,15 @@ footer {
   height: auto;
 }
 
-@media screen and (max-width:800px){
+@media screen and(max-width:800px){
   .box{
     flex: 50%;
     max-width: 50%;
   }
- /* .header{
+  .food{
+    flex-direction: column;
+  }
+ .header{
     justify-content: space-between;
     align-items: center;
 
@@ -190,12 +193,15 @@ footer {
   }
   
   
-}*/
+}
 @media screen and(max-width:600px){
   .box{
     flex: 100%;
     max-width: 100%;
 
+  }
+  .food{
+    flex-direction: column;
   }
 
   
