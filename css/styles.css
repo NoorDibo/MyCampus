@@ -167,6 +167,41 @@ footer {
   height: auto;
 }
 
+@media screen and (max-width:800px){
+  .box{
+    flex: 50%;
+    max-width: 50%;
+  }
+ /* .header{
+    justify-content: space-between;
+    align-items: center;
+
+  }
+  .header_title_container,
+  .header_btn_container{
+    flex: 0 1 auto;
+  }
+  .header_title{
+    font-size: 1.3rem;
+
+  }
+  .header_btn_container{
+    display: flex;
+  }
+  
+  
+}*/
+@media screen and(max-width:600px){
+  .box{
+    flex: 100%;
+    max-width: 100%;
+
+  }
+
+  
+}
+
+
 
 
 /* Topical*/
