@@ -236,48 +236,6 @@ input[type="submit"]{
   color: #00b3ff;
   background-color: rgb(198, 195, 195);
 }
-@media screen and(max-width:800px){
-  .box{
-    flex: 50%;
-    max-width: 50%;
-  }
-  .food{
-    flex-direction: column;
-  }
- .header{
-    justify-content: space-between;
-    align-items: center;
-
-  }
-  .header_title_container,
-  .header_btn_container{
-    flex: 0 1 auto;
-  }
-  .header_title{
-    font-size: 1.3rem;
-
-  }
-  .header_btn_container{
-    display: flex;
-  }
-  
-  
-}
-@media screen and(max-width:600px){
-  .box{
-    flex: 100%;
-    max-width: 100%;
-
-  }
-  .food{
-    flex-direction: column;
-  }
-
-  
-}
-
-
-
 
 /* Topical*/
 
@@ -655,4 +613,51 @@ th {
 }
 
 /* Media query for screens smaller than 768px ends here */
+
+/*media query for kantine*/
+
+/*Media query for screen smaller than 800px"kantine"*/
+
+@media screen and(max-width:800px){
+  .box{
+    flex: 50%;
+    max-width: 50%;
+  }
+  .food{
+    flex-direction: column;
+  }
+ .header{
+    justify-content: space-between;
+    align-items: center;
+
+  }
+  .header_title_container,
+  .header_btn_container{
+    flex: 0 1 auto;
+  }
+  .header_title{
+    font-size: 1.3rem;
+
+  }
+  .header_btn_container{
+    display: flex;
+  }
+  
+  
+}
+/*Media query for screen smaller than 600px"kantine"*/
+@media screen and(max-width:600px){
+  .box{
+    flex: 100%;
+    max-width: 100%;
+
+  }
+  .food{
+    flex-direction: column;
+  }
+
+  
+}
+
+
 
