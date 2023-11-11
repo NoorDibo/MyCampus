@@ -266,25 +266,66 @@ input[type="submit"]{
 
 
 /* Topical*/
-.grid-container {
+
+.body-topical{
+  margin: 0px;
+  padding:0px;
+  box-sizing: border-box;
+}
+
+.header-topical{
+  position: fixed;
+  top: 0px;
+  z-index: 1;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.404);
+}
+
+.container-topical{
+  width: 1280px;
+  margin: auto;
+
+}
+
+.navbar-topical{
   display: grid;
-  grid-template-columns: auto auto auto;
-  background-color: #2196F3;
-  padding: 10px;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  padding: 10px 0px;
 }
-.grid-item {
-  background-color: rgba(255, 255, 255, 0.8);
-  border: 1px solid rgba(0, 0, 0, 0.8);
-  padding: 20px;
-  font-size: 30px;
-  text-align: center;
+
+.tab-nav-topical{
+  outline: none;
+  display: none;
 }
+
+.label-topical{
+  display: none;
+  color: white;
+}
+
+.burger-topical{
+  width: 35px;
+  height: 5px;
+  background-color: white;
+  margin-top: 5px;
+}
+
+.content-nav-topical{
+  grid-column: 3;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.content-nav-topical li{
+  display: inline-block;
+  padding-right: 10px;
+}
+
 
 .main-topical{
   margin: 20px;
-}
-.body-topical{
-  margin: 0px;
 }
 .navbar-topical ul{
   list-style: none;
