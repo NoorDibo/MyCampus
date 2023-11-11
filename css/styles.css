@@ -359,13 +359,13 @@ input[type="submit"]{
 
 
  /* Styl for Libary***********************************************/
- .centered-text {
+ .centered-text-lib{
   text-align: center;
  }
 
  /* Styl for Libary*/
 
- .card .container{
+ .card .container-lib{
   display: flex;
   align-items: center;
   justify-self: space-between;
@@ -399,13 +399,13 @@ input[type="submit"]{
 
 /*style for blog*/
 
-.blog-container {
+.blog-container-lib {
   display: flex;
   flex-direction: column;
   margin: 20px;
 }
 
-.blog-post {
+.blog-post-lib {
   background-color: #fff;
   margin: 10px;
   padding: 20px;
@@ -415,18 +415,18 @@ input[type="submit"]{
   transition: transform 0.2s ease-in-out;
 }
 
-.blog-post:hover {
+.blog-post-lib:hover {
   transform: translateY(-5px);
 }
  
-.card-container {
+.card-container-lib {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
   justify-content: space-between;
 }
 
-.card {
+.card-lib {
   flex: 1;
   border: 1px solid #ccc;
   padding: 20px;
@@ -438,11 +438,11 @@ input[type="submit"]{
   transition: transform 0.2s;
 }
 
-.card:hover {
+.card-lib:hover {
   transform: scale(1.05); /* Forstør kortet ved hover-effekt */
 }
 
-.card img {
+.card-lib img {
   max-width: 100%;
   height: auto;
 }
