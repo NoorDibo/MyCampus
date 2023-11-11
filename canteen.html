@@ -63,7 +63,7 @@
           you can always find it here in our canteen.
         </p>
       </div>
-      <div class="box" >
+      <!--div class="box" >
         <h2>Kjøttfri kantinemat på OsloMet</h2>
         <p>Byrådet i Oslo kjempet mye for å redusere kjøttforbruket i kantiner  </p>
         <p> over hele kommunen.Det er veldig viktig å leve miljøvennelig og ta vare</p>
@@ -83,7 +83,7 @@
          <p></p>
          
 
-      </div>
+      </div-->
      
       <div class="box">
         <h2>Hoved Meny</h2>
@@ -118,6 +118,12 @@
         <p>vinger</p>
         <p>oliven olje</p>
         <p>********HOVED MENY********</p>
+      </div>
+      <div class="box">
+        <img src="img/mat.jpg">
+        <img src="img/salad.jpg">
+        <img src="img/waffel.webp" alt="https://res.cloudinary.com/norgesgruppen/images/c_scale,dpr_auto,f_auto,q_auto:eco,w_1600/nusdnqw8jkhlwablp1kn/verdens-beste-vafler">
+        
       </div>
       <div class="box">
         <h2>Lunsj meny:</h2>
@@ -161,23 +167,26 @@
         <img src="img/kantinemontasje.jpg" alt="https://web.trondelagfylke.no/contentassets/368691d3357b4e409c8283e02061de68/kantinemontasje.jpg?width=1280">
         <h2>Ansatte:</h2>
         <p>Alaa Salah Krenbeh</p>
-        <p>tlf: 46557444</p>
-        <p>epost: AlaaKrenbeh@gmail.com</p>
+        <a href="tel:+47-46557444">call me</a>
+        <a href="Alaakrenbeh@gmail.com">my emailadress</a>
         <p>Douaa Salah Krenbeh</p>
-        <p>tlf: 44892190</p>
-        <p>epost: k.douaa1992@gmail.com</p>
+        <a href="tel:+4744892190">call me</a>
+        <a href=" k.douaa1992@gmail.com">my emailadress</a>
         <p>Noor Dibo</p>
-        <p>tlf: 47593210</p>
-        <p>epost: NoorDibo@gmail.com</p>
+        <a href="tel:+4756873222">call me</a>
+        <a href="NoorDibo@gmail.com">my emailadress</a>
+        <p>**************************</p>
+        <p>********Ansatte***********</p>
         
       </div>
+      
       <div class="box">
+        <img src="img/oslomet.jpg" alt="https://image.forskning.no/1222987.jpg?imageId=1222987&x=0&y=28.747433264887&cropw=100&croph=43.5318275154&width=488&height=213">
         <h2> Åpningstider:</h2>
         <p>Mandag-Fredag 8:00-16:00</p>
         <p>Lørdag: Stengt</p>
         <p>Søndag: Stengt</p>
         <p> Velkommen :) </p>
-       
       </div>
     </div>
     <div class="review-container">
@@ -197,6 +206,12 @@
       </div>
       <button>Submit review</button>
     </div>
+    <form action="/send-klage" method="post">
+      <label for="klagefelt"><h2>Klage:</h2></label>
+      <p>Du kan nå sende din klage dirkte til mattilsynet</p>
+      <textarea id="klagefelt" name="Klage" rows="4" cols="50"></textarea>
+      <input type="submit" value="send-klage">
+    </form>
     </section>
   
   
