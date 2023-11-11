@@ -305,7 +305,7 @@ input[type="submit"]{
   display: none;
 }
 
-<<<<<<< HEAD
+/*HEAD*/
 .label-topical{
   display: none;
   color: white;
@@ -362,7 +362,7 @@ input[type="submit"]{
  .centered-text {
   text-align: center;
  }
-=======
+
  /* Styl for Libary*/
 
  .card .container{
@@ -371,7 +371,7 @@ input[type="submit"]{
   justify-self: space-between;
 }
 
->>>>>>> 70713d7 (noor)
+/* 70713d7 (noor)*/
  /* Stiler for søkeboksen */
 .search-container {
   display: flex;
