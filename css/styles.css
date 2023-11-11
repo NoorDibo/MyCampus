@@ -107,12 +107,12 @@ ul {
   
 }
 
-.image-content {
+.slider-wrappert {
   flex: 1.5; /* Allows image content to grow and shrink as needed */
   padding: 10px;
 }
 
-.image-content img {
+.slider-wrapper img {
   max-width: 100%; /* Ensures the image is responsive */
   height: auto; /* Maintains aspect ratio */
 }
