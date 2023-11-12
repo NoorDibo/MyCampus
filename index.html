@@ -9,6 +9,7 @@
   <meta name="description" content="Explore OsloMet Campusccd, particularly the Pilestredet 35 building. Find information on facilities, accessibility, and more.">
   <!-- Stylesheet link -->
   <link rel="stylesheet" href="css/styles.css">
+  <!-- im using boxin and remixicon for icons-->
   <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
   <link rel="stylesheet"
   href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
@@ -20,10 +21,19 @@
   
   
     <!-- Navigation bar -->
+    <!-- Menu Icon/nav and logo Layout from youtube by Pure code -->
+    <!-- source : https://www.youtube.com/watch?v=XM7sEpl0f7c-->
+    <!--- Logo icon is from remixicon github and website-->
+    <!-- source : https://remixicon.com/-->
     <nav class="navbar">
   <div class="container">
     <a href="index.html" class="logo"><i class="ri-school-fill"></i><span>OSLOMET</span></a>
-
+    <div class="search-box">
+      <form action="">
+        <input type="text" name="search" id="srch" placeholder="Search">
+        <button type="submit"><i class="ri-search-line"></i></button>
+      </form>
+    </div>
     <div class="navigation">
       <input class="burger-toggle" type="checkbox" id="toggle-menu">     
       <label for="toggle-menu" class="menu-icon"></label> <!-- Label to trigger the checkbox -->
@@ -47,36 +57,24 @@
                 The OsloMet Campus is located in the heart of downtown Oslo at Pilestredet 35 and offers a wide
             </p>
           </div>
-          <div class="wrapper">
-            <input checked type="radio" name="slider" id="slide1"/>
-            <input checked type="radio" name="slider" id="slide2"/>
-            <input checked type="radio" name="slider" id="slide2"/>
-            <input checked type="radio" name="slider" id="slide2"/>
-
-            <div class="slider-wrapper">
-              <div class="inner">
-                <article>
-                  <div class="top-left">
-                    <h3>Oslomet</h3>
-                  </div>
-                  <img src="/img/campus1.jpg"/>
-                </article>
-
-                <article>
-                  <div class="bottom-right">
-                    <h3>Oslomet Canteen</h3>
-                  </div>
-                  <img src="/img/campus1.jpg"/>
-                </article>
-                
-
-
-              </div>
-            </div>
-            
-          </div>
-          
+          <!-- Slider and slider css nav Icon Layout from CodePen by Hunter Garrett  -->
+          <!-- Source: https://codepen.io/hunterbecton/pen/jOzVLGR -->
+      <div class="slider-wrapper">
+        <div class="slider">
+          <img id="slide-1" src="/img/campus1.jpg" alt=""/>
+          <img id="slide-2" src="/img/campus.jpg" alt=""/>
+          <img id="slide-3" src="/img/campus1.jpg" alt=""/>
+          <img id="slide-4" src="/img/campus1.jpg" alt=""/>
+        </div>
+        <div class="slider-nav">
+          <a href="#slide-1"></a>
+          <a href="#slide-2"></a>
+          <a href="#slide-3"></a>
+          <a href="#slide-4"></a>
+        </div>
       </div>
+      <!-- slider-wrapper -->
+    </div>
     </header>
 
     
@@ -100,8 +98,47 @@
   </main>
 
   <!-- Footer with copyright information -->
-  <footer>
-    <p>&copy; 2023 OsloMet Campus - All rights reserved.</p>
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="newsletter-signup">
+        <h3>Get the latest news!</h3>
+        <input type="email" placeholder="Enter your email">
+        <button>Sign Up</button>
+      </div>
+      <div class="footer-section">
+        <h3>Services</h3>
+        <a href="#">1on1 Coaching</a>
+        <a href="#">Company Review</a>
+        <!-- Add more links as needed -->
+      </div>
+      <div class="footer-section">
+        <h3>Company</h3>
+        <a href="#">About</a>
+        <a href="#">Meet the Team</a>
+        <!-- Add more links as needed -->
+      </div>
+      <div class="footer-section">
+        <h3>Helpful Links</h3>
+        <a href="#">Contact</a>
+        <a href="#">FAQs</a>
+        <!-- Add more links as needed -->
+      </div>
+      <div class="footer-section">
+        <h3>Legal</h3>
+        <a href="#">Accessibility</a>
+        <a href="#">Returns Policy</a>
+        <!-- Add more links as needed -->
+      </div>
+    </div>
+    <div class="social-links">
+      <a href="#" alt="Facebook"></a><i class="ri-facebook-box-fill"></i></a>
+      <a href="#" alt="Twitter"></a><i class="ri-twitter-fill"></i></a>
+      <a href="#" alt="Instagram"></a><i class="ri-instagram-fill"></i></a>
+      <a href="#" alt="Linkdln"></a><i class="ri-linkedin-box-fill"></i></a>
+    </div>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="36" height="36"><path d="M15.4024 21V14.0344H17.7347L18.0838 11.3265H15.4024V9.59765C15.4024 8.81364 15.62 8.27934 16.7443 8.27934L18.1783 8.27867V5.85676C17.9302 5.82382 17.0791 5.75006 16.0888 5.75006C14.0213 5.75006 12.606 7.01198 12.606 9.32952V11.3265H10.2677V14.0344H12.606V21H4C3.44772 21 3 20.5523 3 20V4C3 3.44772 3.44772 3 4 3H20C20.5523 3 21 3.44772 21 4V20C21 20.5523 20.5523 21 20 21H15.4024Z"></path></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32"><path d="M15.4024 21V14.0344H17.7347L18.0838 11.3265H15.4024V9.59765C15.4024 8.81364 15.62 8.27934 16.7443 8.27934L18.1783 8.27867V5.85676C17.9302 5.82382 17.0791 5.75006 16.0888 5.75006C14.0213 5.75006 12.606 7.01198 12.606 9.32952V11.3265H10.2677V14.0344H12.606V21H4C3.44772 21 3 20.5523 3 20V4C3 3.44772 3.44772 3 4 3H20C20.5523 3 21 3.44772 21 4V20C21 20.5523 20.5523 21 20 21H15.4024Z" fill="rgba(44,25,204,1)"></path></svg>
   </footer>
 </body>
 </html>
+
