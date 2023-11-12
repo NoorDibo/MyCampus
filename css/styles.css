@@ -58,6 +58,8 @@ ul {
   margin-top: 6px;
 }
 
+
+/* search box nav starts here*/
 .search-box{
   position: relative;
   
@@ -95,6 +97,9 @@ ul {
   
 }
 
+/* search box navbar ends here*/
+
+/* navbar menu starts here*/
 .navbar a{
   color: #ECF0F1;
   text-decoration: none;
@@ -121,6 +126,7 @@ ul {
   margin-left: 20px;
 }
 
+/* navbar menu ends here*/
 
 
 /* Header styling with spacing and background color */
@@ -237,7 +243,10 @@ footer {
   flex-wrap: wrap;
 }
 
-/*kantine med flex*/
+
+
+
+/*Cantine Styling starts here*/
 
 /* Box styling */
 .box {
@@ -258,7 +267,7 @@ footer {
 .contered-text{
   text-align: center;
 }
-/*Det er review sin style i kantina*/
+/*rating food at cantine*/
 .review.container{
   display: flex;
   flex-direction: column;
@@ -413,32 +422,6 @@ input[type="submit"]{
   display: flex;
   align-items: center;
   justify-self: space-between;
-}
-
-/* 70713d7 (noor)*/
- /* Stiler for søkeboksen */
-.search-container {
-  display: flex;
-  align-items: center;
-  margin: 20px;
-  justify-content: space-between;
-}
-
-#search {
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  flex-grow: 1;
-}
-
-#search-button {
-  background-color: #007BFF;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  padding: 10px 20px;
-  margin-left: 10px;
-  cursor: pointer;
 }
 
 /*style for blog*/
@@ -668,6 +651,9 @@ th {
   text-decoration: none;
   font-size: 25px;
   
+}
+.search-box button {
+  position: absolute;
 }
 
 /* media screen for the menu ends here*/
