@@ -1,3 +1,5 @@
+@import "bourbon";
+
 /* Resetting default margin and padding for all elements */
 * {
   margin: 0;
@@ -100,28 +102,32 @@ ul {
   width: 100%;
   
 }
-.text-content .wrapper {
+.text-content {
   flex: 1; /* Allows text content to grow and shrink as needed */
   padding: 10px; /* Adjust padding as needed */
   text-align: start;
   
 }
 
-.wrapper{
-  max-width: 60em;
-  margin: 1em auto;
-  position: relative;
-}
-
-
-.slider-wrappert {
+.slider-wrapper{
+  max-width: 48rem;
+  margin: 0 auto;
   flex: 1.5; /* Allows image content to grow and shrink as needed */
   padding: 10px;
+  position: relative;
 }
 
 .slider-wrapper img {
   max-width: 100%; /* Ensures the image is responsive */
   height: auto; /* Maintains aspect ratio */
+}
+
+.slider {
+  display: flex;
+  aspect-ratio: 16 / 9;
+  overflow: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
 }
 
 
