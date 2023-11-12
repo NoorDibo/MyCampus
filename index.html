@@ -9,6 +9,7 @@
   <meta name="description" content="Explore OsloMet Campusccd, particularly the Pilestredet 35 building. Find information on facilities, accessibility, and more.">
   <!-- Stylesheet link -->
   <link rel="stylesheet" href="css/styles.css">
+  <!-- im using boxin and remixicon for icons-->
   <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
   <link rel="stylesheet"
   href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
@@ -23,7 +24,12 @@
     <nav class="navbar">
   <div class="container">
     <a href="index.html" class="logo"><i class="ri-school-fill"></i><span>OSLOMET</span></a>
-
+    <div class="search-box">
+      <form action="">
+        <input type="text" name="search" id="srch" placeholder="Search">
+        <button type="submit"><i class="ri-search-line"></i></button>
+      </form>
+    </div>
     <div class="navigation">
       <input class="burger-toggle" type="checkbox" id="toggle-menu">     
       <label for="toggle-menu" class="menu-icon"></label> <!-- Label to trigger the checkbox -->
