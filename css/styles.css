@@ -62,6 +62,8 @@ ul {
 /* search box nav starts here*/
 .search-box{
   position: relative;
+  flex: 1;
+  padding-left: 80px;
   
 }
 
@@ -72,7 +74,7 @@ ul {
   outline: none;
   border-radius: 30px;
   color: #0077ff;
-  font-size: 16px;
+  font-size: 17px;
   text-align: center;
 }
 
@@ -94,7 +96,6 @@ ul {
   bottom: 0;
   transform: scale(0.9);
   background: linear-gradient(-20deg,#0077ff , #00c6fb);
-  
 }
 
 /* search box navbar ends here*/
@@ -541,6 +542,7 @@ th {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-left: 20px;
 }
 .menu-icon:before,
 .menu-icon:after {
@@ -569,7 +571,6 @@ th {
   z-index: 3;
   cursor: pointer;
   opacity: 0;
-  
 }
 
 .burger-toggle, 
@@ -609,7 +610,7 @@ th {
   /* media screen for the menu*/
   .menu-icon,
   .burger-toggle {
-    display: block;
+    display: flex;
     z-index: 100;
   }
 
@@ -618,6 +619,9 @@ th {
     padding-right: 2px !important;
   }
   
+  .logo{
+    padding-right: 13px;
+  }
 
   .navbar {
     padding: 10px 20px;
@@ -629,9 +633,9 @@ th {
     justify-content: start;
     position: fixed;
     top: 0;
-    right: -400px;
+    right: -450px;
     background: #28282B;
-    width: 400px;
+    width: 450px;
     height: 100%;
     padding-top: 80px;
     z-index: 10;
@@ -675,54 +679,30 @@ th {
   .image-content img {
     /* Optional: Adjust the image size for smaller screens */
   }
+  .search-box {
+    padding-left: 10px;
+    padding-right: 0;
+  }
+
+  #srch {
+    text-align: start;
+    padding-left: 10px;
+  }
+  .menu{
+    width: 350px;
+  }
+  
+
+  .logo i, 
+  .logo span {
+    font-size: 22px;
+    padding-left: -20px;
+  }
 }
 
 /* Media query for screens smaller than 768px ends here */
 
-/*media query for kantine*/
 
-/*Media query for screen smaller than 800px"kantine"*/
-
-@media screen and(max-width:800px){
-  .box{
-    flex: 50%;
-    max-width: 50%;
-  }
-  .food{
-    flex-direction: column;
-  }
- .header{
-    justify-content: space-between;
-    align-items: center;
-
-  }
-  .header_title_container,
-  .header_btn_container{
-    flex: 0 1 auto;
-  }
-  .header_title{
-    font-size: 1.3rem;
-
-  }
-  .header_btn_container{
-    display: flex;
-  }
-  
-  
-}
-/*Media query for screen smaller than 600px"kantine"*/
-@media screen and(max-width:600px){
-  .box{
-    flex: 100%;
-    max-width: 100%;
-
-  }
-  .food{
-    flex-direction: column;
-  }
-
-  
-}
 
 
 
