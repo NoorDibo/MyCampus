@@ -694,8 +694,8 @@ th {
     /* Optional: Adjust the image size for smaller screens */
   }
   .search-box {
-   max-width: 150px;
-    
+  width: 150px;
+   
   }
 
   #srch {
