@@ -40,7 +40,6 @@ Below is the HTML structure of our adapted navigation bar:
 The code has been customized to fit our website’s theme and interactivity. Adjustments made include the addition of a search box within the navigation bar and modifications to the menu for a more streamlined user experience.
 
 
-
 **Web Slider Implementation**
 
 For the image slider feature on our website, we utilized a pre-existing template as a base for our implementation. This template, "Slider and Slider CSS Nav Icon Layout," was originally designed by Hunter Garrett and is available on CodePen at the following URL: https://codepen.io/hunterbecton/pen/jOzVLGR.

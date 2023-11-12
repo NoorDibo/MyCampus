@@ -23,7 +23,7 @@ body {
 .container{
   max-width: 1900px;
   margin: 0 auto;
-  padding: 0 30px;
+  padding: 0 35px;
 }
 
 
@@ -36,7 +36,7 @@ ul {
 .navbar{
   background-color: #28282B;
   height: 80px;
-  
+  padding: 0 30px;
 }
 
 /* logo style starts here*/
@@ -651,7 +651,7 @@ th {
 
 /* media screen starts here*/
 
-@media (max-width: 992px) {
+@media (max-width: 1050px) {
   /* media screen for the menu*/
   .menu-icon,
   .burger-toggle {
