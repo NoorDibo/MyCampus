@@ -388,7 +388,7 @@ ul {
 }
 .food1.container{
   display: flex;
-  align-items: center;
+  align-items:center;
   justify-content: space-between;
   flex-wrap: wrap;
 }
@@ -446,6 +446,7 @@ ul {
 .box img {
   max-width: 100%;
   height: auto;
+  justify-content: stretch;
 }
 .contered-text{
   text-align: center;
