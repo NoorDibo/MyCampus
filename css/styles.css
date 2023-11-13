@@ -332,10 +332,60 @@ ul {
 .footer1{
   background-color:#28282B; /* Dark grey background */
   color: white;
-  
   margin: auto;
+}
+
+.newsletter-signup {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 10rem ;
+}
+
+.newsletter-signup input, .newsletter-btn{
+  display: flex;
+}
+
+.newsletter-signup input{
+  padding: 8px 10px;
+  background-color: #28282B;
+  border: 1px solid #ccc;
+  width: 50%;
+  outline: none;
+  color: #fff;
+  justify-content: space-between;
+}
+
+.newsletter-btn{
+  color: #000;
+  background-color: yellow;
+  outline: none;
+  border: none;
+  padding: 9px 25px;
+  border-radius: 5px;
+  font-size: 15px;
+  font-weight: 600;
   
 }
+
+.get h1{
+ font-size: 2rem;
+}
+
+.get p {
+  font-size: 1.5rem;
+}
+
+.hr{
+  opacity: 0.3;
+}
+
+.main-footer{
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+}
+
+
 
 
 
@@ -719,6 +769,9 @@ html{
   font-size: 2.2rem;
 }
 
+.main-footer, .newsletter-signup{
+  flex-direction: column;
+}
 
 
 
