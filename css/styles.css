@@ -53,7 +53,7 @@ ul {
 }
 
 .logo span{
-  font-size: 1.6rem;
+  font-size: 2rem;
   font-weight: 650;
   margin-top: 6px;
 }
@@ -242,7 +242,7 @@ ul {
 
 /*welcome text*/
 .text-content{
-  flex: 1 1 45rem; /* Allows text content to grow and shrink as needed */
+  flex: 1 1 100%; /* Allows text content to grow and shrink as needed */
   padding: 2rem; 
   text-align: start;
 }
@@ -262,7 +262,7 @@ ul {
 .slider-wrapper{
   max-width: 100%;
   margin: 0 auto;
-  flex: 1 1 45rem; /* Allows image content to grow and shrink as needed */
+  flex: 1 1 100%; /* Allows image content to grow and shrink as needed */
 
   position: relative;
 }
@@ -780,13 +780,13 @@ th {
 /* media screen starts here*/
 @media (max-width: 1500px){
 html{
-  font-size: 77%;
+  font-size: 70%;
 }
 }
 @media (max-width: 1100px) {
   /* media screen for the menu*/
   html {
-    font-size: 65%;
+    font-size: 55%;
   }
   .menu-icon,
   .burger-toggle {
@@ -847,7 +847,8 @@ html{
 }
 
 .text-content p {
-  padding-bottom: 20px;
+  
+  font-size: 2.2rem;
 }
 
 
@@ -871,7 +872,9 @@ html{
     padding: 5px;/* Reset flex-basis for stacked layout */
      /* Full width for smaller screens */
     }
-  
+    .text-content p{
+      font-size: 2.5rem;
+    }
   
   .search-box {
   width: 150px;
@@ -886,11 +889,11 @@ html{
     width: 350px;
   }
   
+  .logo span{
+    font-size: 2.5rem;
 
-  .logo i, 
-  .logo span {
-    font-size: 25px;
   }
+  
 
 }
 
