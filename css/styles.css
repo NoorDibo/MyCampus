@@ -141,7 +141,7 @@ ul {
   align-items: center;
   justify-content: space-between;
   overflow: hidden;
-  padding: 25px 90px;
+  padding: 30px 85px;
   flex-wrap: wrap;
 }
 
@@ -158,9 +158,10 @@ ul {
   border-radius: 0.5rem;
   align-items: center; 
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  width: 100%;
 }
 .text-content{
-  flex: 1; /* Allows text content to grow and shrink as needed */
+  flex: 1.3; /* Allows text content to grow and shrink as needed */
   padding: 10px; /* Adjust padding as needed */
   text-align: start;
   
@@ -833,6 +834,13 @@ th {
 .search-box button {
   position: absolute;
 }
+
+.text-content p {
+  padding-bottom: 20px;
+}
+
+
+
 
 /* media screen for the menu ends here*/
 
