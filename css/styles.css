@@ -23,7 +23,7 @@ body {
 .container{
   max-width: 1900px;
   margin: 0 auto;
-  padding: 0 35px;
+  
 }
 
 
@@ -36,7 +36,7 @@ ul {
 .navbar{
   background-color: #28282B;
   height: 80px;
-  padding: 0 30px;
+  padding: 0 90px;
 }
 
 /* logo style starts here*/
@@ -63,8 +63,8 @@ ul {
 .search-box{
   position: relative;
   padding-left: 14px;
-  padding-right: 0; /* You might want to adjust this padding as well. */
-  max-width: 100%; /* Set a max-width to your preference */
+  padding-right: 0; 
+  max-width: 100%; 
   margin: 0 auto;
   justify-self: start;
   margin-right: 20px;
@@ -141,26 +141,38 @@ ul {
   align-items: center;
   justify-content: space-between;
   overflow: hidden;
+  padding: 25px 90px;
+  flex-wrap: wrap;
 }
 
 .header{
-  padding-top: 30px;
+
   color: #1C2833;
   width: 100%;
-  
+  flex-wrap: wrap;
 }
-.text-content {
+
+.content-background {
+  display: flex;
+  background: #fff;  
+  border-radius: 0.5rem;
+  align-items: center; 
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+.text-content{
   flex: 1; /* Allows text content to grow and shrink as needed */
   padding: 10px; /* Adjust padding as needed */
   text-align: start;
   
 }
 
+
+/* slider image*/
 .slider-wrapper{
-  max-width: 48rem;
+  max-width: 100%;
   margin: 0 auto;
   flex: 1.5; /* Allows image content to grow and shrink as needed */
-  padding: 10px;
+
   position: relative;
 }
 
@@ -287,9 +299,48 @@ ul {
   justify-self: space-between;
   flex-wrap: wrap;
 }
-
-
-
+.food1.container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.food2.container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.food3.container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.food4.container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.food5.container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.food6.container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.food7.container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
 
 /*Cantine Styling starts here*/
 
@@ -371,10 +422,84 @@ input[type="submit"]{
 
 /* Topical*/
 
-.body-topical{
-  margin: 0px;
-  padding:0px;
-  box-sizing: border-box;
+.ingress-topical{
+  font-weight: 700;
+  color: #666666;
+}
+
+article aside{
+  margin-left: 2rem;
+}
+
+aside{
+  background-color: #80d8ff;
+  padding-left: 1em;
+  padding-top: 0.1em;
+  padding-bottom: 0.25em;
+}
+
+aside > p{
+  font-family: 'Times New Roman', Times, serif;
+  font-style: oblique;
+  font-size: larger;
+}
+
+.secondbox-topical{
+  grid-column: 1/2;
+  grid-row: 2;
+  background-image: url("../img/bigdata.jpg");
+  background-size: cover;
+  height: 90vw;
+  max-height: 60vw;
+}
+
+@media(max-width:839px){
+  .secondbox-topical{
+    grid-column: 1/2;
+    grid-row: 2;
+    background-image: url("../img/bigdata.jpg");
+    background-size: cover;
+    height: 90vw;
+    max-height: 60vw;
+  }
+  footer > div{
+    margin-left: 2rem;
+    margin-bottom: 0.4rem;
+    padding: 0.4rem;
+    border-style: dashed;
+    font-style: smaller;
+  }
+}
+
+@media(min-width:840px){
+  .gridcontainer{
+    display: grid;
+    grid-template-columns: minmax(500px, 40vw) minmax(300px, 20vw) auto; /*3 colums*/
+    grid-template-rows: minmax(100px, auto);
+  }
+  .mainbox-topical{
+    grid-column: 1/2;
+    grid-row: 1;
+  }
+  .secondbox-topical{
+    grid-column: 1/2;
+    grid-row: 2;
+    background-image: url("../img/bigdata.jpg");
+    background-size: cover;
+    height: 40vw;
+    max-height: 300px;
+  }
+  aside{
+    grid-column: 2/3;
+    grid-row: 1;
+  }
+  footer{
+    display: grid;
+    grid-template-columns: minmax(200px, 20vw) minmax(200px, 20vw) minmax(200px, 20vw) auto;
+    border-width: 4px;
+    border-color: #666666;
+    border-radius: 20px;
+  }
 }
 
 .header-topical{
@@ -403,7 +528,6 @@ input[type="submit"]{
   display: none;
 }
 
-/*HEAD*/
 .label-topical{
   display: none;
   color: white;
@@ -427,7 +551,6 @@ input[type="submit"]{
   display: inline-block;
   padding-right: 10px;
 }
-
 
 .main-topical{
   margin: 20px;
@@ -648,8 +771,11 @@ th {
 
 /* media screen starts here*/
 
-@media (max-width: 1050px) {
+@media (max-width: 1100px) {
   /* media screen for the menu*/
+  html{
+    font: 55%;
+  }
   .menu-icon,
   .burger-toggle {
     display: flex;
@@ -719,18 +845,17 @@ th {
   html {
     size: 20%;
   }
-  .header .container {
+  .header .container .content-background {
     flex-direction: column; /* Stack items vertically */
-    
+    padding: 5px;
   }
-  .text-content, .image-content {
-    flex-basis: auto; /* Reset flex-basis for stacked layout */
-    width: 100%; /* Full width for smaller screens */
+  .text-content, .slider-wrapper {
+    flex-basis: auto;
+    padding: 5px;/* Reset flex-basis for stacked layout */
+     /* Full width for smaller screens */
     }
   
-  .image-content img {
-    /* Optional: Adjust the image size for smaller screens */
-  }
+  
   .search-box {
   width: 150px;
    
@@ -747,7 +872,7 @@ th {
 
   .logo i, 
   .logo span {
-    font-size: 20px;
+    font-size: 25px;
   }
 
 }
