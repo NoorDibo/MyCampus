@@ -23,7 +23,7 @@ body {
 .container{
   max-width: 1900px;
   margin: 0 auto;
-  padding: 0 40px;
+  
 }
 
 
@@ -36,7 +36,7 @@ ul {
 .navbar{
   background-color: #28282B;
   height: 80px;
-  padding: 0 30px;
+  padding: 0 90px;
 }
 
 /* logo style starts here*/
@@ -63,8 +63,8 @@ ul {
 .search-box{
   position: relative;
   padding-left: 14px;
-  padding-right: 0; /* You might want to adjust this padding as well. */
-  max-width: 100%; /* Set a max-width to your preference */
+  padding-right: 0; 
+  max-width: 100%; 
   margin: 0 auto;
   justify-self: start;
   margin-right: 20px;
@@ -141,26 +141,38 @@ ul {
   align-items: center;
   justify-content: space-between;
   overflow: hidden;
+  padding: 25px 90px;
+  flex-wrap: wrap;
 }
 
 .header{
-  padding-top: 30px;
+
   color: #1C2833;
   width: 100%;
-  
+  flex-wrap: wrap;
 }
-.text-content {
+
+.content-background {
+  display: flex;
+  background: #fff;  
+  border-radius: 0.5rem;
+  align-items: center; 
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+.text-content{
   flex: 1; /* Allows text content to grow and shrink as needed */
   padding: 10px; /* Adjust padding as needed */
   text-align: start;
   
 }
 
+
+/* slider image*/
 .slider-wrapper{
-  max-width: 48rem;
+  max-width: 100%;
   margin: 0 auto;
   flex: 1.5; /* Allows image content to grow and shrink as needed */
-  padding: 10px;
+
   position: relative;
 }
 
@@ -762,8 +774,11 @@ th {
 
 /* media screen starts here*/
 
-@media (max-width: 1050px) {
+@media (max-width: 1100px) {
   /* media screen for the menu*/
+  html{
+    font: 55%;
+  }
   .menu-icon,
   .burger-toggle {
     display: flex;
@@ -833,18 +848,17 @@ th {
   html {
     size: 20%;
   }
-  .header .container {
+  .header .container .content-background {
     flex-direction: column; /* Stack items vertically */
-    
+    padding: 5px;
   }
-  .text-content, .image-content {
-    flex-basis: auto; /* Reset flex-basis for stacked layout */
-    width: 100%; /* Full width for smaller screens */
+  .text-content, .slider-wrapper {
+    flex-basis: auto;
+    padding: 5px;/* Reset flex-basis for stacked layout */
+     /* Full width for smaller screens */
     }
   
-  .image-content img {
-    /* Optional: Adjust the image size for smaller screens */
-  }
+  
   .search-box {
   width: 150px;
    
