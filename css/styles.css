@@ -352,12 +352,16 @@ ul {
 
 .newsletter-signup input{
   padding: 8px 10px;
-  background-color: #28282B;
-  border: 1px solid #ccc;
-  width: 50%;
+  background-color: #ffffff;
+  border: 1px solid #000000;
   outline: none;
   color: #fff;
-  justify-content: space-between;
+  display: flex;
+}
+
+.form-footer{
+ display: flex;
+ align-self:flex-start;
 }
 
 .newsletter-btn{
@@ -365,7 +369,7 @@ ul {
   background-color: yellow;
   outline: none;
   border: none;
-  padding: 9px 25px;
+  padding: 15px 25px;
   border-radius: 5px;
   font-size: 15px;
   font-weight: 600;
@@ -373,11 +377,12 @@ ul {
 }
 
 .get h1{
- font-size: 2rem;
+ font-size: 3rem;
 }
 
 .get p {
-  font-size: 1.5rem;
+  font-size: 1.9rem;
+  padding-bottom: 1rem;
 }
 
 .hr{
@@ -518,7 +523,7 @@ button:hover{
   background-color: #007BFF;
 }
 /*style for klage i kantina*/
-form{
+#cantine-form{
   display: flex;
   flex-direction: column;
   align-items:flex-start;
@@ -830,8 +835,15 @@ html{
     font-size: 2.5rem;
 
   }
+
+  .newsletter-signup,
   .main-footer{
     flex-direction: column;
+  }
+  
+
+  .footer-container{
+    padding: 1rem 2.2rem;
   }
 
 }
