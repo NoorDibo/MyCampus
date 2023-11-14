@@ -439,37 +439,95 @@ ul {
   justify-content: space-between;
   flex-wrap: wrap;
 }
-.food6.container{
+
+.box11{
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  min-width: 300px; /* Minimum width before wrapping */
+height: 500px;
+margin: 100px;
+padding: 10px;
+border-radius: 1px;
+box-sizing:border-box; /* Include padding and border in the element's total width and height */
+background-color: hsl(0, 14%, 97%);
+box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
-.food7.container{
+.box2{
+  background-color: #28282B;
+  text-align: center;
+  color: #ccc;
+  
+}
+.box3{
+  background-color: #28282B;
+  text-align: center;
+  color: #ccc;
+}
+.box4{
+  background-color: #28282B;
+  text-align: center;
+  color: #ccc;
+}
+
+.box5{
+  background-color: #28282B;
+  text-align: center;
+  color: #ccc;
+  
+
+}
+.box6{
+  background-color: #28282B;
+  text-align: center;
+  color: #ccc;
+  
+}
+
+.container1{
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
 }
+.text-container{
+  flex: 1;
+  align-items:flex-start;
+  text-align: left;
+}
+.image-container{
+  flex: 1;
+  margin: 50px;
+  
+}
+img{
+  max-width: 100%;
+  margin-right: 30px;
+  margin-left: 30px;
+  border-radius: 1px;
+  
+}
+
 
 /*Cantine Styling starts here*/
 
 /* Box styling */
-.box {
-  flex: 1 0 300px; /* Grow to fill available space */
-  min-width: 300px; /* Minimum width before wrapping */
-  height: 500;
-  margin: 10px;
-  padding: 10px;
-  border-radius: 1px;
-  box-sizing: border-box; /* Include padding and border in the element's total width and height */
-  background-color: hsl(0, 14%, 97%);
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+.box{
+flex: 1 0 300px; /* Grow to fill available space */
+min-width: 300px; /* Minimum width before wrapping */
+height: 500;
+margin: 80px;
+padding: 10px;
+border-radius: 1px;
+box-sizing: border-box; /* Include padding and border in the element's total width and height */
+background-color: hsl(0, 14%, 97%);
+box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+
 }
 
 .box img {
   max-width: 100%;
-  height: auto;
+  width: 40%;
+  height: 40%;
+  margin: 50px;
+  /*height: auto;*/
   justify-content: stretch;
 }
 .contered-text{
