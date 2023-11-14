@@ -496,6 +496,8 @@ box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 .container1{
   display: flex;
   align-items: center;
+  height: auto;
+  width: auto;
 }
 .text-container{
   flex: 1;
@@ -523,10 +525,10 @@ img{
 flex: 1 0 300px; /* Grow to fill available space */
 min-width: 300px; /* Minimum width before wrapping */
 height: 500;
-margin: 80px;
+margin: 60px;
 padding: 10px;
 border-radius: 1px;
-box-sizing: border-box; /* Include padding and border in the element's total width and height */
+box-sizing:border-box; /* Include padding and border in the element's total width and height */
 background-color: hsl(0, 14%, 97%);
 box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 
