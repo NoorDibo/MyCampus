@@ -794,7 +794,7 @@ html{
 
   
 .content-background {
-    flex-direction: column; /* Stack items vertically */
+    flex-direction:column; /* Stack items vertically */
     padding: auto;
   }
 
