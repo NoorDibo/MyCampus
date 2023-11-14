@@ -336,13 +336,14 @@ ul {
 }
 
 .footer-container{
-  padding: 1rem 3rem;;
+  padding: 2rem 6rem ;
+  justify-content: space-between;
 }
 
 .newsletter-signup {
   display: flex;
   justify-content: space-between;
-  padding: 2rem 8rem ;
+  padding-bottom: 2rem;
 }
 
 
@@ -387,7 +388,10 @@ ul {
 .main-footer{
   display: flex;
   justify-content: space-between;
- 
+}
+
+.footer-section{
+  
 }
 
 
@@ -775,9 +779,7 @@ html{
   font-size: 2.2rem;
 }
 
-.main-footer{
-  flex-direction: column;
-}
+
 .footer-section, .newsletter-signup{
   padding: 1.5rem 0%;
 }
@@ -827,7 +829,9 @@ html{
     font-size: 2.5rem;
 
   }
-  
+  .main-footer{
+    flex-direction: column;
+  }
 
 }
 
