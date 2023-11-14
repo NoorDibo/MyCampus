@@ -706,7 +706,7 @@ html{
   font-size: 70%;
 }
 }
-@media (max-width: 1100px) {
+@media (max-width: 1080px) {
   /* media screen for the menu*/
   
   .header .container{
@@ -740,7 +740,7 @@ html{
     justify-content: start;
     position: fixed;
     top: 0;
-    right: -450px;
+    right: -100%;
     background: #28282B;
     width: 450px;
     height: 100%;
@@ -820,7 +820,7 @@ html{
     padding-left: 10px;
   }
   .menu{
-    width: 350px;
+    width: 100%;
   }
   
   .logo span{
