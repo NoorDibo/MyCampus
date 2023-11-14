@@ -336,7 +336,7 @@ ul {
 }
 
 .footer-container{
-  padding: 2rem 6rem ;
+  padding: 2rem 8rem ;
   justify-content: space-between;
 }
 
@@ -388,6 +388,7 @@ ul {
 .main-footer{
   display: flex;
   justify-content: space-between;
+  padding-top: 1rem;
 }
 
 .footer-section{
