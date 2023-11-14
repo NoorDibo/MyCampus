@@ -336,13 +336,14 @@ ul {
 }
 
 .footer-container{
-  padding: 1rem 3rem;;
+  padding: 2rem 8rem ;
+  justify-content: space-between;
 }
 
 .newsletter-signup {
   display: flex;
   justify-content: space-between;
-  padding: 2rem 8rem ;
+  padding-bottom: 2rem;
 }
 
 
@@ -351,12 +352,16 @@ ul {
 
 .newsletter-signup input{
   padding: 8px 10px;
-  background-color: #28282B;
-  border: 1px solid #ccc;
-  width: 50%;
+  background-color: #ffffff;
+  border: 1px solid #000000;
   outline: none;
   color: #fff;
-  justify-content: space-between;
+  display: flex;
+}
+
+.form-footer{
+ display: flex;
+ align-self:flex-start;
 }
 
 .newsletter-btn{
@@ -364,7 +369,7 @@ ul {
   background-color: yellow;
   outline: none;
   border: none;
-  padding: 9px 25px;
+  padding: 15px 25px;
   border-radius: 5px;
   font-size: 15px;
   font-weight: 600;
@@ -372,11 +377,12 @@ ul {
 }
 
 .get h1{
- font-size: 2rem;
+ font-size: 3rem;
 }
 
 .get p {
-  font-size: 1.5rem;
+  font-size: 1.9rem;
+  padding-bottom: 1rem;
 }
 
 .hr{
@@ -387,7 +393,11 @@ ul {
 .main-footer{
   display: flex;
   justify-content: space-between;
- 
+  padding-top: 1rem;
+}
+
+.footer-section{
+  
 }
 
 
@@ -571,7 +581,7 @@ button:hover{
   background-color: #007BFF;
 }
 /*style for klage i kantina*/
-form{
+#cantine-form{
   display: flex;
   flex-direction: column;
   align-items:flex-start;
@@ -764,7 +774,7 @@ html{
   font-size: 70%;
 }
 }
-@media (max-width: 1100px) {
+@media (max-width: 1080px) {
   /* media screen for the menu*/
   
   .header .container{
@@ -798,7 +808,7 @@ html{
     justify-content: start;
     position: fixed;
     top: 0;
-    right: -450px;
+    right: -100%;
     background: #28282B;
     width: 450px;
     height: 100%;
@@ -833,9 +843,7 @@ html{
   font-size: 2.2rem;
 }
 
-.main-footer{
-  flex-direction: column;
-}
+
 .footer-section, .newsletter-signup{
   padding: 1.5rem 0%;
 }
@@ -852,7 +860,7 @@ html{
 
   
 .content-background {
-    flex-direction: column; /* Stack items vertically */
+    flex-direction:column; /* Stack items vertically */
     padding: auto;
   }
 
@@ -878,14 +886,23 @@ html{
     padding-left: 10px;
   }
   .menu{
-    width: 350px;
+    width: 100%;
   }
   
   .logo span{
     font-size: 2.5rem;
 
   }
+
+  .newsletter-signup,
+  .main-footer{
+    flex-direction: column;
+  }
   
+
+  .footer-container{
+    padding: 1rem 2.2rem;
+  }
 
 }
 
