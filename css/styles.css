@@ -241,7 +241,6 @@ ul {
 .content-background {
   display: flex;
   background: #fff;  
-  border-radius: 0.5rem;
   align-items: center; 
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
  
@@ -282,7 +281,7 @@ ul {
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
   box-shadow: 0 0.2rem 1rem -0.5rem hsla(0, 0%, 0%, 0.972);
-  border-radius: 0.5rem;
+  
   -ms-overflow-style: none; /* Hide scrollbar IE and Edge */
 	scrollbar-width: none; /* Hide scrollbar Firefox */
 }
@@ -351,10 +350,9 @@ ul {
   flex: 1;
   max-width: 500px; /* Maximum width of the cards */
   background-color: #fff;
-  border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.2);
   overflow: hidden; /* Makes sure nothing spills out of the border-radius */
-  margin-bottom: 20px; /* Space below each card */
+  margin-bottom: 15px; /* Space below each card */
 }
 
 .departmnet-box img {
@@ -387,7 +385,7 @@ ul {
   background-color: #007bff;
   color: white;
   text-decoration: none;
-  border-radius: 0 0 8px 8px; /* Only round the bottom corners to match the card */
+   /* Only round the bottom corners to match the card */
 }
 
 .button-link:hover {
@@ -974,14 +972,13 @@ html{
   }
 
   .buildings{
-    padding: 5px;
+    padding-bottom: 10px;
   }
   
   .departmnet-box{
     flex-direction: column;
     flex: 0 100%;
     max-width: 100%;
-    padding: 5px;
     margin-bottom: auto;
   
   }
