@@ -240,7 +240,6 @@ ul {
 .content-background {
   display: flex;
   background: #fff;  
-  border-radius: 0.5rem;
   align-items: center; 
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
  
@@ -281,7 +280,7 @@ ul {
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
   box-shadow: 0 0.2rem 1rem -0.5rem hsla(0, 0%, 0%, 0.972);
-  border-radius: 0.5rem;
+  
   -ms-overflow-style: none; /* Hide scrollbar IE and Edge */
 	scrollbar-width: none; /* Hide scrollbar Firefox */
 }
@@ -326,15 +325,22 @@ ul {
 
 
 .buildings {
-  background-color: #BFC9CA;
+  background-color: #b0c8c8;
   display: flex;
   flex-direction: column;
 }
 
 .headings {
   text-align: center;
-  font-size: 2em;
+  font-size: 4rem;
   margin-bottom: 20px;
+  margin-top: 20px;
+
+}
+
+.headings span {
+  color: #F1C40F;
+  box-shadow:  0 2px 5px rgba(0,0,0,0.2);
 }
 
 .box-container {
@@ -343,17 +349,16 @@ ul {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 4rem; /* Space between the boxes */
+  gap: 8rem; /* Space between the boxes */
 }
 
 .departmnet-box {
   flex: 1;
   max-width: 500px; /* Maximum width of the cards */
   background-color: #fff;
-  border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.2);
   overflow: hidden; /* Makes sure nothing spills out of the border-radius */
-  margin-bottom: 20px; /* Space below each card */
+  margin-bottom: 15px; /* Space below each card */
 }
 
 .departmnet-box img {
@@ -386,7 +391,7 @@ ul {
   background-color: #007bff;
   color: white;
   text-decoration: none;
-  border-radius: 0 0 8px 8px; /* Only round the bottom corners to match the card */
+   /* Only round the bottom corners to match the card */
 }
 
 .button-link:hover {
@@ -604,20 +609,22 @@ a , .footer-section li{
 }
 .text-container{
   flex: 1;
-  align-items:flex-start;
-  text-align: left;
+  align-items:center;
+  
 }
 .image-container{
   flex: 1;
-  margin: 50px;
-  
+  object-fit: cover;
 }
 .image-container img{
-  flex: 0 100%;
+  flex: 1;
   max-width: 100%;
-  margin-right: 30px;
-  border-radius: 1px;
-  
+  width: 70%;
+  height: 70%;
+  margin: 50px;
+  object-fit: cover;
+  /*height: auto;*/
+  justify-content: stretch;
 }
 
 
@@ -643,6 +650,7 @@ box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
   width: 40%;
   height: 40%;
   margin: 50px;
+  object-fit: cover;
   /*height: auto;*/
   justify-content: stretch;
 }
@@ -983,14 +991,13 @@ html{
   }
 
   .buildings{
-    padding: 5px;
+    padding-bottom: 10px;
   }
   
   .departmnet-box{
     flex-direction: column;
     flex: 0 100%;
     max-width: 100%;
-    padding: 5px;
     margin-bottom: auto;
   
   }
