@@ -337,15 +337,16 @@ ul {
 }
 
 .box-container {
+  align-items: start;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 10rem; /* Space between the boxes */
+  gap: 9rem; /* Space between the boxes */
 }
 
 .departmnet-box {
   flex: 1;
-  max-width: 30%; /* Maximum width of the cards */
+  max-width: 35%; /* Maximum width of the cards */
   background-color: #fff;
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.2);
@@ -389,11 +390,7 @@ ul {
   background-color: #0056b3;
 }
 
-.buildings .container{
-  display: flex;
-  align-items: center;
-  justify-self: space-between;
-}
+
 
 
 
