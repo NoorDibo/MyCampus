@@ -595,12 +595,6 @@ a , .footer-section li{
   
 }
 
-.container1{
-  display: flex;
-  align-items: center;
-  height: auto;
-  width: auto;
-}
 .text-container{
   flex: 1;
   align-items:flex-start;
@@ -648,6 +642,82 @@ box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 .contered-text{
   text-align: center;
 }
+.container.row.heading p{
+  margin-top: 15px;
+  color: #000;
+  font-size: 17px;
+  line-height: 1.5;
+}
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px auto;
+}
+.container.box{
+  flex: 1;
+  margin: 40px 20px;
+}
+.container.box img{
+  width: 100%;
+  height: auto;
+}
+.container.box .text-container{
+  font-size: 15px;
+  font-weight: bold;
+  color: #ccc;
+  
+}
+.container.box.image-container{
+  font-size: 15px;
+  font-weight:bold ;
+  color: #ccc;
+}
+.container.box h2{
+  margin-top: 5px;
+  font-size: 17px;
+
+}
+.container.box p{
+  font-size: 16px;
+  margin-top: 10px;
+  color:#000;
+  line-height: 1.5;
+}
+/*media for box11 kantine*/
+.container.box11{
+  flex: 1;
+  margin: 40px 20px;
+}
+.container.box11 img{
+  width: 100%;
+  height: auto;
+}
+.container.box11 .text-container{
+  font-size: 15px;
+  font-weight: bold;
+  color: #ccc;
+  
+}
+.container.box11.image-container{
+  font-size: 15px;
+  font-weight:bold ;
+  color: #ccc;
+}
+.container.box11 h2{
+  margin-top: 5px;
+  font-size: 17px;
+
+}
+.container.box11 p{
+  font-size: 16px;
+  margin-top: 10px;
+  color:#000;
+  line-height: 1.5;
+}
+
+
+
 
 
 /* Topical*/
@@ -988,6 +1058,13 @@ html{
     max-width: 100%;
     padding: 10px;
 
+  }
+  .box11.contect{
+    flex: 0 100%;
+    max-width: 100%;
+    padding: 10px;
+
+    
   }
 }
 
