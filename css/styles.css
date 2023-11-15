@@ -1,11 +1,16 @@
 
 
 /* Resetting default margin and padding for all elements */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,700;1,300&display=swap');
+
+
 * {
-  margin: 0;
-  padding: 0;
+  margin: 0px;
+  padding: 0px;
   box-sizing: border-box;
   border-radius: 0%;
+  font-family: 'Poppins', sans-serif;
 }
 
 :root{
@@ -649,15 +654,14 @@ input[type="submit"]{
 }
 
 .navbar-topical a:hover{
-  background-color:  hsl(0, 0%, 10%);
+  background-color:  hsl(0, 36%, 96%);
 }
 
 .navbar-topical li{
   float: left;
 }
 
-
- /* Styl for Library***********************************************/
+ /*style library........................................*/
  .centered-text-lib{
   text-align: center;
  }
@@ -667,7 +671,39 @@ input[type="submit"]{
  
 
 /*style for blog*/
+.head-lib{
+  margin:0px;
+  padding:0px;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+ }
 
+
+
+.container .row-lib{
+  width:80%;
+  margin:0 auto;
+
+}
+
+.container .row-lib .head-lib{
+  width:80%;
+  text-align: center;
+  margin:0px auto;
+
+}
+.container .row-lib .head-lib h1{
+padding-top: 30px;
+font-size: 42px;
+color: #000;
+}
+
+.container .row-lib .head-lib p{
+  margin-top: 15px;
+  color:#6e6e6e;
+  font-size: 17px;
+  line-height: 1.5;
+}
 .blog-container-lib {
   display: flex;
   flex-direction: column;
@@ -736,34 +772,6 @@ p {
   margin-top: 10px;
   cursor: pointer;
 }
-
-/*styl to åpnings tider*/
-/* Stiler for tabellen */
-table {
-  width: 100%;
-  border-collapse: collapse;
-  border: 1px solid #ccc;
-}
-
-th, td {
-  padding: 8px 12px;
-  text-align: left;
-  border: 1px solid #ccc;
-}
-
-tr:nth-child(even) {
-  background-color: #f2f2f2;
-}
-
-th {
-  background-color: #00b3ff;
-  color: white;
-}
-
-
-
-
-
 
 
 
@@ -858,7 +866,9 @@ html{
 /* Media query for screens smaller than 768px */
 @media (max-width: 768px) {
 
-  
+.content-blog{
+  flex-direction: column;
+}  
 .content-background {
     flex-direction:column; /* Stack items vertically */
     padding: auto;
