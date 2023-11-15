@@ -324,8 +324,71 @@ ul {
 
 /* header main ends here*/
 
+.buildings{
+  padding: 20px;
+  background-color: #C0392B 
+}
 
-.boxes .container{
+
+.headings {
+  text-align: center;
+  font-size: 3em;
+  margin-bottom: 20px;
+}
+
+.box-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px; /* Space between the boxes */
+}
+
+.departmnet-box {
+  flex: 1;
+  max-width: 300px; /* Maximum width of the cards */
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  overflow: hidden; /* Makes sure nothing spills out of the border-radius */
+  margin-bottom: 20px; /* Space below each card */
+}
+
+.departmnet-box img {
+  width: 100%; /* Makes the image responsive */
+  height: auto; /* Maintain aspect ratio */
+  display: block; /* Remove bottom space under image */
+}
+
+.departmnet-box h3 {
+  padding: 15px;
+  margin: 0;
+  background-color: #007bff;
+  color: #fff;
+  text-align: center;
+}
+
+.departmnet-box p {
+  padding: 0 15px 15px;
+  margin: 0;
+  line-height: 1.6;
+}
+
+.button-link {
+  display: block;
+  width: 100%; /* Make the button expand the full width of the card */
+  text-align: center;
+  padding: 10px 0;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 0 0 8px 8px; /* Only round the bottom corners to match the card */
+}
+
+.button-link:hover {
+  background-color: #0056b3;
+}
+
+.buildings .container{
   display: flex;
   align-items: center;
   justify-self: space-between;
