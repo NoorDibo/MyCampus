@@ -38,6 +38,9 @@ ul {
   background-color: #28282B;
   height: 80px;
   padding: 0 90px;
+  position: sticky; /*make the navbar stick with the site*/
+  top: 0; 
+  z-index: 2; /* fix this because to not get behinde my slider image */
 }
 
 /* logo style starts here*/
