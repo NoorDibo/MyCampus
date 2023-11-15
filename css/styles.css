@@ -336,11 +336,12 @@ ul {
   background-color:#28282B; /* Dark grey background */
   color: white;
   margin: auto;
+  align-items: center;
 }
 
 .footer-container{
   padding: 2rem 7rem ;
-  justify-content: space-between;
+
 }
 
 /*footer styling up*/
@@ -429,15 +430,23 @@ a , .footer-section li{
 }
 
 /*sosail media icon */
-.social-icon i {
+ .social-icon {
   display: flex;
   margin-right: 20px;
-  font-size: 43px;
   text-decoration: none;
   color: white;
 }
+.social-icon i {
+  margin-right: 20px;
+  font-size: 43px;
+  height: 32px;
+  line-height: 32px;
+    margin-bottom: 30px;
+    text-decoration: none;
+    width: fit-content;
+}
 
-.social-icon i:hover {
+.social-icon span:hover {
   text-decoration: underline;
   color: #D0D3D4;
 }
