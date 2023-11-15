@@ -559,19 +559,6 @@ a , .footer-section li{
   flex-wrap: wrap;
 }
 
-/*
-.box11{
-  display: flex;
-  align-items: center;
-  min-width: 300px; /* Minimum width before wrapping */
-  /*height: 500px;
-  margin: 60px;
-  padding: 10px;*/
-  /*border-radius: 1px;
-  box-sizing:border-box; /* Include padding and border in the element's total width and height */
- /* background-color: hsl(0, 14%, 97%);
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);}*/
-
 .box1{
   background-color: #28282B;
   text-align: center;
