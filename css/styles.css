@@ -15,10 +15,10 @@
 /* Body styling for consistent font and background */
 body {
   font-family: 'Arial', sans-serif;
-  line-height: 1.4;
+  line-height: 1.6;
   background-color:	#E5E4E2 ;
   color: #17202A;
- 
+  
 }
 
 .container{
@@ -115,7 +115,7 @@ ul {
   font-weight: bold;
 }
 
-.navbar a:hover{
+.navbar .menu a:hover{
   opacity: 1;
   text-decoration: underline;
   color: #D0D3D4;
@@ -324,15 +324,15 @@ ul {
 
 /* header main ends here*/
 
-.buildings{
-  padding: 20px;
-  background-color: #C0392B 
-}
 
+.buildings {
+  padding: 20px;
+  background-color: #BFC9CA
+}
 
 .headings {
   text-align: center;
-  font-size: 3em;
+  font-size: 2em;
   margin-bottom: 20px;
 }
 
@@ -340,12 +340,12 @@ ul {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 20px; /* Space between the boxes */
+  gap: 10rem; /* Space between the boxes */
 }
 
 .departmnet-box {
   flex: 1;
-  max-width: 300px; /* Maximum width of the cards */
+  max-width: 30%; /* Maximum width of the cards */
   background-color: #fff;
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.2);
@@ -357,6 +357,7 @@ ul {
   width: 100%; /* Makes the image responsive */
   height: auto; /* Maintain aspect ratio */
   display: block; /* Remove bottom space under image */
+  object-fit: cover;
 }
 
 .departmnet-box h3 {
