@@ -15,7 +15,7 @@
 /* Body styling for consistent font and background */
 body {
   font-family: 'Arial', sans-serif;
-  line-height: 1.6;
+  line-height: 1.4;
   background-color:	#E5E4E2 ;
   color: #17202A;
  
@@ -38,6 +38,9 @@ ul {
   background-color: #28282B;
   height: 80px;
   padding: 0 90px;
+  position: sticky; /*make the navbar stick with the site*/
+  top: 0; 
+  z-index: 2; /* fix this because to not get behinde my slider image */
 }
 
 /* logo style starts here*/
@@ -336,19 +339,16 @@ ul {
 }
 
 .footer-container{
-  padding: 2rem 8rem ;
+  padding: 2rem 7rem ;
   justify-content: space-between;
 }
 
+/*footer styling up*/
 .newsletter-signup {
   display: flex;
   justify-content: space-between;
   padding-bottom: 2rem;
 }
-
-
-
-
 
 .newsletter-signup input{
   padding: 8px 10px;
@@ -389,14 +389,14 @@ ul {
 .hr{
   opacity: 0.3;
 }
+/*footer styling up ends here*/
 
-
+/* foorer down section starts here*/
 .main-footer{
   display: flex;
   justify-content: space-between;
   padding-top: 1rem;
 }
-
 
 .footer-section h2{
   text-transform: uppercase;
@@ -406,20 +406,21 @@ ul {
   color: var(--main-color);
 }
 .footer-section p{ 
-  font-size: 20px;
+  font-size: 19px;
   margin-bottom: 10px;
 }
 
 a , .footer-section li{
   color: white;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 19px;
 }
 
 
 .footer-links a:hover{
   opacity: 1;
   text-decoration: underline;
+  color: #D0D3D4;
 }
 
 .footer-links li {
@@ -427,22 +428,20 @@ a , .footer-section li{
   margin-bottom: 10px;
 }
 
+/*sosail media icon */
 .social-icon i {
   display: flex;
   margin-right: 20px;
-  font-size: 45px;
+  font-size: 43px;
   text-decoration: none;
-  color: ivory;
+  color: white;
 }
 
-
-
-
-
-
-
-
-
+.social-icon i:hover {
+  text-decoration: underline;
+  color: #D0D3D4;
+}
+/* foorer down section ends here here*/
 /* footer style ends here*/
 
 
@@ -758,7 +757,9 @@ html{
 }
 @media (max-width: 1080px) {
   /* media screen for the menu*/
-  
+  html{
+    font-size: 55%;
+  }
   .header .container{
     padding: 30px 0;
   }
@@ -823,9 +824,8 @@ html{
   font-size: 2.2rem;
 }
 
-
-.footer-section, .newsletter-signup{
-  padding: 1.5rem 0%;
+.footer-section p li a {
+  font-size: 13px;
 }
 
 
