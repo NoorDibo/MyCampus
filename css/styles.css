@@ -527,6 +527,19 @@ a , .footer-section li{
   justify-self: space-between;
   flex-wrap: wrap;
 }
+.food1.container{
+  display: flex;
+  align-items:center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.food2.container{
+  display: flex;
+  align-items:center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
 .food3.container{
   display: flex;
   align-items:center;
@@ -545,18 +558,7 @@ a , .footer-section li{
   justify-content: space-between;
   flex-wrap: wrap;
 }
-.food6.container{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-.food7.container{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
+
 /*
 .box11{
   display: flex;
@@ -570,31 +572,45 @@ a , .footer-section li{
  /* background-color: hsl(0, 14%, 97%);
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);}*/
 
-.box2{
+.box1{
   background-color: #28282B;
   text-align: center;
   color: #ccc;
   
+  
+}
+
+.box2{
+  background-color: #28282B;
+  text-align: center;
+  color: #ccc;
 }
 .box3{
   background-color: #28282B;
   text-align: center;
   color: #ccc;
 }
-.box4{
-  background-color: #28282B;
-  text-align: center;
-  color: #ccc;
-}
 
-.box5{
+.box4{
   background-color: #28282B;
   text-align: center;
   color: #ccc;
   
 
 }
+.box5{
+  background-color: #28282B;
+  text-align: center;
+  color: #ccc;
+  
+}
 .box6{
+  background-color: #28282B;
+  text-align: center;
+  color: #ccc;
+  
+}
+.box7{
   background-color: #28282B;
   text-align: center;
   color: #ccc;
@@ -604,11 +620,15 @@ a , .footer-section li{
 .text-container{
   flex: 1;
   align-items:center;
+  margin: 30px;
+  
   
 }
+
 .image-container{
   flex: 1;
   object-fit: cover;
+  margin: 30px;
 }
 .image-container img{
   flex: 1;
@@ -619,6 +639,7 @@ a , .footer-section li{
   object-fit: cover;
   /*height: auto;*/
   justify-content: stretch;
+  
 }
 
 
@@ -650,6 +671,11 @@ box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
 .contered-text{
   text-align: center;
+}
+.container.row.heading h1{
+  padding-top: 30px;
+  font-size: 42px;
+  color: #000;
 }
 .container.row.heading p{
   margin-top: 15px;
@@ -683,6 +709,11 @@ box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
   color: #ccc;
 }
 .container.box h2{
+  margin-top: 5px;
+  font-size: 17px;
+
+}
+.container.box h1{
   margin-top: 5px;
   font-size: 17px;
 
