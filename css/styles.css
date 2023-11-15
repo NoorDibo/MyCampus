@@ -17,10 +17,9 @@ body {
   justify-content: center;
   align-items: center;
   font-family: 'Arial', sans-serif;
-  line-height: 1.6;
+  line-height: 1.4;
   background-color:	#E5E4E2 ;
   color: #17202A;
-  
 }
 
 .container{
@@ -327,7 +326,7 @@ ul {
 /* header main ends here*/
 
 
-.buildings .container {
+.buildings {
   background-color: #BFC9CA;
   display: flex;
   flex-direction: column;
@@ -369,7 +368,6 @@ ul {
 .departmnet-box h3 {
   padding: 15px;
   margin: 0;
-
   color: #000000;
   text-align: center;
 }
@@ -463,15 +461,17 @@ ul {
 
 /* foorer down section starts here*/
 .main-footer{
+  flex: 1;
   display: flex;
   justify-content: space-between;
   padding-top: 1rem;
 }
 
 .footer-section h2{
+  flex: 1;
   text-transform: uppercase;
   margin-bottom: 10px;
-  font-size: 20px;
+  font-size: 15px;
   text-decoration: underline;
   color: var(--main-color);
 }
@@ -614,6 +614,7 @@ a , .footer-section li{
   
 }
 .image-container img{
+  flex: 0 100%;
   max-width: 100%;
   margin-right: 30px;
   border-radius: 1px;
@@ -894,11 +895,10 @@ html{
 }
 
 .footer-section p li a {
-  font-size: 13px;
+  flex: 0 100%;
+  max-width: 100%;
 }
-.departmnet-box{
-  width: 300px;
-}
+
 
 
 /* media screen for the menu ends here*/
@@ -924,11 +924,13 @@ html{
      /* Full width for smaller screens */
     }
     .text-content p{
-      font-size: 2.5rem;
+      flex: 0 100%;
+      max-width: 100%;
     }
   
   .search-box {
-  width: 150px;
+  flex: 0 100%;
+  width: 100%;
    
   }
 
@@ -948,6 +950,8 @@ html{
   .newsletter-signup,
   .main-footer{
     flex-direction: column;
+    flex: 0 100%;
+    max-width: 100%;
   }
   
 
@@ -955,6 +959,25 @@ html{
     padding: 1rem 2.2rem;
   }
 
+  .buildings{
+    padding: 5px;
+  }
+  
+  .departmnet-box{
+    flex-direction: column;
+    flex: 0 100%;
+    max-width: 100%;
+    padding: 5px;
+    margin-bottom: auto;
+  
+  }
+
+  .box-contect{
+    flex: 0 100%;
+    max-width: 100%;
+    padding: 10px;
+
+  }
 }
 
 /* Media query for screens smaller than 768px ends here */
