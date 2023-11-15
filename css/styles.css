@@ -610,10 +610,9 @@ a , .footer-section li{
   margin: 50px;
   
 }
-img{
+.image-container img{
   max-width: 100%;
   margin-right: 30px;
-  margin-left: 30px;
   border-radius: 1px;
   
 }
