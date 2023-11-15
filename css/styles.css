@@ -116,6 +116,8 @@ ul {
 }
 
 .navbar a:hover{
+  opacity: 1;
+  text-decoration: underline;
   color: #D0D3D4;
 }
 
@@ -417,13 +419,6 @@ a , .footer-section li{
   font-size: 19px;
 }
 
-
-.footer-links a:hover{
-  opacity: 1;
-  text-decoration: underline;
-  color: #D0D3D4;
-}
-
 .footer-links li {
   list-style: none;
   margin-bottom: 10px;
@@ -432,21 +427,19 @@ a , .footer-section li{
 /*sosail media icon */
  .social-icon {
   display: flex;
-  margin-right: 20px;
   text-decoration: none;
   color: white;
+  align-items: center;
 }
 .social-icon i {
+  cursor: pointer;
   margin-right: 20px;
   font-size: 43px;
-  height: 32px;
-  line-height: 32px;
-    margin-bottom: 30px;
-    text-decoration: none;
-    width: fit-content;
+  text-decoration: none;
 }
 
-.social-icon span:hover {
+.footer-section a:hover {
+  opacity: 1;
   text-decoration: underline;
   color: #D0D3D4;
 }
