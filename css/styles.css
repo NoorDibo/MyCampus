@@ -14,6 +14,8 @@
 
 /* Body styling for consistent font and background */
 body {
+  justify-content: center;
+  align-items: center;
   font-family: 'Arial', sans-serif;
   line-height: 1.6;
   background-color:	#E5E4E2 ;
@@ -325,9 +327,10 @@ ul {
 /* header main ends here*/
 
 
-.buildings {
-  padding: 20px;
-  background-color: #BFC9CA
+.buildings .container {
+  background-color: #BFC9CA;
+  display: flex;
+  flex-direction: column;
 }
 
 .headings {
@@ -337,16 +340,17 @@ ul {
 }
 
 .box-container {
+  margin: 0;
   align-items: start;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 9rem; /* Space between the boxes */
+  gap: 4rem; /* Space between the boxes */
 }
 
 .departmnet-box {
   flex: 1;
-  max-width: 35%; /* Maximum width of the cards */
+  max-width: 500px; /* Maximum width of the cards */
   background-color: #fff;
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.2);
@@ -355,6 +359,7 @@ ul {
 }
 
 .departmnet-box img {
+  flex: 1;
   width: 100%; /* Makes the image responsive */
   height: auto; /* Maintain aspect ratio */
   display: block; /* Remove bottom space under image */
@@ -620,7 +625,7 @@ a , .footer-section li{
 
 /* Box styling */
 .box{
-flex: 1 0 300px; /* Grow to fill available space */
+flex: 1; /* Grow to fill available space */
 min-width: 300px; /* Minimum width before wrapping */
 height: 500;
 margin: 60px;
@@ -633,6 +638,7 @@ box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
 
 .box img {
+  flex: 1;
   max-width: 100%;
   width: 40%;
   height: 40%;
@@ -890,7 +896,9 @@ html{
 .footer-section p li a {
   font-size: 13px;
 }
-
+.departmnet-box{
+  width: 300px;
+}
 
 
 /* media screen for the menu ends here*/
