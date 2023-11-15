@@ -603,20 +603,22 @@ a , .footer-section li{
 }
 .text-container{
   flex: 1;
-  align-items:flex-start;
-  text-align: left;
+  align-items:center;
+  
 }
 .image-container{
   flex: 1;
-  margin: 50px;
-  
+  object-fit: cover;
 }
 .image-container img{
-  flex: 0 100%;
+  flex: 1;
   max-width: 100%;
-  margin-right: 30px;
-  border-radius: 1px;
-  
+  width: 70%;
+  height: 70%;
+  margin: 50px;
+  object-fit: cover;
+  /*height: auto;*/
+  justify-content: stretch;
 }
 
 
@@ -642,6 +644,7 @@ box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
   width: 40%;
   height: 40%;
   margin: 50px;
+  object-fit: cover;
   /*height: auto;*/
   justify-content: stretch;
 }
