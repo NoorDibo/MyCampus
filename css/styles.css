@@ -364,8 +364,8 @@ ul {
 .departmnet-box h3 {
   padding: 15px;
   margin: 0;
-  background-color: #007bff;
-  color: #fff;
+
+  color: #000000;
   text-align: center;
 }
 
@@ -373,6 +373,7 @@ ul {
   padding: 0 15px 15px;
   margin: 0;
   line-height: 1.6;
+  font-size: 20px;
 }
 
 .button-link {
