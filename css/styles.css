@@ -718,25 +718,14 @@ box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 
 /* Topical*/
 
-
-/*.navbar-topical ul{
-  list-style: none;
-  background-color: hsl(0, 0%, 25%);
-  padding: 0px;
-  margin: 0px;
-  overflow: hidden;
-}
-
-
-*/
-
 .navbar-topical {
-  background-color: #3b40c4;
-  color: #fff;
+  background-color: #244da5;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1em;
+  position: sticky;
+  top: -0px;
 }
 
 .leftnavbar-topical{
@@ -750,17 +739,16 @@ box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
 
 .leftnavbar-topical a {
-    text-decoration: none; /*Remove the link’s text-decoration*/
-    font-family:Arial, Helvetica, sans-serif;
-    font-size: 19px;
-    font-weight: bold;
-    display: inline-block; 
-    padding: 5px 0;
-   position: relative;
-
-    background-image: linear-gradient( /*We give the link a linear background gradient, and a stop between two colors at the halfway mark*/
+  text-decoration: none; /*Remove the link’s text-decoration*/
+  font-family:Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  display: inline-block; 
+  padding: 5px 0;
+  position: relative;
+  background-image: linear-gradient( /*We give the link a linear background gradient, and a stop between two colors at the halfway mark*/
     to right,
-    rgb(34, 8, 186),
+    rgb(45, 30, 130),
     #11004f 50%,
     #000 50%  
   );
@@ -771,30 +759,28 @@ box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
   transition: all 0.45s ease-in-out; /*Timer, smooths the transitions*/
 }
 
-
-.leftnavbar-topical a:before {
-  content: '';
-  background: #11004f;
-  display: block;
+.leftnavbar-topical a:before { /*When it hovers*/
+  content: ''; /*Specifies that the pseudo-element has no content.*/
+  background: #11004f;/*Color of the line*/
+  display: block; /*Block level element*/
   position: absolute;
-  bottom: -3px;
+  bottom: -3px; /*Size of the line*/
   left: 0;
   width: 0;
-  height: 3px;
+  height: 3px; 
 }
 
-
-.leftnavbar-topical a:hover{
+.leftnavbar-topical a:hover{ /*Upon hovering, we smoothly slide the ::before element into position, emerging from the left side.*/
   background-position: 0;
   }
 
 .leftnavbar-topical a:hover::before {
-  width: 100%;
+  width: 100%; /*Upon hovering, we expand the ::before pseudo-element of the link to 100% of the link's width. */
 }
 
 
 .logo-topical img {
-    max-height: 70px; /* Adjust the height as needed */
+    max-height: 60px; /* Adjust the height as needed */
     margin-left: 550px;
 
 }
