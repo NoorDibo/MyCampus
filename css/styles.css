@@ -731,7 +731,7 @@ box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 */
 
 .navbar-topical {
-  background-color: #4a21ab;
+  background-color: #3b40c4;
   color: #fff;
   display: flex;
   justify-content: space-between;
@@ -750,17 +750,47 @@ box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
 
 .leftnavbar-topical a {
-    color: #000000;
-    text-decoration: none;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 17px;
+    text-decoration: none; /*Remove the link’s text-decoration*/
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 19px;
     font-weight: bold;
+    display: inline-block; 
+    padding: 5px 0;
+   position: relative;
+
+    background-image: linear-gradient( /*We give the link a linear background gradient, and a stop between two colors at the halfway mark*/
+    to right,
+    rgb(34, 8, 186),
+    #11004f 50%,
+    #000 50%  
+  );
+  background-size: 200% 100%;  
+  background-position: -100%; /* Makes the background double the link’s width, or 200%. Takes it all the way over to the left so only one of the gradients two colors is showing at one time.*/  
+  -webkit-background-clip: text; /*Clips the background gradient onto the text, giving the illusion that the text adopts the color of the background*/
+  -webkit-text-fill-color: transparent; /*Removes the color from the text to create a transparent effect*/
+  transition: all 0.45s ease-in-out; /*Timer, smooths the transitions*/
 }
 
+
+.leftnavbar-topical a:before {
+  content: '';
+  background: #11004f;
+  display: block;
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 3px;
+}
+
+
 .leftnavbar-topical a:hover{
-  background-color:  hsl(217, 49%, 59%);
-  opacity: 2;
+  background-position: 0;
   }
+
+.leftnavbar-topical a:hover::before {
+  width: 100%;
+}
 
 
 .logo-topical img {
