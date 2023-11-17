@@ -895,6 +895,7 @@ color: #000;
   font-size: 17px;
   line-height: 1.5;
 }
+/*style for blogs */
 
 .blog-container-lib {
   display: flex;
@@ -968,11 +969,23 @@ p {
   cursor: pointer;
 }
 
-.open-time-lib{
+.open-time-lib {
   display: flex;
-  margin: 30;
- /* Sørger for at kortene flyter til neste rad når det er nødvendig */
-  
+  flex-direction: column;
+  align-items: center;
+  background-color: #f4f4f4;
+  padding: 50px;
+  box-shadow: 9 9 10px rgba(0, 0, 0, 0.1);
+  max-width: 500px; /* Adjust the width as needed */
+  border-radius: 5px;
+  padding: 5px 10px;
+  margin-top: 20px;
+  margin-block: 20px;
+}
+
+
+p {
+  margin: 90px 30;
 }
 
 
