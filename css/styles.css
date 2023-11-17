@@ -19,11 +19,12 @@
 
 /* Body styling for consistent font and background */
 body {
+  justify-content: center;
+  align-items: center;
   font-family: 'Arial', sans-serif;
-  line-height: 1.6;
+  line-height: 1.4;
   background-color:	#E5E4E2 ;
   color: #17202A;
- 
 }
 
 .container{
@@ -43,6 +44,9 @@ ul {
   background-color: #28282B;
   height: 80px;
   padding: 0 90px;
+  position: sticky; /*make the navbar stick with the site*/
+  top: 0; 
+  z-index: 2; /* fix this because to not get behinde my slider image */
 }
 
 /* logo style starts here*/
@@ -117,7 +121,9 @@ ul {
   font-weight: bold;
 }
 
-.navbar a:hover{
+.navbar .menu a:hover{
+  opacity: 1;
+  text-decoration: underline;
   color: #D0D3D4;
 }
 
@@ -325,11 +331,75 @@ ul {
 /* header main ends here*/
 
 
-.boxes .container{
+.buildings {
+  background-color: #BFC9CA;
   display: flex;
-  align-items: center;
-  justify-self: space-between;
+  flex-direction: column;
 }
+
+.headings {
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.box-container {
+  margin: 0;
+  align-items: start;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 4rem; /* Space between the boxes */
+}
+
+.departmnet-box {
+  flex: 1;
+  max-width: 500px; /* Maximum width of the cards */
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  overflow: hidden; /* Makes sure nothing spills out of the border-radius */
+  margin-bottom: 20px; /* Space below each card */
+}
+
+.departmnet-box img {
+  flex: 1;
+  width: 100%; /* Makes the image responsive */
+  height: auto; /* Maintain aspect ratio */
+  display: block; /* Remove bottom space under image */
+  object-fit: cover;
+}
+
+.departmnet-box h3 {
+  padding: 15px;
+  margin: 0;
+  color: #000000;
+  text-align: center;
+}
+
+.departmnet-box p {
+  padding: 0 15px 15px;
+  margin: 0;
+  line-height: 1.6;
+  font-size: 20px;
+}
+
+.button-link {
+  display: block;
+  width: 100%; /* Make the button expand the full width of the card */
+  text-align: center;
+  padding: 10px 0;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 0 0 8px 8px; /* Only round the bottom corners to match the card */
+}
+
+.button-link:hover {
+  background-color: #0056b3;
+}
+
+
 
 
 
@@ -338,22 +408,20 @@ ul {
   background-color:#28282B; /* Dark grey background */
   color: white;
   margin: auto;
+  align-items: center;
 }
 
 .footer-container{
-  padding: 2rem 8rem ;
-  justify-content: space-between;
+  padding: 2rem 7rem ;
+
 }
 
+/*footer styling up*/
 .newsletter-signup {
   display: flex;
   justify-content: space-between;
   padding-bottom: 2rem;
 }
-
-
-
-
 
 .newsletter-signup input{
   padding: 8px 10px;
@@ -387,31 +455,67 @@ ul {
 
 .get p {
   font-size: 1.9rem;
+  opacity: 0.6;
   padding-bottom: 1rem;
 }
 
 .hr{
   opacity: 0.3;
 }
+/*footer styling up ends here*/
 
-
+/* foorer down section starts here*/
 .main-footer{
+  flex: 1;
   display: flex;
   justify-content: space-between;
   padding-top: 1rem;
 }
 
-.footer-section{
-  
+.footer-section h2{
+  flex: 1;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  font-size: 15px;
+  text-decoration: underline;
+  color: var(--main-color);
+}
+.footer-section p{ 
+  font-size: 19px;
+  margin-bottom: 10px;
 }
 
+a , .footer-section li{
+  color: white;
+  text-decoration: none;
+  font-size: 19px;
+}
 
+.footer-links li {
+  list-style: none;
+  margin-bottom: 10px;
+}
 
+/*sosail media icon */
+ .social-icon {
+  display: flex;
+  text-decoration: none;
+  color: white;
+  align-items: center;
+}
+.social-icon i {
+  cursor: pointer;
+  margin-right: 20px;
+  font-size: 43px;
+  text-decoration: none;
+}
 
-
-
-
-
+.footer-section a:hover {
+  opacity: 1;
+  text-decoration: underline;
+  color: #D0D3D4;
+}
+/* foorer down section ends here here*/
 /* footer style ends here*/
 
 
@@ -424,21 +528,9 @@ ul {
   justify-self: space-between;
   flex-wrap: wrap;
 }
-.food1.container{
-  display: flex;
-  align-items:center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-.food2.container{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
 .food3.container{
   display: flex;
-  align-items: center;
+  align-items:center;
   justify-content: space-between;
   flex-wrap: wrap;
 }
@@ -454,18 +546,30 @@ ul {
   justify-content: space-between;
   flex-wrap: wrap;
 }
+.food6.container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.food7.container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
 
 .box11{
   display: flex;
   align-items: center;
   min-width: 300px; /* Minimum width before wrapping */
-height: 500px;
-margin: 100px;
-padding: 10px;
-border-radius: 1px;
-box-sizing:border-box; /* Include padding and border in the element's total width and height */
-background-color: hsl(0, 14%, 97%);
-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  height: 500px;
+  margin: 60px;
+  padding: 10px;
+  border-radius: 1px;
+  box-sizing:border-box; /* Include padding and border in the element's total width and height */
+  background-color: hsl(0, 14%, 97%);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
 .box2{
   background-color: #28282B;
@@ -501,6 +605,8 @@ box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 .container1{
   display: flex;
   align-items: center;
+  height: auto;
+  width: auto;
 }
 .text-container{
   flex: 1;
@@ -512,10 +618,10 @@ box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
   margin: 50px;
   
 }
-img{
+.image-container img{
+  flex: 0 100%;
   max-width: 100%;
   margin-right: 30px;
-  margin-left: 30px;
   border-radius: 1px;
   
 }
@@ -525,19 +631,20 @@ img{
 
 /* Box styling */
 .box{
-flex: 1 0 300px; /* Grow to fill available space */
+flex: 1; /* Grow to fill available space */
 min-width: 300px; /* Minimum width before wrapping */
 height: 500;
-margin: 80px;
+margin: 60px;
 padding: 10px;
 border-radius: 1px;
-box-sizing: border-box; /* Include padding and border in the element's total width and height */
+box-sizing:border-box; /* Include padding and border in the element's total width and height */
 background-color: hsl(0, 14%, 97%);
 box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 
 }
 
 .box img {
+  flex: 1;
   max-width: 100%;
   width: 40%;
   height: 40%;
@@ -548,97 +655,12 @@ box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 .contered-text{
   text-align: center;
 }
-/*rating food at cantine*/
-.review.container{
-  display: flex;
-  flex-direction: column;
-  width: 300px;
-  background-color: #0077ff;
-  border: 1px solid #ccc;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0,0,0.1);
-}
-.rating{
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 10px;
-}
-.user-review{
-  margin-bottom: 10px;
-}
-textarea{
-  width: 100%;
-  padding: 8px;
-  box-sizing: border-box;
-
-}
-button{
-  background-color: #ccc;
-  color: #2196F3;
-  border: none;
-  padding: 10px;
-  border-radius: 4px;
-  cursor: pointer;
-
-}
-button:hover{
-  background-color: #007BFF;
-}
-/*style for klage i kantina*/
-#cantine-form{
-  display: flex;
-  flex-direction: column;
-  align-items:flex-start;
-}
-label{
-  margin-bottom: 5px;
-}
-textarea{
-  margin-bottom: 10px;
-
-}
-input[type="submit"]{
-  cursor: pointer;
-  padding: 5px 10px;
-  color: #00b3ff;
-  background-color: rgb(198, 195, 195);
-}
 
 
 /* Topical*/
 
 
-.body-topical{
-  display: grid;
-  height: 100vh;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 0.2fr 1.5fr 1.2fr 0.8fr;
-  grid-template-areas: "nav nav nav" "main main main" "content1 content2 content3" "footer footer footer";
-
-}
-
-.navbar-topical{
-  grid-area: nav;
-}
-
-#main-topical{
-  grid-area: main;
-}
-
-#content1{
-  grid-area: content1;
-}
-
-#content2{
-  grid-area: content2;
-}
-
-#content3{
-  grid-area: content3;
-}
-
-.navbar-topical ul{
+/*.navbar-topical ul{
   list-style: none;
   background-color: hsl(0, 0%, 25%);
   padding: 0px;
@@ -648,18 +670,66 @@ input[type="submit"]{
 
 .navbar-topical a{
   color: white;
-  text-decoration: none;
-  padding: 15px;
-  text-align: center;
+  text-decoration: none;nav {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
 }
 
+<<<<<<< HEAD
 .navbar-topical a:hover{
   background-color:  hsl(0, 36%, 96%);
+=======
+>>>>>>> 47ea22adb1699e36de4e9f40b15480d55a814867
 }
 
 .navbar-topical li{
-  float: left;
+float: left;
 }
+*/
+
+.navbar-topical {
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em;
+}
+
+.leftnavbar-topical{
+    list-style: none;
+    display: flex;
+    margin: 0;
+}
+
+.leftnavbar-topical li {
+    margin-right: 20px;
+}
+
+.leftnavbar-topical a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.leftnavbar-topical a:hover{
+  background-color:  hsl(0, 26%, 7%);
+  }
+
+
+.logo-topical img {
+    max-height: 70px; /* Adjust the height as needed */
+    margin-left: 700px;
+}
+
+
+
+
+
+
 
  /*style library........................................*/
  .centered-text-lib{
@@ -670,7 +740,7 @@ input[type="submit"]{
 
  
 
-/*style for blog*/
+/*style for welcome*/
 .head-lib{
   margin:0px;
   padding:0px;
@@ -704,16 +774,18 @@ color: #000;
   font-size: 17px;
   line-height: 1.5;
 }
+
 .blog-container-lib {
   display: flex;
-  flex-direction: column;
-  margin: 3px;
+  flex-direction:column-reverse;
+  justify-content: center;
+  margin: 6px;
 }
 
 .blog-post-lib {
   background-color: #fff;
-  margin: 10px;
-  padding: 20px;
+  margin: 30px;
+  padding: 30px;
   border: 1px solid #ddd;
   border-radius: 5px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
@@ -727,12 +799,14 @@ color: #000;
 /*Card. linrary style*/
 .container-lib {
   display: flex;
+  margin: 30;
   flex-wrap: wrap; /* Sørger for at kortene flyter til neste rad når det er nødvendig */
   justify-content: space-around; /* Justerer mellomrom mellom kortene */
 }
 
 .card-lib {
   flex: 1;
+  flex-basis: 300px; 
   border: 1px solid #ccc;
   padding: 20px;
   text-align: center;
@@ -741,7 +815,7 @@ color: #000;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
   border-radius: 5px;
   transition: transform 0.2s;
-  margin: 10px; /* mellomrom mellom kortene */
+  margin: 3px; /* mellomrom mellom kortene */
 }
 
 .card-lib:hover {
@@ -754,7 +828,7 @@ color: #000;
 }
 
 h2, h3 {
-  color: #00b3ff;
+  color: #3b4242;
   font-size: 20px;
   margin: 10px 0;
 }
@@ -764,13 +838,20 @@ p {
 }
 
 .read-more-button {
-  background-color: #0077ff;
+  background-color: #363b4089;
   color: #fff;
   border: none;
   border-radius: 5px;
   padding: 5px 10px;
   margin-top: 10px;
   cursor: pointer;
+}
+
+.open-time-lib{
+  display: flex;
+  margin: 30;
+ /* Sørger for at kortene flyter til neste rad når det er nødvendig */
+  
 }
 
 
@@ -784,13 +865,13 @@ html{
 }
 @media (max-width: 1080px) {
   /* media screen for the menu*/
-  
+  html{
+    font-size: 55%;
+  }
   .header .container{
     padding: 30px 0;
   }
-  html {
-    font-size: 55%;
-  }
+  
   .menu-icon,
   .burger-toggle {
     display: flex;
@@ -851,9 +932,9 @@ html{
   font-size: 2.2rem;
 }
 
-
-.footer-section, .newsletter-signup{
-  padding: 1.5rem 0%;
+.footer-section p li a {
+  flex: 0 100%;
+  max-width: 100%;
 }
 
 
@@ -866,7 +947,7 @@ html{
 /* Media query for screens smaller than 768px */
 @media (max-width: 768px) {
 
-.content-blog{
+.container-lib{
   flex-direction: column;
 }  
 .content-background {
@@ -883,11 +964,13 @@ html{
      /* Full width for smaller screens */
     }
     .text-content p{
-      font-size: 2.5rem;
+      flex: 0 100%;
+      max-width: 100%;
     }
   
   .search-box {
-  width: 150px;
+  flex: 0 100%;
+  width: 100%;
    
   }
 
@@ -907,6 +990,8 @@ html{
   .newsletter-signup,
   .main-footer{
     flex-direction: column;
+    flex: 0 100%;
+    max-width: 100%;
   }
   
 
@@ -914,6 +999,25 @@ html{
     padding: 1rem 2.2rem;
   }
 
+  .buildings{
+    padding: 5px;
+  }
+  
+  .departmnet-box{
+    flex-direction: column;
+    flex: 0 100%;
+    max-width: 100%;
+    padding: 5px;
+    margin-bottom: auto;
+  
+  }
+
+  .box-contect{
+    flex: 0 100%;
+    max-width: 100%;
+    padding: 10px;
+
+  }
 }
 
 /* Media query for screens smaller than 768px ends here */

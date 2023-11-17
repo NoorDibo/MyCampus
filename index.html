@@ -85,23 +85,33 @@
   
 
   <!-- Main content section -->
-  <main>
+ 
     <!-- Introduction to OsloMet Campus -->
-    <section class="boxes">
-        <div class="container">
-            <div class="box">
-                <h2>Discover the Heart of Learning</h2>
-      <!-- Responsive image with descriptive alt text -->
-      <img src="campus.jpg" alt="Aerial view of OsloMet Campus at Pilestredet 35" width="100%" height="auto">
-      <!-- Photographer credit (hidden from users but available for screen readers and in the page source) -->
-      <p style="display: none;">Photo by: Photographer's Name</p>
-      <p>Explore our vibrant campus, state-of-the-art facilities, and welcoming community. Dive into a world of knowledge and innovation at OsloMet.</p>
+    <section class="buildings">
+      
+      <h1 class="headings"><span>Pilestredet 35</span>department</h1>
+        <div class="box-container">
+            <div class="departmnet-box">
+              <img src="/img/canteen-department.jpg" alt="Aerial view of OsloMet Campus at Pilestredet 35 canteen. the photo by : NoorDibo">
+              <div class="box-contect">
+                <h3>Olaf Spiseri</h3>
+                <p>Enjoy a variety of healthy and delicious meals at our canteen! Our menu includes a range of options to cater to all tastes, including vegetarian and vegan dishes.</p>
+              </div>
+                <a href="/canteen.html" class="button-link">Visit Us Today!</a>
             </div>
+            <div class="departmnet-box">
+              <img src="/img/canteen-department.jpg" alt="Aerial view of OsloMet Campus at Pilestredet 35 Library. the photo by : NoorDibo">
+              <div class="box-contect">
+              <h3>Library Pilestredet</h3>
+                <p>Explore a world of knowledge in our library! Find books, journals, and resources for your studies and leisure reading.</p>
+              </div>
+                <a href="/Library.html" class="button-link">Discover More!</a>
+            
+        </div>
         </div>
     </section>
-  </main>
-
-  <!-- Footer with copyright information -->
+  
+  <!-- Footer section starts here -->
   <footer class="footer1">
     <div class="footer-container">
       <div class="newsletter-signup">
@@ -115,7 +125,7 @@
           <button type="submit" class="btn newsletter-btn">Subscribe</button>
         </form>
       </div>
-      <hr class="hr">
+      <hr class="hr"> <!-- to create a line-->
       <div class="main-footer">
         <div class="footer-section">
           <h2>OSLO Metropolitan University</h2>
@@ -124,24 +134,28 @@
           <p>NO-0130 Oslo</p>
           <p>Tel: +47 67 23 50 00</p>
           <p>Email: info@oslomet.no</p>
-          <li><a href="/contact">Contact us</a></li>
+          <ul class="footer-links">
+            <br>
+            <h2>Contact</h2>
+          <li><a href="#">Contact us</a></li></ul>
         </div>
         <div class="footer-section">
           <h2>Quick Links</h2>
-          <ul>
-            <li><a href="/admissions">Admissions</a></li>
-            <li><a href="/studies">Studies</a></li>
-            <li><a href="/research">Research</a></li>
-            <li><a href="/about">About OsloMet</a></li>
+          <ul class="footer-links">
+            <li><a href="#">Admissions</a></li>
+            <li><a href="#">Studies</a></li>
+            <li><a href="#">Research</a></li>
+            <li><a href="#">About OsloMet</a></li>
           </ul>
         </div>
+        <!---->
         <div class="footer-section">
           <h2>Connect with Us</h2>
-          <a href="https://facebook.com" class="social-icon"><i class="ri-facebook-box-fill"></i></a>
-          <a href="https://twitter.com" class="social-icon"><i class="ri-twitter-fill"></i></a>
-          <a href="https://instagram.com" class="social-icon"><i class="ri-instagram-fill"></i></a>
-          <a href="https://linkedin.com" class="social-icon"><i class="ri-linkedin-box-fill"></i></a>
-        </div>
+          <a href="https://facebook.com" class="social-icon"><i class="ri-facebook-box-fill"></i><span>Facebook</span></a>
+          <a href="https://twitter.com" class="social-icon"><i class="ri-twitter-fill"></i><span>X (twitter)</span></a>
+          <a href="https://instagram.com" class="social-icon"><i class="ri-instagram-fill"></i><span>Instagram</span></a>
+          <a href="https://linkedin.com" class="social-icon"><i class="ri-linkedin-box-fill"></i><span>Linkedin</span></a> 
+      </div>
       </div>
     </div>
   </footer>
