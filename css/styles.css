@@ -195,7 +195,6 @@ ul {
 .burger-toggle, 
 .menu-icon {
   display: none;
-
 }
 
 /* navigation setting*/
@@ -246,7 +245,6 @@ ul {
 .content-background {
   display: flex;
   background: #fff;  
-  border-radius: 0.5rem;
   align-items: center; 
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
  
@@ -287,7 +285,7 @@ ul {
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
   box-shadow: 0 0.2rem 1rem -0.5rem hsla(0, 0%, 0%, 0.972);
-  border-radius: 0.5rem;
+  
   -ms-overflow-style: none; /* Hide scrollbar IE and Edge */
 	scrollbar-width: none; /* Hide scrollbar Firefox */
 }
@@ -332,15 +330,22 @@ ul {
 
 
 .buildings {
-  background-color: #BFC9CA;
+  background-color: #b0c8c8;
   display: flex;
   flex-direction: column;
 }
 
 .headings {
   text-align: center;
-  font-size: 2em;
+  font-size: 4rem;
   margin-bottom: 20px;
+  margin-top: 20px;
+
+}
+
+.headings span {
+  color: #F1C40F;
+  box-shadow:  0 2px 5px rgba(0,0,0,0.2);
 }
 
 .box-container {
@@ -349,17 +354,16 @@ ul {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 4rem; /* Space between the boxes */
+  gap: 8rem; /* Space between the boxes */
 }
 
 .departmnet-box {
   flex: 1;
   max-width: 500px; /* Maximum width of the cards */
   background-color: #fff;
-  border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.2);
   overflow: hidden; /* Makes sure nothing spills out of the border-radius */
-  margin-bottom: 20px; /* Space below each card */
+  margin-bottom: 15px; /* Space below each card */
 }
 
 .departmnet-box img {
@@ -392,7 +396,7 @@ ul {
   background-color: #007bff;
   color: white;
   text-decoration: none;
-  border-radius: 0 0 8px 8px; /* Only round the bottom corners to match the card */
+   /* Only round the bottom corners to match the card */
 }
 
 .button-link:hover {
@@ -528,6 +532,19 @@ a , .footer-section li{
   justify-self: space-between;
   flex-wrap: wrap;
 }
+.food1.container{
+  display: flex;
+  align-items:center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.food2.container{
+  display: flex;
+  align-items:center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
 .food3.container{
   display: flex;
   align-items:center;
@@ -546,54 +563,38 @@ a , .footer-section li{
   justify-content: space-between;
   flex-wrap: wrap;
 }
-.food6.container{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-.food7.container{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
+
+.box1{
+  background-color: #28282B;
+  text-align: center;
+  color: #ccc;
+  margin: 40px;
+
 }
 
-.box11{
-  display: flex;
-  align-items: center;
-  min-width: 300px; /* Minimum width before wrapping */
-  height: 500px;
-  margin: 60px;
-  padding: 10px;
-  border-radius: 1px;
-  box-sizing:border-box; /* Include padding and border in the element's total width and height */
-  background-color: hsl(0, 14%, 97%);
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-}
 .box2{
   background-color: #28282B;
   text-align: center;
   color: #ccc;
-  
 }
 .box3{
   background-color: #28282B;
   text-align: center;
   color: #ccc;
 }
-.box4{
-  background-color: #28282B;
-  text-align: center;
-  color: #ccc;
-}
 
-.box5{
+.box4{
   background-color: #28282B;
   text-align: center;
   color: #ccc;
   
 
+}
+.box5{
+  background-color: #28282B;
+  text-align: center;
+  color: #ccc;
+  
 }
 .box6{
   background-color: #28282B;
@@ -601,28 +602,34 @@ a , .footer-section li{
   color: #ccc;
   
 }
-
-.container1{
-  display: flex;
-  align-items: center;
-  height: auto;
-  width: auto;
-}
-.text-container{
-  flex: 1;
-  align-items:flex-start;
-  text-align: left;
-}
-.image-container{
-  flex: 1;
-  margin: 50px;
+.box7{
+  background-color: #28282B;
+  text-align: center;
+  color: #ccc;
   
 }
+
+.text-container{
+  flex: 1;
+  align-items:center;
+  margin: 30px;
+  
+}
+
+.image-container{
+  flex: 1;
+  object-fit: cover;
+  margin: 10px;
+}
 .image-container img{
-  flex: 0 100%;
+  flex: 1;
   max-width: 100%;
-  margin-right: 30px;
-  border-radius: 1px;
+  width: 70%;
+  height: 70%;
+  margin: 50px;
+  object-fit: cover;
+  /*height: auto;*/
+  justify-content: stretch;
   
 }
 
@@ -634,7 +641,7 @@ a , .footer-section li{
 flex: 1; /* Grow to fill available space */
 min-width: 300px; /* Minimum width before wrapping */
 height: 500;
-margin: 60px;
+margin: 40px;
 padding: 10px;
 border-radius: 1px;
 box-sizing:border-box; /* Include padding and border in the element's total width and height */
@@ -648,17 +655,75 @@ box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
   max-width: 100%;
   width: 40%;
   height: 40%;
-  margin: 50px;
+  margin: 40px;
+  object-fit: cover;
   /*height: auto;*/
   justify-content: stretch;
 }
 .contered-text{
   text-align: center;
+  margin: 30px;
+  width:100%;
 }
+
+.container.row.heading h1{
+  padding-top: 30px;
+  font-size: 42px;
+  color: #000;
+}
+.container.row.heading p{
+  margin-top: 15px;
+  color: #000;
+  font-size: 17px;
+  line-height: 1.5;
+}
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px auto;
+}
+.container.box{
+  flex: 1;
+  margin: 40px 20px;
+}
+.container.box img{
+  width: 100%;
+  height: auto;
+}
+.container.box .text-container{
+  font-size: 15px;
+  font-weight: bold;
+  color: #ccc;
+  
+}
+.container.box.image-container{
+  font-size: 15px;
+  font-weight:bold ;
+  color: #ccc;
+}
+.container.box h2{
+  margin-top: 5px;
+  font-size: 17px;
+
+}
+.container.box h1{
+  margin-top: 5px;
+  font-size: 17px;
+
+}
+.container.box p{
+  font-size: 16px;
+  margin-top: 10px;
+  color:#000;
+  line-height: 1.5;
+}
+
 
 
 /* Topical*/
 
+<<<<<<< HEAD
 
 /*.navbar-topical ul{
   list-style: none;
@@ -691,13 +756,16 @@ float: left;
 }
 */
 
+=======
+>>>>>>> e3bc73cda04b50ce099686fb862674f550a4596e
 .navbar-topical {
-  background-color: #333;
-  color: #fff;
+  background-color: #244da5;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1em;
+  position: sticky;
+  top: -0px;
 }
 
 .leftnavbar-topical{
@@ -711,21 +779,73 @@ float: left;
 }
 
 .leftnavbar-topical a {
-    color: #fff;
-    text-decoration: none;
+  text-decoration: none; /*Remove the link’s text-decoration*/
+  font-family:Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  display: inline-block; 
+  padding: 5px 0;
+  position: relative;
+  background-image: linear-gradient( /*We give the link a linear background gradient, and a stop between two colors at the halfway mark*/
+    to right,
+    rgb(45, 30, 130),
+    #11004f 50%,
+    #000 50%  
+  );
+  background-size: 200% 100%;  
+  background-position: -100%; /* Makes the background double the link’s width, or 200%. Takes it all the way over to the left so only one of the gradients two colors is showing at one time.*/  
+  -webkit-background-clip: text; /*Clips the background gradient onto the text, giving the illusion that the text adopts the color of the background*/
+  -webkit-text-fill-color: transparent; /*Removes the color from the text to create a transparent effect*/
+  transition: all 0.45s ease-in-out; /*Timer, smooths the transitions*/
 }
 
-.leftnavbar-topical a:hover{
-  background-color:  hsl(0, 26%, 7%);
+.leftnavbar-topical a:before { /*When it hovers*/
+  content: ''; /*Specifies that the pseudo-element has no content.*/
+  background: #11004f;/*Color of the line*/
+  display: block; /*Block level element*/
+  position: absolute;
+  bottom: -3px; /*Size of the line*/
+  left: 0;
+  width: 0;
+  height: 3px; 
+}
+
+.leftnavbar-topical a:hover{ /*Upon hovering, we smoothly slide the ::before element into position, emerging from the left side.*/
+  background-position: 0;
   }
+
+.leftnavbar-topical a:hover::before {
+  width: 100%; /*Upon hovering, we expand the ::before pseudo-element of the link to 100% of the link's width. */
+}
 
 
 .logo-topical img {
-    max-height: 70px; /* Adjust the height as needed */
-    margin-left: 700px;
+    max-height: 60px; /* Adjust the height as needed */
+    margin-left: 550px;
+
 }
 
 
+.navbar .menu a:hover{
+  opacity: 1;
+  text-decoration: underline;
+  color: #D0D3D4;
+}
+
+.navbar .container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.navbar ul{
+  display: flex;
+}
+
+.navbar ul li{
+  margin-left: 20px;
+}
 
 
 
@@ -1000,14 +1120,13 @@ html{
   }
 
   .buildings{
-    padding: 5px;
+    padding-bottom: 10px;
   }
   
   .departmnet-box{
     flex-direction: column;
     flex: 0 100%;
     max-width: 100%;
-    padding: 5px;
     margin-bottom: auto;
   
   }
@@ -1017,6 +1136,13 @@ html{
     max-width: 100%;
     padding: 10px;
 
+  }
+  .box11.contect{
+    flex: 0 100%;
+    max-width: 100%;
+    padding: 10px;
+
+    
   }
 }
 
