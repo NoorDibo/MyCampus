@@ -525,7 +525,7 @@ a , .footer-section li{
 
 
 
-/*kantine styling*/ 
+/*kantine styling start here*/ 
 
 .food .container{
   display: flex;
@@ -566,7 +566,95 @@ a , .footer-section li{
   justify-content: space-between;
   flex-wrap: wrap;
 }
+/*Welcome text for the canteen to writing big welcome text*/
+.store-overskrift{
+  text-transform:capitalize;
+  font-size: 45px;
+  align-items: center;
+  margin-right: 100px;
+}
+.lett-tekst{
+  align-items: center;
+  text-align: center;
+  color:#b0c8c8;
+  
+  
+}
+/*Forsidebildet of the canteen*/
+.image-container1{
+  display: flex;
+  width: max-content;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: fit-content;
+  margin-right: 100px;
+  margin-left: 100px;
+  margin-top: auto;
+  
+}
+.sentrert-bilde{
+  display: flex;
+  max-width: 100%;
+  max-height: 100%;
+  width: 30px;
+  height: 30px;
+  align-items: center;
+}
 
+
+/*style of another pictures of  canteen page*/
+
+.image-container{
+  flex: 1;
+  object-fit: cover;
+  margin: 10px;
+}
+.image-container img{
+  flex: 1;
+  max-width: 100%;
+  width: 70%;
+  height: 70%;
+  margin: 50px;
+  object-fit: cover;
+  /*height: auto;*/
+  justify-content: stretch;
+  
+}
+/*Styling of text of another boxes in the canteen page*/
+.text-container{
+  flex: 1;
+  align-items:center;
+  justify-content: center;
+  margin: 60px;
+  margin-top: auto;
+  
+}
+
+/* Box styling of the canteen*/
+.box{
+flex: 1; /* Grow to fill available space */
+min-width: 300px; /* Minimum width before wrapping */
+height: 500;
+margin: 40px;
+padding: 10px;
+border-radius: 1px;
+box-sizing:border-box; /* Include padding and border in the element's total width and height */
+background-color: hsl(0, 14%, 97%);
+box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+
+}
+
+.box img {
+  flex: 1;
+  max-width: 100%;
+  width: 40%;
+  height: 40%;
+  margin: 40px;
+  object-fit: cover;
+  /*height: auto;*/
+  justify-content: stretch;
+}
 .box1{
   background-color: #28282B;
   text-align: center;
@@ -613,97 +701,13 @@ a , .footer-section li{
   color: #ccc;
   
 }
-
-.text-container{
-  flex: 1;
-  align-items:center;
-  justify-content: center;
-  margin: 60px;
-  margin-top: auto;
-  
-}
-.image-container1{
-  display: flex;
-  width: max-content;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  width: fit-content;
-  margin-right: 100px;
-  margin-left: 100px;
-  margin-top: auto;
-  
-}
-.sentrert-bilde{
-  display: flex;
-  max-width: 100%;
-  max-height: 100%;
-  width: 30px;
-  height: 30px;
-  align-items: center;
-}
-
-.image-container{
-  flex: 1;
-  object-fit: cover;
-  margin: 10px;
-}
-.image-container img{
-  flex: 1;
-  max-width: 100%;
-  width: 70%;
-  height: 70%;
-  margin: 50px;
-  object-fit: cover;
-  /*height: auto;*/
-  justify-content: stretch;
-  
-}
-.store-overskrift{
-  text-transform:capitalize;
-  font-size: 45px;
-  align-items: center;
-  margin-right: 100px;
-}
-.lett-tekst{
-  align-items: center;
-  color:#b0c8c8;
-  
-  
-}
-
-
-/*Cantine Styling starts here*/
-
-/* Box styling */
-.box{
-flex: 1; /* Grow to fill available space */
-min-width: 300px; /* Minimum width before wrapping */
-height: 500;
-margin: 40px;
-padding: 10px;
-border-radius: 1px;
-box-sizing:border-box; /* Include padding and border in the element's total width and height */
-background-color: hsl(0, 14%, 97%);
-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-
-}
-
-.box img {
-  flex: 1;
-  max-width: 100%;
-  width: 40%;
-  height: 40%;
-  margin: 40px;
-  object-fit: cover;
-  /*height: auto;*/
-  justify-content: stretch;
-}
+/*styling of  overskriften in the canteen*/
 .contered-text{
   text-align: center;
   margin: 30px;
   width:100%;
 }
+/*store og små skjermer **canteen*/
 .container.row.heading .store-overskrift h1{
   padding-top: 30px;
   font-size: 42px;
@@ -787,6 +791,7 @@ box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
   color:#000;
   line-height: 1.5;
 }
+/***********************CANTEEN****************************/
 
 
 
@@ -1158,6 +1163,7 @@ html{
     font-size: 18px;
   }
   .lett-tekst{
+    text-align: auto;
     font-size: 14px;
   }
 
