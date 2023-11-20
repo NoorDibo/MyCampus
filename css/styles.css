@@ -799,6 +799,33 @@ box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 /* Topical*/
 
 
+/*.navbar-topical ul{
+  list-style: none;
+  background-color: hsl(0, 0%, 25%);
+  padding: 0px;
+  margin: 0px;
+  overflow: hidden;
+}
+
+.navbar-topical a{
+  color: white;
+  text-decoration: none;nav {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+}
+
+}
+
+.navbar-topical li{
+float: left;
+}
+*/
+
+
 .navbar-topical {
   background-color: #244da5;
   display: flex;
@@ -890,48 +917,53 @@ box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 
 
  /*style library........................................*/
- .centered-text-lib{
+ /* Style for .centered-text-lib */
+.centered-text-lib {
   text-align: center;
- }
-
- /* Styl for Libary*/
-
- 
-
-/*style for welcome*/
-.head-lib{
-  margin:0px;
-  padding:0px;
-  box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
- }
-
-
-
-.container .row-lib{
-  width:80%;
-  margin:0 auto;
-
 }
 
-.container .row-lib .head-lib{
-  width:80%;
-  text-align: center;
-  margin:0px auto;
-
-}
-.container .row-lib .head-lib h1{
-padding-top: 30px;
-font-size: 42px;
-color: #000;
+/* Style for .welcome-lib-sec */
+welcome-lib-sec {
+  background-color: #6c3434; /* Bakgrunnsfarge for seksjonen */
+  padding: 50px 0; /* Eksempel på innvendig padding */
+  text-align: center; /* Justerer teksten til senteret */
 }
 
-.container .row-lib .head-lib p{
+.welcome-lib-sec .row-lib {
+  max-width: 800px; /* Maks bredde for innholdet */
+  margin: 0 auto; /* Senterer innholdet horisontalt */
+}
+
+.welcome-lib-sec .head-lib {
+  padding: 20px; /* Inndreven padding for hodeelementet */
+  background-color: #fff; /* Bakgrunnsfarge for hodeelementet */
+  border-radius: 8px; /* Runde hjørner */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Skyggeeffekt */
+}
+
+.welcome-lib-sec .head-lib h1 {
+  color: #000; /* Tekstfarge for overskriften */
+  font-size: 42px;
+  padding-top: 30px;
+}
+
+.welcome-lib-sec .head-lib p {
   margin-top: 15px;
-  color:#6e6e6e;
+  color: #6e6e6e; /* Tekstfarge for avsnittet */
   font-size: 17px;
   line-height: 1.5;
 }
+
+.welcome-lib-sec .center-lib-img {
+  width: 100%; /* Gjør bildet responsivt */
+  height: auto;
+  margin-top: 30px; /* Legger til toppmargen under teksten */
+  border: 2px solid #ccc; /* Eksempel på en ramme rundt bildet */
+  border-radius: 8px; /* Runde hjørner */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Skyggeeffekt */
+}
+
+
 /*style for blogs */
 
 .blog-container-lib {
@@ -1183,7 +1215,7 @@ html{
   }
 
   .buildings{
-    padding-bottom: 10px;
+    padding-bottom: 30px;
   }
   
   .departmnet-box{
