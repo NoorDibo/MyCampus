@@ -920,20 +920,28 @@ float: left;
 }
 
 /* Style for .welcome-lib-sec */
-welcome-lib-sec {
-  background-color: #6c3434; /* Bakgrunnsfarge for seksjonen */
-  padding: 50px 0; /* Eksempel på innvendig padding */
-  text-align: center; /* Justerer teksten til senteret */
+.welcome-lib-sec {
+  display: flex;
+  width: max-content;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: fit-content;
+  max-width: 100%;
+  margin-right: 100px;
+  margin-left: 100px;
+  margin-top: 80px;/* Justerer teksten til senteret */
+  padding: 20px 0;
 }
 
 .welcome-lib-sec .row-lib {
-  max-width: 800px; /* Maks bredde for innholdet */
+  max-width: 90%; /* Maks bredde for innholdet */
   margin: 0 auto; /* Senterer innholdet horisontalt */
 }
 
 .welcome-lib-sec .head-lib {
   padding: 20px; /* Inndreven padding for hodeelementet */
-  background-color: #fff; /* Bakgrunnsfarge for hodeelementet */
+  background-color: #beaaaa; /* Bakgrunnsfarge for hodeelementet */
   border-radius: 8px; /* Runde hjørner */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Skyggeeffekt */
 }
@@ -967,7 +975,11 @@ welcome-lib-sec {
   display: flex;
   flex-direction:column-reverse;
   justify-content: center;
+  margin-right: 100px;
+  margin-left: 100px;
   margin: 6px;
+  margin-right: 130px; 
+  margin-left: 130px;
 }
 
 .blog-post-lib {
