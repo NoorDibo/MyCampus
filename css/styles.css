@@ -874,11 +874,13 @@ box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
   align-items:center;
   background-color:#244da5;
 }
-input[type="text"]{
+.submit{
+  input[type="text"]{
   width: 200px;
   padding: 8px 10px;
   outline: none;
   border: 2px solid black; 
+}
 }
 
 
