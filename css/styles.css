@@ -622,6 +622,16 @@ background-color: hsl(0, 14%, 97%);
 box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 
 }
+#food2{
+  background-color: #6e6e6e;
+}
+#food3{
+  background-color: #b0c8c8;
+}
+
+#food4{
+  background-color: #9f9f9f
+}
 
 .box img {
   flex: 1;
@@ -633,53 +643,8 @@ box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
   /*height: auto;*/
   justify-content: stretch;
 }
-/*this is id of each box in canteeen page*/
-.box1{
-  background-color: #28282B;
-  text-align: center;
-  color: #ccc;
-  margin: 40px;
-  align-items: center;
-  
-}
 
-.box2{
-  background-color: #28282B;
-  text-align: center;
-  color: #ccc;
-}
-.box3{
-  background-color: #28282B;
-  text-align: center;
-  color: #ccc;
-}
 
-.box4{
-  background-color: #28282B;
-  text-align: center;
-  color: #ccc;
-  
-
-}
-.box5{
-  background-color: #28282B;
-  text-align: center;
-  color: #ccc;
-  
-}
-.box6{
-  background-color: #28282B;
-  text-align: center;
-  color: #ccc;
-  
-}
-.box7{
-  background-color: #28282B;
-  text-align: center;
-  color:#ccc;
-
-  
-}
 
 /*styling of  overskrifter*/
 
@@ -1295,7 +1260,6 @@ html{
 
 
 /* Media query for screens smaller than 768px ends here */
-
 
 
 
