@@ -905,8 +905,6 @@ float: left;
 
 /*Card. linrary style*/
 
-
-
 /* Style for  cards */
 .container-card-lib {
   background-color:  #b0c8c8;
@@ -924,8 +922,6 @@ float: left;
   border: 1px solid #ccc;
   padding: 20px;
   text-align: center;
-  max-width: 320px;
-  max-height: 500px;
   background-color: #f7f7f7;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
   border-radius: 5px;
