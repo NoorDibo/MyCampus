@@ -850,9 +850,9 @@ float: left;
   justify-content: center;
   text-align: center;
   width: fit-content;
-  max-width: 100%;
-  margin-right: 100px;
-  margin-left: 100px;
+  max-width: 120%;
+  margin-right: 30px;
+  margin-left: 30px;
   margin-top: 20px;/* Justerer teksten til senteret */
   padding: 20px 0;
 }
@@ -898,7 +898,7 @@ float: left;
 
 .blog-post-lib {
   background-color: #fff;
-  margin: 30px 160px;
+  margin: 30px 70px;
   padding: 30px;
   border: 1px solid #ddd;
   border-radius: 5px;
@@ -920,7 +920,7 @@ float: left;
   display: flex;
   border-radius: 8px;
   display: flex;
-  margin: 30px 160px;
+  margin: 30px 70px;
   flex-wrap: wrap; /* Sørger for at kortene flyter til neste rad når det er nødvendig */
   justify-content: space-around; /* Justerer mellomrom mellom kortene */
 }
@@ -1052,7 +1052,7 @@ html{
 
   }
 
-  
+
   .navbar {
     padding: 10px 15px;
   }
@@ -1134,26 +1134,19 @@ html{
   }
 
 .container-card-lib{
+  display: flex;
   flex-direction: column;
   margin: auto;
 }  
 
 .card-lib {
-  flex: 1; /* Deler tilgjengelig plass likt mellom kortene */
-  max-width: 500px; 
-  max-height: 500px;
-  margin-inline: 30;
- 
   margin: auto;
-  
-  
-  
 }
+
 .card-lib img {
-  max-width: 700px; /* Maks bredde for hvert kort */
-  max-height: 300px;
   padding: auto;
-}
+    height: 500px;
+    margin: auto;
 
 
 
