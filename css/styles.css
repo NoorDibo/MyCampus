@@ -1192,11 +1192,11 @@ html{
     
   }
   .store-overskrift{
-    font-size: 18px;
+    font-size: 30px;
   }
   .lett-tekst{
     text-align: auto;
-    font-size: 14px;
+    font-size: 20px;
   }
 
 .container1-lib{
@@ -1213,7 +1213,6 @@ html{
   
   
 }
-
 .card-lib img {
   max-width: 700px; /* Maks bredde for hvert kort */
   max-height: 300px;
