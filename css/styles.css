@@ -895,20 +895,22 @@ float: left;
 
 /*style for blogs */
 
-.blog-container-lib {
+blog-container-lib {
   display: flex;
-  flex-direction:column-reverse;
+  flex-direction: column-reverse;
   justify-content: center;
+  align-items: center; /* Legg til for å sentrere innholdet horisontalt */
   background-color: #b49999;
-  margin-right: 160px; 
-  margin-left: 160px;
+  margin: 160px 160px; /* Kombiner margin-right og margin-left til en enkelt egenskap */
+  margin-bottom: 100px;
   border-radius: 8px;
+  padding: 80px;
   
 }
 
 .blog-post-lib {
   background-color: #fff;
-  margin: 30px;
+  margin: 30px 160px;
   padding: 30px;
   border: 1px solid #ddd;
   border-radius: 5px;
@@ -929,7 +931,7 @@ float: left;
   justify-content: space-around; /* Justerer avstanden mellom kortene */
   flex-wrap: wrap; /* Lar kortene pakke til neste linje hvis det ikke er nok plass */
   padding: 20px; /*  for avstand fra kanten av containeren */
-  background-color: #be4848;/* Bakgrunnsfarge for hele seksjonen */
+  background-color: #c59d9d;/* Bakgrunnsfarge for hele seksjonen */
   margin: 6px;
   margin-right: 200px; 
   margin-left: 200px;
