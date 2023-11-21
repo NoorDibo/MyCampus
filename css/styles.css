@@ -582,7 +582,7 @@ a , .footer-section li{
   box-shadow: 0 5px 5px rgba(0,0,0,0.2);
 }
 
-.text-container {
+.text-container1 {
   flex: 1;
   width: 100%; /* Adjust as needed */
   align-items: center;
@@ -1246,7 +1246,9 @@ html{
   #food1{
     padding: 15px 2px;
   }
-  
+  .text-container1{
+    padding: 18px 10px;
+  }
 
 }
 
