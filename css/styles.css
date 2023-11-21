@@ -1002,6 +1002,13 @@ p {
 html{
   font-size: 70%;
 }
+/*media til container-card-lib */
+.container-card-lib{
+  display: flex;
+  flex-direction:row;
+  margin: auto;
+}  
+
 }
 @media (max-width: 1080px) {
   /* media screen for the menu*/
