@@ -813,25 +813,7 @@ float: left;
 
 }
 
-.searchbox-topical{
-  width: auto;
-  height: 5vh;
-  display: flex;  
-  justify-content: center;
-  align-items:center;
-  background-color:#244da5;
-}
-.submit{
-  input[type="text"]{
-  width: 200px;
-  padding: 8px 10px;
-  outline: none;
-  border: 2px solid black; 
-}
-  input[type="submit"]{
-    width: 120px;
-  }
-}
+
 
 
 
