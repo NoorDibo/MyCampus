@@ -961,14 +961,14 @@ p {
 
 .read-more-button {
   background-color: #5690a989;
-  color: #fff;
+  color: #000000;
   border: none;
   border-radius: 5px;
   margin-top: 10px;
   margin-bottom: 10px;
   padding: 15px 15px;
   cursor: pointer;
-  font-size: 18px;
+  font-size: 20px;
 }
 
 
