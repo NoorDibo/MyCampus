@@ -584,7 +584,7 @@ a , .footer-section li{
   width: 100%; /* Adjust as needed */
   align-items: center;
   justify-content: space-between;
-  padding-left: 15px;
+  padding-left: 30px;
   flex-direction: column;
   font-size: 100px;
 }
@@ -597,14 +597,7 @@ a , .footer-section li{
 }
 
 
-.sentrert-bilde{
-  display: flex;
-  max-width: 100%;
-  max-height: 100%;
-  width: 30px;
-  height: 30px;
-  align-items: center;
-}
+
 
 
 /*style of another pictures of  canteen page*/
@@ -614,7 +607,7 @@ a , .footer-section li{
 flex: 1; /* Grow to fill available space */
 min-width: 300px; /* Minimum width before wrapping */
 height: 500;
-margin: 40px;
+margin: 50px;
 padding: 10px;
 border-radius: 1px;
 box-sizing:border-box; /* Include padding and border in the element's total width and height */
@@ -635,7 +628,7 @@ box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 
 .box img {
   flex: 1;
-  max-width: 100%;
+  align-items: center;
   width: 40%;
   height: 40%;
   margin: 40px;
@@ -691,10 +684,7 @@ box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
   flex: 1;
   margin: 40px 20px;
 }
-.container.box img{
-  width: 100%;
-  height: auto;
-}
+
 
 .container.box.image-container{ /*media of image-container*/
   font-size: 15px;
@@ -1248,6 +1238,10 @@ html{
     margin-bottom: auto;
     text-align: start;
   
+  }
+
+  .box{
+    margin: 20px 20px;
   }
 
   
