@@ -932,17 +932,17 @@ float: left;
   display: flex;
   justify-content: space-around; /* Justerer avstanden mellom kortene */
   flex-wrap: wrap; /* Lar kortene pakke til neste linje hvis det ikke er nok plass */
-  padding: 20px; /* Eksempel på innvendig padding for avstand fra kanten av containeren */
-  background-color: #beaaaa;/* Bakgrunnsfarge for hele seksjonen */
+  padding: 20px; /*  for avstand fra kanten av containeren */
+  background-color: #be4848;/* Bakgrunnsfarge for hele seksjonen */
   margin: 6px;
-  margin-right: 160px; 
-  margin-left: 160px;
+  margin-right: 200px; 
+  margin-left: 200px;
   border-radius: 8px;
 }
 
 /* Style for individual cards */
 .container1-lib {
-  background-color: #d0c2c2;
+  background-color: #2d1e1e;
   display: flex;
   border-radius: 8px;
   display: flex;
@@ -997,7 +997,7 @@ p {
 
 
 .read-more-button:hover {
-  background-color: #b92929; /* Endret farge ved hovering over knappen */
+  background-color: #c27474; /* Endret farge ved hovering over knappen */
 }
 
 .open-time-lib {
@@ -1166,6 +1166,7 @@ html{
   max-height: 500px;
   margin-left: 20px;
   margin-right: 20px;
+  
   
   
 }
