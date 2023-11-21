@@ -656,7 +656,6 @@ a , .footer-section li{
   margin-top: 10px;
   justify-content: center;
   align-items: center;
-
 }
 
 .title{
@@ -664,6 +663,7 @@ a , .footer-section li{
   margin-top: 2%;
   margin-bottom: 2%;
   color: #140256;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 .tekst-topical{
@@ -672,7 +672,7 @@ a , .footer-section li{
     margin-top: 1%;
     margin-bottom: 1%;
     font-family: 'Times New Roman', Times, serif;
-    font-size: 15px;
+    font-size: 16px;
 }
 
 #tekst1-bildet-div{
@@ -782,6 +782,7 @@ a , .footer-section li{
   min-height: 100px;
   margin-top: 10px;
   justify-content: space-between;
+  padding-bottom: 2%;
 }
 
 .box-row1{
