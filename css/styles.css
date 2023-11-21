@@ -961,7 +961,7 @@ float: left;
   max-width: 100%;
   margin-right: 100px;
   margin-left: 100px;
-  margin-top: 80px;/* Justerer teksten til senteret */
+  margin-top: 20px;/* Justerer teksten til senteret */
   padding: 20px 0;
 }
 
@@ -991,12 +991,13 @@ float: left;
 }
 
 .welcome-lib-sec .center-lib-img {
-  width: 100%; /* Gjør bildet responsivt */
-  height: auto;
-  margin-top: 30px; /* Legger til toppmargen under teksten */
+  width: 80%; /* Gjør bildet responsivt */
+  height: 50%;
+  margin-top: 20px; /* Legger til toppmargen under teksten */
   border: 2px solid #ccc; /* Eksempel på en ramme rundt bildet */
   border-radius: 8px; /* Runde hjørner */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Skyggeeffekt */
+  
 }
 
 
@@ -1006,10 +1007,12 @@ float: left;
   display: flex;
   flex-direction:column-reverse;
   justify-content: center;
-  background-color: #917878
+  background-color: #bc8e8e;
   margin: 6px;
-  margin-right: 130px; 
-  margin-left: 130px;
+  margin-right: 160px; 
+  margin-left: 160px;
+  border-radius: 8px;
+  
 }
 
 .blog-post-lib {
@@ -1030,20 +1033,23 @@ float: left;
 /*Card. linrary style*/
 /* Style for the card container */
 .card-container-lib {
+  
   display: flex;
   justify-content: space-around; /* Justerer avstanden mellom kortene */
   flex-wrap: wrap; /* Lar kortene pakke til neste linje hvis det ikke er nok plass */
   padding: 20px; /* Eksempel på innvendig padding for avstand fra kanten av containeren */
-  background-color: #9a6e6e; /* Bakgrunnsfarge for hele seksjonen */
+  background-color: #beaaaa;/* Bakgrunnsfarge for hele seksjonen */
   margin: 6px;
   margin-right: 160px; 
   margin-left: 160px;
+  border-radius: 8px;
 }
 
 /* Style for individual cards */
-.container-lib {
+.container1-lib {
   background-color: #d0c2c2;
   display: flex;
+  border-radius: 8px;
 }
 
 .card-lib {
@@ -1060,7 +1066,7 @@ float: left;
 }
 
 .card-lib:hover {
-  transform: scale(1.06); /* Øker størrelsen på kortet ved hovering */
+  transform: scale(1.04); /* Øker størrelsen på kortet ved hovering */
 }
 
 .card-lib img {
@@ -1080,7 +1086,7 @@ float: left;
 }
 
 .read-more-button:hover {
-  background-color: #2980b9; /* Endret farge ved hovering over knappen */
+  background-color: #b92929; /* Endret farge ved hovering over knappen */
 }
 
 
@@ -1093,9 +1099,11 @@ float: left;
   box-shadow: 9 9 10px rgba(0, 0, 0, 0.1);
   max-width: 500px; /* Adjust the width as needed */
   border-radius: 5px;
-  padding: 5px 10px;
+  padding: 9px 10px;
   margin-top: 20px;
   margin-block: 20px;
+  margin-right: 160px; 
+  margin-left: 160px
 }
 
 
@@ -1103,8 +1111,7 @@ p {
   margin: 90px 30;
 }
 
-
-
+/*end style library kode*/
 
 /* media screen starts here*/
 @media (max-width: 1500px){
@@ -1208,7 +1215,7 @@ html{
     font-size: 14px;
   }
 
-container-lib{
+.container-lib{
   flex-direction: column;
 }  
 .content-background {
