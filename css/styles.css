@@ -385,6 +385,7 @@ ul {
   margin: 0;
   color: #000000;
   text-align: center;
+  font-size: 20px;
 }
 
 .departmnet-box p {
@@ -1008,12 +1009,9 @@ float: left;
   display: flex;
   flex-direction:column-reverse;
   justify-content: center;
-<<<<<<< HEAD
   background-color: #bc8e8e;
-=======
   margin-right: 100px;
   margin-left: 100px;
->>>>>>> 9350c78 (mj)
   margin: 6px;
   margin-right: 160px; 
   margin-left: 160px;
@@ -1036,7 +1034,7 @@ float: left;
 }
 
 /*Card. linrary style*/
-<<<<<<< HEAD
+
 /* Style for the card container */
 .card-container-lib {
   
@@ -1056,13 +1054,10 @@ float: left;
   background-color: #d0c2c2;
   display: flex;
   border-radius: 8px;
-=======
-.container-lib {
   display: flex;
   margin: 30;
   flex-wrap: wrap; /* Sørger for at kortene flyter til neste rad når det er nødvendig */
   justify-content: space-around; /* Justerer mellomrom mellom kortene */
->>>>>>> 9350c78 (mj)
 }
 
 .card-lib {
@@ -1080,11 +1075,8 @@ float: left;
 }
 
 .card-lib:hover {
-<<<<<<< HEAD
   transform: scale(1.04); /* Øker størrelsen på kortet ved hovering */
-=======
   transform: scale(1.05);
->>>>>>> 9350c78 (mj)
 }
 
 .card-lib img {
@@ -1112,14 +1104,11 @@ p {
   cursor: pointer;
 }
 
-<<<<<<< HEAD
+
 .read-more-button:hover {
   background-color: #b92929; /* Endret farge ved hovering over knappen */
 }
 
-
-=======
->>>>>>> 9350c78 (mj)
 .open-time-lib {
   display: flex;
   flex-direction: column;
