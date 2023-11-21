@@ -1092,9 +1092,6 @@ html{
 
 } 
 
-
-
-
 /* Media query for screens smaller than 768px */
 @media (max-width: 768px) {
   .image-container1{
@@ -1114,8 +1111,23 @@ html{
 
   .welcome-lib-sec{
     display: flex;
+<<<<<<< HEAD
   flex-direction: column;
   margin: auto;
+=======
+    flex-direction: column;
+    
+    
+  }
+  .welcome-lib-sec .row-lib {
+    width: 100%;
+   
+    
+  }
+ .welcome-lib-sec .head-lib {
+    margin: auto;
+    width: 100%;
+>>>>>>> 1637a6e (noor)
   }
 
   .row-lib{
@@ -1128,20 +1140,21 @@ html{
   .blog-post-lib{
     display: flex;
     flex-direction: column;
-    margin: 10px;
+    margin: 20px 2px;
   }
 
 .container-card-lib{
   display: flex;
   flex-direction: column;
-  margin: auto;
+  margin: 0px;
 }  
 
 .card-lib {
-    flex: 0 90%;
-    max-width: 90%;
-    margin-bottom: auto;
+    flex: 0 100%;
+    max-width: 100%;
+    
     text-align: start;
+    margin: 25px 2px;
 }
 
 .card-lib img {
@@ -1150,6 +1163,11 @@ html{
   max-width: 100%;
   padding: auto;
     margin: auto;
+}
+ #box7.box {
+  width: 100%;
+  flex: 1;
+  margin: 25px 2px;
 }
 
 
@@ -1220,14 +1238,13 @@ html{
   .box{
     margin: 30px 23px;
   }
+ 
 
   .content-area{
     text-align: start;
     
   }
-  .text-container{
-    margin: 30px;
-  }
+  
 
   #food1{
     padding: 15px 2px;
