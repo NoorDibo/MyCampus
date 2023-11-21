@@ -836,7 +836,7 @@ float: left;
   width: fit-content;
   max-width: 100%;
   max-height: 100%;
-  margin:0px;
+  margin:0 auto;
   padding: 20px 0;
  
 }
@@ -852,6 +852,7 @@ float: left;
   margin:30px;
   border-radius: 8px; /* Runde hjørner */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Skyggeeffekt */
+  margin:0% auto;
 }
 
 .welcome-lib-sec .head-lib h1 {
@@ -1103,10 +1104,17 @@ html{
 
   .welcome-lib-sec{
     display: flex;
-    flex-direction: column;
-    margin: auto;
+  flex-direction: column;
+  margin: auto;
   }
 
+  .row-lib{
+    display: flex;
+  flex-direction: column;
+  margin: 0px;
+  }
+
+  
   .blog-post-lib{
     display: flex;
     flex-direction: column;
