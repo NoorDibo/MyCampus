@@ -527,6 +527,278 @@ a , .footer-section li{
 /* foorer down section ends here here*/
 /* footer style ends here*/
 
+/*Topical*/
+
+
+.body-topical{
+  display: flex;
+  flex-direction: column;
+  background-color: #F5F5DC;
+}
+
+#wrapper-div{
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  min-height: 100px;
+  background-color: #F5F5DC;
+  margin: auto;
+}
+
+#logo-nav-div{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  min-height: 50px;
+  background-color: #4675db;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em;
+  position: sticky;
+  top: -0px;   
+}
+
+#nav-div1{
+  display: flex;
+  flex-direction: row;
+  flex-basis: 90%;
+  align-items: row;
+  padding-left: 1%;
+  list-style: none;
+}
+
+#nav-div1 li{
+  margin-right: 30px;
+}
+
+#nav-div1 a {
+  text-decoration: none; /*Remove the link’s text-decoration*/
+  font-family:Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  display: inline block; 
+  padding: 5px 0;
+  position: relative;
+  background-image: linear-gradient( /*We give the link a linear background gradient, and a stop between two colors at the halfway mark*/
+    to right,
+    rgb(45, 30, 130),
+    #11004f 50%,
+    #000 50%  
+  );
+  background-size: 200% 100%;  
+  background-position: -100%; /* Makes the background double the link’s width, or 200%. Takes it all the way over to the left so only one of the gradients two colors is showing at one time.*/  
+  -webkit-background-clip: text; /*Clips the background gradient onto the text, giving the illusion that the text adopts the color of the background*/
+  -webkit-text-fill-color: transparent; /*Removes the color from the text to create a transparent effect*/
+  transition: all 0.45s ease-in-out; /*Timer, smooths the transitions*/
+}
+
+#nav-div1 a:before { /*When it hovers*/
+  content: ''; /*Specifies that the pseudo-element has no content.*/
+  background: #11004f;/*Color of the line*/
+  display: block; /*Block level element*/
+  position: absolute;
+  bottom: -3px; /*Size of the line*/
+  left: 0;
+  width: 0;
+  height: 3px; 
+}
+
+#nav-div1 a:hover{ /*Upon hovering, we smoothly slide the ::before element into position, emerging from the left side.*/
+  background-position: 0;
+}
+
+#nav-div1 a:hover::before {
+  width: 100%; /*Upon hovering, we expand the ::before pseudo-element of the link to 100% of the link's width. */
+}
+
+#logo-div{
+  display: flex;
+  flex-direction: row;
+  flex-basis: 10%;
+  align-items: center;
+  padding-left: 2%;
+}
+
+#logo-div img{
+  max-width: 100%;
+}
+
+#title{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100px;
+  background-color: #F5F5DC;
+  margin-top: 10px;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.title{
+  display: block;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  color: #140256;
+}
+
+.tekst-topical{
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+}
+
+#tekst1-bildet-div{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  min-height: 50px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#tekst1-div{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100px;
+  background-color: #F5F5DC;
+  margin-top: 10px;
+  justify-content: center;
+  align-items: center;
+  padding-left: 0px;
+}
+
+#bildet{
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  min-height: 10px;
+  background-color: #F5F5DC;
+  margin-top: 10px;
+  justify-content: center;
+  align-items: center;
+}
+.bildet-hjerne{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#bildet-div{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  min-height: 100px;
+  background-color: #F5F5DC;
+  margin-top: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.bildet-bigdata{
+  width: 90%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+#tekst2-div{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100px;
+  background-color: #F5F5DC;
+  margin-top: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+#tekst3-div{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 50px;
+  background-color: #F5F5DC;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  justify-content: left;
+  align-items: left;
+  color: #140256;
+}
+
+
+#boxes1-div{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  min-height: 100px;
+  margin-top: 10px;
+  justify-content: space-between;
+}
+
+.box-row1{
+  display: flex;
+  flex-direction: column;
+  flex-basis: 30%;
+  max-width: 100%;
+  background-color: #F5F5DC;
+  justify-content: center;
+  align-items: center;
+}
+
+.box-row1 img{
+  align-items: center;
+  width: 90%;
+  height: 100%;
+  object-fit: cover;
+  justify-content: stretch;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+#boxes2-div{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  min-height: 100px;
+  margin-top: 10px;
+  justify-content: space-between;
+}
+
+.box-row2{
+  display: flex;
+  flex-direction: column;
+  flex-basis: 30%;
+  background-color: #F5F5DC;
+  justify-content: center;
+  align-items: center;
+}
+
+.box-row2 img{
+  align-items: center;
+  width: 90%;
+  height: 100%;
+  object-fit: cover;
+  justify-content: stretch;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); /* taken from w3schools:https://www.w3schools.com/css/css3_images.asp*/
+}
+
+#footer-div{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  min-height: 50px;
+  background-color: #F5F5DC;
+  margin-top: 10px;
+  justify-content: center;
+  align-items: center;
+}
 
 
 /*Cantine styling start here*/ 
@@ -712,111 +984,6 @@ box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
 
 /***********************CANTEEN****************************/
-
-
-
-
-/* Topical*/
-
-
-/*.navbar-topical ul{
-  list-style: none;
-  background-color: hsl(0, 0%, 25%);
-  padding: 0px;
-  margin: 0px;
-  overflow: hidden;
-}
-
-.navbar-topical a{
-  color: white;
-  text-decoration: none;nav {
-    background-color: #333;
-    color: #fff;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1em;
-}
-
-}
-
-.navbar-topical li{
-float: left;
-}
-*/
-
-
-.navbar-topical {
-  background-color: #244da5;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1em;
-  position: sticky;
-  top: -0px;
-}
-
-.leftnavbar-topical{
-    list-style: none;
-    display: flex;
-    margin: 0;
-}
-
-.leftnavbar-topical li {
-    margin-right: 20px;
-}
-
-.leftnavbar-topical a {
-  text-decoration: none; /*Remove the link’s text-decoration*/
-  font-family:Arial, Helvetica, sans-serif;
-  font-size: 16px;
-  font-weight: bold;
-  display: inline-block; 
-  padding: 5px 0;
-  position: relative;
-  background-image: linear-gradient( /*We give the link a linear background gradient, and a stop between two colors at the halfway mark*/
-    to right,
-    rgb(45, 30, 130),
-    #11004f 50%,
-    #000 50%  
-  );
-  background-size: 200% 100%;  
-  background-position: -100%; /* Makes the background double the link’s width, or 200%. Takes it all the way over to the left so only one of the gradients two colors is showing at one time.*/  
-  -webkit-background-clip: text; /*Clips the background gradient onto the text, giving the illusion that the text adopts the color of the background*/
-  -webkit-text-fill-color: transparent; /*Removes the color from the text to create a transparent effect*/
-  transition: all 0.45s ease-in-out; /*Timer, smooths the transitions*/
-}
-
-.leftnavbar-topical a:before { /*When it hovers*/
-  content: ''; /*Specifies that the pseudo-element has no content.*/
-  background: #11004f;/*Color of the line*/
-  display: block; /*Block level element*/
-  position: absolute;
-  bottom: -3px; /*Size of the line*/
-  left: 0;
-  width: 0;
-  height: 3px; 
-}
-
-.leftnavbar-topical a:hover{ /*Upon hovering, we smoothly slide the ::before element into position, emerging from the left side.*/
-  background-position: 0;
-  }
-
-.leftnavbar-topical a:hover::before {
-  width: 100%; /*Upon hovering, we expand the ::before pseudo-element of the link to 100% of the link's width. */
-}
-
-
-.logo-topical img {
-    max-height: 60px; /* Adjust the height as needed */
-    margin-left: 50px;
-
-}
-
-
-
-
-
 
  /*style library........................................*/
  /* Style for .centered-text-lib */
