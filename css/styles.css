@@ -576,7 +576,7 @@ a , .footer-section li{
 .lett-tekst{
   align-items: center;
   text-align: center;
-  color:#b0c8c8;
+  color:#363b4089;
   
   
 }
@@ -655,6 +655,7 @@ box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
   /*height: auto;*/
   justify-content: stretch;
 }
+/*this is id of each box in canteeen page*/
 .box1{
   background-color: #28282B;
   text-align: center;
@@ -662,7 +663,6 @@ box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
   margin: 40px;
   align-items: center;
   
-
 }
 
 .box2{
@@ -698,24 +698,50 @@ box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 .box7{
   background-color: #28282B;
   text-align: center;
-  color: #ccc;
+  color:#ccc;
+
   
 }
-/*styling of  overskriften in the canteen*/
+
+/*styling of  overskrifter*/
 .contered-text{
   text-align: center;
   margin: 30px;
   width:100%;
 }
+/*style of emailadress og telefonnumber */
+.email-link::before{
+  content: "\2709";
+  margin-right: 5px;
+
+}
+.email-link{
+  color: #007bff;
+  text-decoration: none;
+}
+.email-link:hover{
+  text-decoration: underline;
+}
+.phone-link::before{
+  content: "\260E";
+  margin-right: 5px;
+}
+.phone-link{
+  color:#00c6fb;
+  text-decoration: none;
+}
+.phone-link:hover{
+  text-decoration: underline;
+}
 /*store og små skjermer **canteen*/
-.container.row.heading .store-overskrift h1{
+.container.row.heading .store-overskrift h1{ /* media of welcome txt*/
   padding-top: 30px;
   font-size: 42px;
   color: #000;
 }
-.container.row.heading .lett-tekst p{
+.container.row.heading .lett-tekst p{ /*media of lett-text*/
   margin-top: 15px;
-  color: #000;
+  color: #363b4089;
   font-size: 17px;
   line-height: 1.5;
 }
@@ -725,7 +751,7 @@ box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
   font-size: 42px;
   color: #000;
 }
-.container.row.heading p{
+.container.row.heading p{  /*media of txt writing in the canteen page*/
   margin-top: 15px;
   color: #000;
   font-size: 17px;
@@ -745,18 +771,18 @@ box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
   width: 100%;
   height: auto;
 }
-.container.box .text-container{
+.container.box .text-container{ /*media of txt-container*/
   font-size: 15px;
   font-weight: bold;
   color: #ccc;
   
 }
-.container.box.image-container{
+.container.box.image-container{ /*media of image-container*/
   font-size: 15px;
   font-weight:bold ;
   color: #ccc;
 }
-.container.box.image-container1{
+.container.box.image-container1{ /*media of welcome picture*/
   font-size: 15px;
   font-weight:bold ;
   color: #ccc;
@@ -780,15 +806,15 @@ box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
   color:#000;
   line-height: 1.5;
 }
-.container.box .store-overskrift h1{
+.container.box .store-overskrift h1{  /*media of welcome txt*/
   margin-top: 5px;
   font-size: 17px;
 
 }
-.container.box .lett-tekst p{
+.container.box .lett-tekst p{ /*media of lett-txt*/
   font-size: 16px;
   margin-top: 10px;
-  color:#000;
+  color:#F1C40F;
   line-height: 1.5;
 }
 /***********************CANTEEN****************************/
