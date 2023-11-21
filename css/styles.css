@@ -1111,13 +1111,9 @@ html{
 
   .welcome-lib-sec{
     display: flex;
-<<<<<<< HEAD
   flex-direction: column;
   margin: auto;
-=======
-    flex-direction: column;
-    
-    
+    flex-direction: column; 
   }
   .welcome-lib-sec .row-lib {
     width: 100%;
@@ -1127,7 +1123,7 @@ html{
  .welcome-lib-sec .head-lib {
     margin: auto;
     width: 100%;
->>>>>>> 1637a6e (noor)
+
   }
 
   .row-lib{
