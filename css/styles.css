@@ -895,18 +895,6 @@ float: left;
 
 /*style for blogs */
 
-blog-container-lib {
-  display: flex;
-  flex-direction: column-reverse;
-  justify-content: center;
-  align-items: center; /* Legg til for å sentrere innholdet horisontalt */
-  background-color: #b49999;
-  margin: 160px 160px; /* Kombiner margin-right og margin-left til en enkelt egenskap */
-  margin-bottom: 100px;
-  border-radius: 8px;
-  padding: 80px;
-  
-}
 
 .blog-post-lib {
   background-color: #fff;
@@ -925,18 +913,6 @@ blog-container-lib {
 /*Card. linrary style*/
 
 /* Style for the card container */
-.card-container-lib {
-  
-  display: flex;
-  justify-content: space-around; /* Justerer avstanden mellom kortene */
-  flex-wrap: wrap; /* Lar kortene pakke til neste linje hvis det ikke er nok plass */
-  padding: 20px; /*  for avstand fra kanten av containeren */
-  background-color: #c59d9d;/* Bakgrunnsfarge for hele seksjonen */
-  margin: 6px;
-  margin-right: 200px; 
-  margin-left: 200px;
-  border-radius: 8px;
-}
 
 /* Style for individual cards */
 .container1-lib {
