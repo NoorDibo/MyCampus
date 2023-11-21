@@ -1245,7 +1245,11 @@ html{
     margin: 30px 23px;
   }
 
-  
+  .content-area{
+    padding-bottom: 40px;
+    text-align: start;
+    padding-left: 0px;
+  }
 
   #food1{
     padding: 15px 2px;
