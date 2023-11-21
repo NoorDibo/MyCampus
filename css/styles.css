@@ -560,7 +560,7 @@ a , .footer-section li{
   top: -0px;   
 }
 
-#nav-div1{
+.nav-div1{
   display: flex;
   flex-direction: row;
   flex-basis: 90%;
@@ -569,11 +569,11 @@ a , .footer-section li{
   list-style: none;
 }
 
-#nav-div1 li{
+.nav-div1 li{
   margin-right: 30px;
 }
 
-#nav-div1 a {
+.nav-div1 a {
   text-decoration: none; /*Remove the link’s text-decoration*/
   font-family:Arial, Helvetica, sans-serif;
   font-size: 16px;
@@ -594,7 +594,7 @@ a , .footer-section li{
   transition: all 0.45s ease-in-out; /*Timer, smooths the transitions*/
 }
 
-#nav-div1 a:before { /*When it hovers*/
+.nav-div1 a:before { /*When it hovers*/
   content: ''; /*Specifies that the pseudo-element has no content.*/
   background: #11004f;/*Color of the line*/
   display: block; /*Block level element*/
@@ -605,13 +605,35 @@ a , .footer-section li{
   height: 3px; 
 }
 
-#nav-div1 a:hover{ /*Upon hovering, we smoothly slide the ::before element into position, emerging from the left side.*/
+.nav-div1 a:hover{ /*Upon hovering, we smoothly slide the ::before element into position, emerging from the left side.*/
   background-position: 0;
 }
 
-#nav-div1 a:hover::before {
+.nav-div1 a:hover::before {
   width: 100%; /*Upon hovering, we expand the ::before pseudo-element of the link to 100% of the link's width. */
 }
+
+#nav-div input:checked ~ .menu-icon {
+  background: transparent;
+}
+
+#nav-div input:checked ~ .menu-icon:before {
+
+  top: 0;
+  transform: rotate(-45deg);
+  width: 35px;
+}
+
+#nav-div input:checked ~ .menu-icon:after {
+  top: 0;
+  transform: rotate(45deg);
+  width: 35px;
+}
+
+#nav-div input:checked ~ .menu {
+  right: 0;
+}
+
 
 #logo-div{
   display: flex;
@@ -658,6 +680,7 @@ a , .footer-section li{
   flex-direction: row;
   width: 100%;
   min-height: 50px;
+  padding-left: 2.5%;
   justify-content: space-between;
   align-items: center;
 }
@@ -684,6 +707,19 @@ a , .footer-section li{
   justify-content: center;
   align-items: center;
 }
+
+#tekst2-div{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100px;
+  background-color: #F5F5DC;
+  margin-top: 10px;
+  justify-content: center;
+  align-items: center;
+  padding-left: 0px;
+}
+
 .bildet-hjerne{
   display: flex;
   flex-direction: row;
@@ -708,7 +744,7 @@ a , .footer-section li{
 }
 
 
-#tekst2-div{
+#tekst3-div{
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -719,7 +755,7 @@ a , .footer-section li{
   align-items: center;
 }
 
-#tekst3-div{
+#tekst4-div{
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -1218,12 +1254,20 @@ html{
 
   }
 
+  #nav-div
+  {
+    size: 20px;
+  }
 
   .navbar {
     padding: 10px 15px;
   }
 
-  .menu {
+  #logo-nav-div{
+    padding: 10px 15px;
+  }
+
+.menu {
     flex-direction: column;
     align-items: center;
     justify-content: start;
@@ -1246,12 +1290,43 @@ html{
   box-shadow: 0 1px 0 rgba(0, 0, 0, 0.8)
   inset;
 }
-.menu li a {
+.menu a {
   color: white;
   text-decoration: none;
   font-size: 25px;
   
 }
+
+.nav-div1{
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  position: fixed;
+  top: 0;
+  right: -100%;
+  background: #28282B;
+  width: 450px;
+  height: 100%;
+  padding-top: 80px;
+  z-index: 10;
+}
+
+.nav-div1 li {
+  width: 100%; 
+}
+.nav-div1 li {
+  padding: 25px;
+  font-size: 25px;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.8)
+  inset;
+}
+.nav-div1 a {
+  color: #140256;
+  text-decoration: none;
+  font-size: 25px;
+  
+}
+
 .search-box{
   width: 300px;
 }
@@ -1281,6 +1356,18 @@ html{
 
 /* Media query for screens smaller than 768px */
 @media (max-width: 768px) {
+
+  #tekst1-bildet-div{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 50px;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+
+
   .image-container1{
     padding: auto;
     height: 500px;
