@@ -419,6 +419,7 @@ ul {
   color: white;
   margin: auto;
   align-items: center;
+  width: 100%;
 }
 
 .footer-container{
@@ -731,6 +732,12 @@ a , .footer-section li{
   color: #140256;
 }
 
+.tittel2{
+  display: block;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  color: #140256;
+}
 
 #boxes1-div{
   display: flex;
@@ -757,10 +764,18 @@ a , .footer-section li{
   height: 100%;
   object-fit: cover;
   justify-content: stretch;
+  vertical-align: middle;
   border-radius: 8px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); /* taken from w3schools:https://www.w3schools.com/css/css3_images.asp*/
 }
 
+.box-row1 img:hover {
+  box-shadow: 0 0 5px 1px rgba(0, 0, 186, 0.5);
+}
+
+.box-row1 p{
+  padding-top: 5%;
+}
 
 #boxes2-div{
   display: flex;
@@ -778,6 +793,7 @@ a , .footer-section li{
   background-color: #F5F5DC;
   justify-content: center;
   align-items: center;
+  padding-bottom: 5%;
 }
 
 .box-row2 img{
@@ -786,20 +802,19 @@ a , .footer-section li{
   height: 100%;
   object-fit: cover;
   justify-content: stretch;
+  vertical-align: middle;
   border-radius: 8px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); /* taken from w3schools:https://www.w3schools.com/css/css3_images.asp*/
 }
 
-#footer-div{
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  min-height: 50px;
-  background-color: #F5F5DC;
-  margin-top: 10px;
-  justify-content: center;
-  align-items: center;
+.box-row2 img:hover {
+  box-shadow: 0 0 5px 1px rgba(0, 0, 186, 0.5);
 }
+
+.box-row2 p{
+  padding-top: 5%;
+}
+
 
 
 /*Cantine styling start here*/ 
@@ -876,9 +891,6 @@ font-size: 22px;
   justify-content: space-between;
   flex-wrap: wrap;
 }
-
-
-
 
 
 /*style of another pictures of  canteen page*/
