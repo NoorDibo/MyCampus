@@ -356,6 +356,7 @@ ul {
   flex-wrap: wrap;
   justify-content: center;
   gap: 8rem; /* Space between the boxes */
+  padding: 30px 0;
 }
 
 .departmnet-box {
@@ -399,13 +400,13 @@ ul {
 .button-link {
     text-align: center;
     padding: 10px 10px;
-    background-color: #007bff;
+    background-color: #1a7637;
     color: white;
     text-decoration: none;
 }
 
 .button-link:hover {
-  background-color: #0056b3;
+  background-color: #0cf0dd;
 }
 
 
@@ -825,7 +826,7 @@ a , .footer-section li{
 .lett-tekst { /*media of lett-text*/
   padding: 5px;
   color: #363b4089;
-  font-size: 20px;
+  font-size: 25px;
   flex: 1;
   width: 100%;
 }
@@ -842,6 +843,7 @@ a , .footer-section li{
   margin: 10px;
   width: 100%; /* Adjust as needed */
   align-items: center;
+  
 }
 
 .image-container1 img {
@@ -849,17 +851,23 @@ a , .footer-section li{
   width: 100%;
   height: auto;
   object-fit: cover;
+  box-shadow: 0 5px 5px rgba(0,0,0,0.2);
 }
 
-.text-container {
+.text-container1 {
   flex: 1;
   width: 100%; /* Adjust as needed */
   align-items: center;
   justify-content: space-between;
   padding-left: 30px;
   flex-direction: column;
-  font-size: 100px;
-  line-height: 2.4rem;
+  
+}
+.text-container1 h2{
+font-size: 22px;
+}
+.text-container1 p {
+  font-size: 16px;
 }
 
 .food .container{
@@ -999,11 +1007,12 @@ box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
   justify-content: center;
   text-align: center;
   width: fit-content;
-  max-width: 120%;
-  margin-right: 30px;
-  margin-left: 30px;
-  margin-top: 20px;/* Justerer teksten til senteret */
+  max-width: 100%;
+  max-height: 100%;
+  margin:0 auto;
   padding: 20px 0;
+  background-color: #b8dbdc;
+ 
 }
 
 .welcome-lib-sec .row-lib {
@@ -1013,9 +1022,11 @@ box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 
 .welcome-lib-sec .head-lib {
   padding: 20px; /* Inndreven padding for hodeelementet */
-  background-color: #b8dbdc; /* Bakgrunnsfarge for hodeelementet */
+  background-color: #fff; /*; Bakgrunnsfarge for hodeelementet */
+  margin:30px;
   border-radius: 8px; /* Runde hjørner */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Skyggeeffekt */
+  margin:0% auto;
 }
 
 .welcome-lib-sec .head-lib h1 {
@@ -1032,7 +1043,7 @@ box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
 
 .welcome-lib-sec .center-lib-img {
-  width: 80%; /* Gjør bildet responsivt */
+  width: 70%; /* Gjør bildet responsivt */
   height: 50%;
   margin-top: 20px; /* Legger til toppmargen under teksten */
   border: 2px solid #ccc; /* Eksempel på en ramme rundt bildet */
@@ -1063,17 +1074,17 @@ box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 
 
 
-/* Style for individual cards */
+/* Style for  cards */
 .container-card-lib {
   background-color:  #b0c8c8;
   display: flex;
   border-radius: 8px;
-  display: flex;
-  margin: 30px 70px;
+  margin: auto;
   flex-wrap: wrap; /* Sørger for at kortene flyter til neste rad når det er nødvendig */
   justify-content: space-around; /* Justerer mellomrom mellom kortene */
 }
 
+/* Style for individual cards */
 .card-lib {
   flex: 1;
   flex-basis: 300px; 
@@ -1086,7 +1097,7 @@ box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
   border-radius: 5px;
   transition: transform 0.2s;
-  margin: 3px; /* mellomrom mellom kortene */
+  margin: 30px; /* mellomrom mellom kortene */
 }
 
 .card-lib img{
@@ -1117,12 +1128,14 @@ p {
 
 .read-more-button {
   background-color: #5690a989;
-  color: #fff;
+  color: #000000;
   border: none;
   border-radius: 5px;
-  padding: 5px 10px;
   margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 15px 15px;
   cursor: pointer;
+  font-size: 20px;
 }
 
 
@@ -1130,21 +1143,6 @@ p {
   background-color: #0cf0dd; /* Endret farge ved hovering over knappen */
 }
 
-.open-time-lib {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: #f4f4f4;
-  padding: 50px;
-  box-shadow: 9 9 10px rgba(0, 0, 0, 0.1);
-  max-width: 500px; /* Adjust the width as needed */
-  border-radius: 5px;
-  padding: 9px 10px;
-  margin-top: 20px;
-  margin-block: 20px;
-  margin-right: 160px; 
-  margin-left: 160px
-}
 
 
 p {
@@ -1180,6 +1178,13 @@ p {
 html{
   font-size: 70%;
 }
+/*media til container-card-lib */
+.container-card-lib{
+  display: flex;
+  flex-direction:row;
+  margin: auto;
+}  
+
 }
 @media (max-width: 1080px) {
   /* media screen for the menu*/
@@ -1253,18 +1258,14 @@ html{
 }
 
 /* media screen for the menu ends here*/
+
+
 .content-area{
   flex-direction: column;
   padding: 10px;
 }
 
 } 
-
-
-
-
-
-
 
 /* Media query for screens smaller than 768px */
 @media (max-width: 768px) {
@@ -1281,21 +1282,63 @@ html{
     text-align: auto;
     font-size: 20px;
   }
+  /*Media query for screens smaller than 768px*/
+
+  .welcome-lib-sec{
+    display: flex;
+  flex-direction: column;
+  margin: auto;
+    flex-direction: column; 
+  }
+  .welcome-lib-sec .row-lib {
+    width: 100%;
+   
+    
+  }
+ .welcome-lib-sec .head-lib {
+    margin: auto;
+    width: 100%;
+
+  }
+
+  .row-lib{
+    display: flex;
+  flex-direction: column;
+  margin: 0px;
+  }
+
+  
+  .blog-post-lib{
+    display: flex;
+    flex-direction: column;
+    margin: 20px 2px;
+  }
 
 .container-card-lib{
   display: flex;
   flex-direction: column;
-  margin: auto;
+  margin: 0px;
 }  
 
 .card-lib {
-  margin: auto;
+    flex: 0 100%;
+    max-width: 100%;
+    
+    text-align: start;
+    margin: 25px 2px;
 }
 
 .card-lib img {
+  width: 80%; /* Gjør bildet bredt 100% av forelderens bredde */
+  height: auto;
+  max-width: 100%;
   padding: auto;
-    height: 500px;
     margin: auto;
+}
+ #box7.box {
+  width: 100%;
+  flex: 1;
+  margin: 25px 2px;
 }
 
 
@@ -1366,22 +1409,23 @@ html{
   .box{
     margin: 30px 23px;
   }
+ 
 
   .content-area{
-    padding-bottom: 40px;
     text-align: start;
-    padding-left: 0px;
+    
   }
+  
 
   #food1{
     padding: 15px 2px;
   }
-  
+  .text-container1{
+    padding: 18px 10px;
+    line-height: 2.8rem;
+  }
+
 }
 
-
 /* Media query for screens smaller than 768px ends here */
-
-
-
 

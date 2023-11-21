@@ -68,6 +68,5 @@ Our adaptation involved modifying the image sources to align with our content an
 Our modifications ensured that the slider fits the visual and functional requirements of our website, providing users with an intuitive and aesthetically pleasing way to navigate through a series of images.
 
 <!--Kilder som er brukt i kantine>
-<!--https://l.facebook.com/l.php?u=http%3A%2F%2Fitunes.apple.com%2Fapp%2Fid6448311069&h=AT0lJUHFLPiehFd-SfA1JHgmvK8KT0nTyZ6RRP_GwE4mImtR904isHl8sI6mTPyqPviBzxOlViPFpgFWXv6K8ZfQ9Ez-ffrLQwp3b5v9h-rLKkiAei-5CFtK9XWDxqwpPfk69O3WdawxBek-->
 
 <!--https://youtube.com/-->
