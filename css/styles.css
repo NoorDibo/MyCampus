@@ -864,7 +864,7 @@ float: left;
 
 .welcome-lib-sec .head-lib {
   padding: 20px; /* Inndreven padding for hodeelementet */
-  background-color: #beaaaa; /* Bakgrunnsfarge for hodeelementet */
+  background-color: #b8dbdc; /* Bakgrunnsfarge for hodeelementet */
   border-radius: 8px; /* Runde hjørner */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Skyggeeffekt */
 }
@@ -912,15 +912,15 @@ float: left;
 
 /*Card. linrary style*/
 
-/* Style for the card container */
+
 
 /* Style for individual cards */
-.container1-lib {
-  background-color: #2d1e1e;
+.container-card-lib {
+  background-color:  #b0c8c8;
   display: flex;
   border-radius: 8px;
   display: flex;
-  margin: 30;
+  margin: 30px 160px;
   flex-wrap: wrap; /* Sørger for at kortene flyter til neste rad når det er nødvendig */
   justify-content: space-around; /* Justerer mellomrom mellom kortene */
 }
@@ -931,7 +931,8 @@ float: left;
   border: 1px solid #ccc;
   padding: 20px;
   text-align: center;
-  max-width: 300px;
+  max-width: 320px;
+  max-height: 500px;
   background-color: #f7f7f7;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
   border-radius: 5px;
@@ -939,9 +940,15 @@ float: left;
   margin: 3px; /* mellomrom mellom kortene */
 }
 
+.card-lib img{
+  max-width: 300px;
+  max-height: 300px;
+  margin: 3px;
+}
+
 .card-lib:hover {
-  transform: scale(1.04); /* Øker størrelsen på kortet ved hovering */
-  transform: scale(1.05);
+  transform: scale(1.02); /* Øker størrelsen på kortet ved hovering */
+  
 }
 
 .card-lib img {
@@ -960,7 +967,7 @@ p {
 }
 
 .read-more-button {
-  background-color: #363b4089;
+  background-color: #5690a989;
   color: #fff;
   border: none;
   border-radius: 5px;
@@ -971,7 +978,7 @@ p {
 
 
 .read-more-button:hover {
-  background-color: #c27474; /* Endret farge ved hovering over knappen */
+  background-color: #0cf0dd; /* Endret farge ved hovering over knappen */
 }
 
 .open-time-lib {
@@ -1129,7 +1136,7 @@ html{
     font-size: 20px;
   }
 
-.container1-lib{
+.container-card-lib{
   flex-direction: column;
   margin: auto;
 }  
@@ -1138,8 +1145,9 @@ html{
   flex: 1; /* Deler tilgjengelig plass likt mellom kortene */
   max-width: 500px; 
   max-height: 500px;
-  margin-left: 20px;
-  margin-right: 20px;
+  margin-inline: 30;
+ 
+  margin: auto;
   
   
   
