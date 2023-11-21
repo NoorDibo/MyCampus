@@ -900,17 +900,17 @@ float: left;
 
 
 
-/* Style for individual cards */
+/* Style for  cards */
 .container-card-lib {
   background-color:  #b0c8c8;
   display: flex;
   border-radius: 8px;
-  display: flex;
-  margin: 30px 70px;
+  margin: auto;
   flex-wrap: wrap; /* Sørger for at kortene flyter til neste rad når det er nødvendig */
   justify-content: space-around; /* Justerer mellomrom mellom kortene */
 }
 
+/* Style for individual cards */
 .card-lib {
   flex: 1;
   flex-basis: 300px; 
@@ -1082,6 +1082,8 @@ html{
 }
 
 /* media screen for the menu ends here*/
+
+
 .content-area{
   flex-direction: column;
   padding: 10px;
@@ -1107,7 +1109,7 @@ html{
     text-align: auto;
     font-size: 20px;
   }
-  /*legg til media til library side*/
+  /*Media query for screens smaller than 768px*/
 
   .welcome-lib-sec{
     display: flex;
