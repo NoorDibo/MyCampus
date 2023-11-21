@@ -900,12 +900,8 @@ float: left;
   flex-direction:column-reverse;
   justify-content: center;
   background-color: #b49999;
-  margin-right: 100px;
-  margin-left: 100px;
-  margin: 6px;
   margin-right: 160px; 
   margin-left: 160px;
-  margin-bottom: 20px;
   border-radius: 8px;
   
 }
