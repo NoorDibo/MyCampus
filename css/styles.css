@@ -570,6 +570,7 @@ a , .footer-section li{
   margin: 10px;
   width: 100%; /* Adjust as needed */
   align-items: center;
+  
 }
 
 .image-container1 img {
@@ -577,6 +578,7 @@ a , .footer-section li{
   width: 100%;
   height: auto;
   object-fit: cover;
+  box-shadow: 0 5px 5px rgba(0,0,0,0.2);
 }
 
 .text-container {
@@ -1201,9 +1203,11 @@ html{
   }
 
   .content-area{
-    padding-bottom: 40px;
     text-align: start;
-    padding-left: 0px;
+    
+  }
+  .text-container{
+    margin: 30px;
   }
 
   #food1{
