@@ -351,7 +351,7 @@ ul {
 
 .box-container {
   margin: 0;
-  align-items: start;
+  align-items: center;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -359,20 +359,25 @@ ul {
 }
 
 .departmnet-box {
+  display: flex;
+  flex-direction: column; /* Stack children vertically */
+  justify-content: space-between; /* Pushes content to top and button to bottom */
   flex: 1;
   max-width: 500px; /* Maximum width of the cards */
   background-color: #fff;
   box-shadow: 0 2px 5px rgba(0,0,0,0.2);
   overflow: hidden; /* Makes sure nothing spills out of the border-radius */
   margin-bottom: 15px; /* Space below each card */
+  align-self: stretch;
 }
 
 .departmnet-box img {
   flex: 1;
   width: 100%; /* Makes the image responsive */
   height: auto; /* Maintain aspect ratio */
-  display: block; /* Remove bottom space under image */
+   /* Remove bottom space under image */
   object-fit: cover;
+
 }
 
 .departmnet-box h3 {
@@ -390,14 +395,11 @@ ul {
 }
 
 .button-link {
-  display: block;
-  width: 100%; /* Make the button expand the full width of the card */
-  text-align: center;
-  padding: 10px 0;
-  background-color: #007bff;
-  color: white;
-  text-decoration: none;
-   /* Only round the bottom corners to match the card */
+    text-align: center;
+    padding: 10px 10px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
 }
 
 .button-link:hover {
@@ -1254,6 +1256,7 @@ html{
 
   .buildings{
     padding-bottom: 30px;
+    text-align: start;
   }
   
   .departmnet-box{
@@ -1261,6 +1264,7 @@ html{
     flex: 0 100%;
     max-width: 100%;
     margin-bottom: auto;
+    text-align: start;
   
   }
 
