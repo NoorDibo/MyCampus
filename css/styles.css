@@ -1007,10 +1007,11 @@ float: left;
   display: flex;
   flex-direction:column-reverse;
   justify-content: center;
-  background-color: #bc8e8e;
+  background-color: #b49999;
   margin: 6px;
   margin-right: 160px; 
   margin-left: 160px;
+  margin-bottom: 20px;
   border-radius: 8px;
   
 }
@@ -1194,9 +1195,33 @@ html{
 }
 
 
+
 /* media screen for the menu ends here*/
 
+/*media til library*/
+
+.welcome-lib-sec{
+  margin: 0px;
 } 
+
+.card-container-lib{
+  margin: 0px;
+}
+
+.blog-container-lib{
+  margin: 0px;
+  padding: auto;
+}
+
+
+
+.open-time-lib{
+  margin: auto;
+  padding: auto;
+}
+
+
+}
 
 
 /* Media query for screens smaller than 768px */
@@ -1215,9 +1240,30 @@ html{
     font-size: 14px;
   }
 
-.container-lib{
+.container1-lib{
   flex-direction: column;
+  margin: auto;
 }  
+
+.card-lib {
+  flex: 1; /* Deler tilgjengelig plass likt mellom kortene */
+  max-width: 500px; 
+  max-height: 500px;
+  margin-left: 20px;
+  margin-right: 20px;
+  
+  
+}
+
+.card-lib img {
+  max-width: 700px; /* Maks bredde for hvert kort */
+  max-height: 300px;
+  padding: auto;
+}
+
+
+
+
 .content-background {
     flex-direction:column; /* Stack items vertically */
     padding: auto;
