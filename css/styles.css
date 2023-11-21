@@ -838,6 +838,7 @@ float: left;
   max-height: 100%;
   margin:0 auto;
   padding: 20px 0;
+  background-color: #b8dbdc;
  
 }
 
@@ -848,7 +849,7 @@ float: left;
 
 .welcome-lib-sec .head-lib {
   padding: 20px; /* Inndreven padding for hodeelementet */
-  background-color: #b8dbdc; /* Bakgrunnsfarge for hodeelementet */
+  background-color: #fff; /*; Bakgrunnsfarge for hodeelementet */
   margin:30px;
   border-radius: 8px; /* Runde hjørner */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Skyggeeffekt */
