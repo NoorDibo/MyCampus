@@ -613,24 +613,24 @@ a , .footer-section li{
   width: 100%; /*Upon hovering, we expand the ::before pseudo-element of the link to 100% of the link's width. */
 }
 
-#nav-div input:checked ~ .menu-icon {
+.nav-div input:checked ~ .menu-icon {
   background: transparent;
 }
 
-#nav-div input:checked ~ .menu-icon:before {
+.nav-div input:checked ~ .menu-icon:before {
 
   top: 0;
   transform: rotate(-45deg);
   width: 35px;
 }
 
-#nav-div input:checked ~ .menu-icon:after {
+.nav-div input:checked ~ .menu-icon:after {
   top: 0;
   transform: rotate(45deg);
   width: 35px;
 }
 
-#nav-div input:checked ~ .menu {
+.nav-div input:checked ~ .menu {
   right: 0;
 }
 
@@ -1255,7 +1255,7 @@ html{
 
   }
 
-  #nav-div
+  .nav-div
   {
     size: 20px;
   }
@@ -1361,13 +1361,7 @@ html{
   #tekst1-bildet-div{
     display: flex;
     flex-direction: column;
-    width: 100%;
-    min-height: 50px;
-    justify-content: space-between;
-    align-items: center;
   }
-
-
 
   .image-container1{
     padding: auto;
@@ -1382,7 +1376,7 @@ html{
     text-align: auto;
     font-size: 20px;
   }
-  /*Media query for screens smaller than 768px*/
+
 
   .welcome-lib-sec{
     display: flex;
