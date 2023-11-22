@@ -1521,6 +1521,11 @@ html{
   border-radius: 8px;
 }
 
+.acc-section h2 {
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
 
 
 .acc-section img {
