@@ -567,9 +567,7 @@ a , .footer-section li{
   list-style: none;
 }
 
-.nav-div1 li{
-  margin-right: 30px;
-}
+
 
 .nav-div1 a {
   text-decoration: none; /*Remove the link’s text-decoration*/
@@ -1295,7 +1293,7 @@ html{
   top: 0;
   right: -100%;
   background: #4675db;
-  width: 450px;
+  width: 100%;
   height: 100%;
   padding-top: 80px;
   z-index: 10;
@@ -1307,8 +1305,7 @@ html{
 .nav-div1 li {
   padding: 25px;
   font-size: 25px;
-  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.8)
-  inset;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.8);
 }
 .nav-div1 a {
   color: #2f1c74;
@@ -1349,7 +1346,7 @@ html{
 
 /* Media query for screens smaller than 768px */
 @media (max-width: 768px) {
-
+  
   #tekst1-bildet-div{
     display: flex;
     flex-direction: column;
