@@ -1338,14 +1338,12 @@ html{
 } 
 
 
-
-
 /* Media query for screens smaller than 768px */
 @media (max-width: 768px) {
   
   #tekst1-bildet-div{
     display: flex;
-    flex-direction: column;
+    flex-direction: column; /*For at bildet skal legge seg mellom teksten i topical siden og ikke på siden*/
   }
   .text-container1{
     padding: 18px 10px;
@@ -1375,7 +1373,7 @@ html{
    
   }
   .welcome-lib-sec{
-    display: flex;
+  display: flex;
   flex-direction: column;
   margin: auto;
   }
@@ -1505,13 +1503,21 @@ html{
 /* Media query for screens smaller than 768px ends here */
 
 /*accibility style*/
-
-.centered-text-acc {
-  text-align: center;
-  margin-top:20px;
-  margin-bottom: 20px;
+.accessibility-image{
+  display: flex;
+  flex-direction: row;
+  min-height: 100px;
+  margin-top: 10px;
+  justify-content: space-between;
+  padding-bottom: 2%;
+  padding-right: 4%;
 }
 
+.article-content-access{
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-bottom: 5%;
+}
 
 
 
