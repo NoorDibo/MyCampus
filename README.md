@@ -71,4 +71,6 @@ Our modifications ensured that the slider fits the visual and functional require
 
 <!--https://youtube.com/-->
 
+We used  https://www.pexels.com/nb-no/ Library photo Lib99
+inspierd for card design by https://www.youtube.com/watch?v=o_G6OMdl4bU
 
