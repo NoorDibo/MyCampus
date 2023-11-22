@@ -1339,6 +1339,9 @@ html{
 .nav-div1 li{
   margin-right: 0PX;
 }
+.accessibility-image{
+  flex-direction: column;
+}
 
 } 
 
