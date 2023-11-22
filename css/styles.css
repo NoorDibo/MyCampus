@@ -630,8 +630,8 @@ a , .footer-section li{
   width: 35px;
 }
 
-.nav-div input:checked ~ .menu {
-  right: 0;
+.nav-div input:checked ~ .nav-div1 {
+  left: 0;
 }
 
 
@@ -1291,7 +1291,7 @@ html{
   box-shadow: 0 1px 0 rgba(0, 0, 0, 0.8)
   inset;
 }
-.menu a {
+.menu a{
   color: white;
   text-decoration: none;
   font-size: 25px;
@@ -1305,7 +1305,7 @@ html{
   position: fixed;
   top: 0;
   right: -100%;
-  background: #28282B;
+  background: #4675db;
   width: 450px;
   height: 100%;
   padding-top: 80px;
@@ -1322,7 +1322,7 @@ html{
   inset;
 }
 .nav-div1 a {
-  color: #140256;
+  color: #2f1c74;
   text-decoration: none;
   font-size: 25px;
   
