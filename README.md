@@ -70,3 +70,5 @@ Our modifications ensured that the slider fits the visual and functional require
 <!--Kilder som er brukt i kantine>
 
 <!--https://youtube.com/-->
+
+
