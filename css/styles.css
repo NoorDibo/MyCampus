@@ -1497,3 +1497,7 @@ html{
 
 /* Media query for screens smaller than 768px ends here */
 
+acc-section{
+  margin-bottom: 30px;
+}
+
