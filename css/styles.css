@@ -1410,7 +1410,7 @@ html{
     flex: 0 90%;
     max-width: 90%;
     text-align: start;
-    margin: 25px 2px;
+    margin: 25px;
 }
 
 .card-lib img {
