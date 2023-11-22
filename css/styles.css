@@ -1354,6 +1354,10 @@ html{
     display: flex;
     flex-direction: column;
   }
+  .text-container1{
+    padding: 18px 10px;
+    line-height: 2.8rem;
+  }
 
   .image-container1{
     padding: auto;
@@ -1368,14 +1372,21 @@ html{
     text-align: auto;
     font-size: 20px;
   }
+  .welcome-lib-sec .head-lib {
+    margin: auto;
+    width: 100%;
 
-
+  }
+  .welcome-lib-sec .row-lib {
+    width: 100%;
+   
+  }
   .welcome-lib-sec{
     display: flex;
   flex-direction: column;
   margin: auto;
   }
-
+  
   .row-lib{
     display: flex;
   flex-direction: column;
@@ -1386,20 +1397,20 @@ html{
   .blog-post-lib{
     display: flex;
     flex-direction: column;
-    margin: 10px;
+    margin: 20px 2px;
   }
 
 .container-card-lib{
   display: flex;
   flex-direction: column;
-  margin: auto;
+  margin: 0px;
 }  
 
 .card-lib {
     flex: 0 90%;
     max-width: 90%;
-    margin-bottom: auto;
     text-align: start;
+    margin: 25px 2px;
 }
 
 .card-lib img {
@@ -1410,7 +1421,11 @@ html{
     margin: auto;
 }
 
-
+#box7.box {
+  width: 100%;
+  flex: 1;
+  margin: 25px 2px;
+}
 
 .content-background {
     flex-direction:column; /* Stack items vertically */
@@ -1489,12 +1504,12 @@ html{
     padding: 15px 2px;
   }
   
-
+  .acc-section{
+    margin-bottom: 30px;
+  }
 }
 
 /* Media query for screens smaller than 768px ends here */
 
-acc-section{
-  margin-bottom: 30px;
-}
+
 
