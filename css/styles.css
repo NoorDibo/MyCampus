@@ -567,9 +567,7 @@ a , .footer-section li{
   list-style: none;
 }
 
-.nav-div1 li{
-  margin-right: 30px;
-}
+
 
 .nav-div1 a {
   text-decoration: none; /*Remove the link’s text-decoration*/
